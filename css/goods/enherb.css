@@ -175,7 +175,8 @@
     }
 
     .brown {
-        color: #996e33 !important;
+        color: #916640 !important;
+        font-weight: bold;
     }
 
     .brown1 {
@@ -1571,7 +1572,7 @@
 
         .bg-1 {
             margin-top: 20px;
-            padding: 0 !important;
+            padding: 0 0 100px 0 !important;
             background: #e3eede;
         }
 
@@ -2001,73 +2002,62 @@
             height: 46px;
             background: url(../../img/goods/enherb/arrow.png) no-repeat;
             background-size: 100% auto;
-            bottom: -60px;
+            bottom: -50px;
             left: 50%;
             transform: translateX(-50%);
             padding-bottom: 60px;
         }
 
-        .box {
-            width: 40%;
-            height: 200px;
-            background-color: white;
-            margin: 25px 15px;
-            border-radius: 5px;
-        }
-
-        .box h3 {
-            font-family: 'Didact Gothic', sans-serif;
-            font-weight: normal;
-            text-align: center;
-            padding-top: 60px;
-            color: #fff;
-        }
-
-        .box1 {
-            background-color: #EBA39E;
-        }
-
-        .shadow1 {
+        /**/
+        .memo {
+            background: #fff;
             position: relative;
+            padding: 30px 15px;
         }
 
-        .shadow1 {
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-        }
-
-        .shadow1 h3 {
-            width: 87%;
-            height: 100px;
-            margin-left: 6%;
-            border: 2px dashed #F7EEEE;
-            border-radius: 5px;
-        }
-
-        .shadow1:before,
-        .shadow1:after {
+        .memo::before,
+        .memo::after {
             position: absolute;
             content: "";
-            bottom: 12px;
+            box-shadow: 0 20px 15px rgba(101, 101, 101, .4);
+            transform: rotate(358deg);
             left: 15px;
-            top: 80%;
+            top: 61%;
+            bottom: 17px;
             width: 45%;
             background: #9B7468;
-            z-index: -1;
-            -webkit-box-shadow: 0 20px 15px #9B7468;
-            -moz-box-shadow: 0 20px 15px #9B7468;
-            box-shadow: 0 20px 15px #9B7468;
-            -webkit-transform: rotate(-6deg);
-            -moz-transform: rotate(-6deg);
-            transform: rotate(-6deg);
+            z-index: 0;
         }
 
-        .shadow1:after {
-            -webkit-transform: rotate(6deg);
-            -moz-transform: rotate(6deg);
-            transform: rotate(6deg);
-            right: 15px;
-            left: auto;
+        .memo::after {
+            transform: rotate(5deg) !important;
+            left: inherit;
+            right: 15px !important;
         }
+
+        .memo>.memo_in {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            background: #fff;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+            z-index: 2;
+        }
+
+        .memo>.memo_in>div {
+            border: #ccc solid 1px;
+            width: calc(100% - 30px);
+            height: calc(100% - 30px);
+            padding: 15px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+
 
         /*git*/
         .git1103-1 {
