@@ -2069,7 +2069,13 @@
             left: auto;
         }
 
-        /**/
+        /*git*/
+        .git1103-1 {
+            display: none;
+        }
 
+        .git_master_change {
+            display: none;
+        }
 
     }
