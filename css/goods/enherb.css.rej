@@ -1,0 +1,9 @@
+diff a/css/goods/enherb.css b/css/goods/enherb.css	(rejected hunks)
+@@ -2074,7 +2074,6 @@
+             display: none;
+         }
+ 
+-        .git_master_changechangechangechangechange {
+         .git_master_changechangechangechangechange123 {
+             display: none;
+         }
