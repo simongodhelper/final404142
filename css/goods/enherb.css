@@ -330,7 +330,6 @@
     .w900 {
         max-width: 100%;
         margin: auto;
-        padding: 0 15px;
         line-height: normal;
     }
 
@@ -356,7 +355,8 @@
 
     .w1160,
     .w1160_1,
-    .w750 {
+    .w750,
+    .w900 {
         width: auto;
     }
 
@@ -947,6 +947,10 @@
     .btn_modal button:active {
         color: #00bbff;
         text-decoration: underline;
+    }
+
+    .white {
+        color: #fff !important;
     }
 
 
@@ -1571,9 +1575,9 @@
         }
 
         .bg-1 {
-            margin-top: 20px;
-            padding: 0 0 100px 0 !important;
+            padding: 0 !important;
             background: #e3eede;
+            position: relative;
         }
 
         .purchase .supply.red {
@@ -2006,6 +2010,7 @@
             left: 50%;
             transform: translateX(-50%);
             padding-bottom: 60px;
+            z-index: 1;
         }
 
         /**/
@@ -2020,7 +2025,7 @@
             position: absolute;
             content: "";
             box-shadow: 0 20px 15px rgba(101, 101, 101, .4);
-            transform: rotate(358deg);
+            transform: rotate(354deg);
             left: 15px;
             top: 61%;
             bottom: 17px;
@@ -2056,6 +2061,191 @@
             transform: translate(-50%, -50%);
             left: 50%;
             top: 50%;
+        }
+
+        .memo .title {
+            color: #916640;
+            font-size: 22px;
+            font-weight: bold;
+            padding-bottom: 12px;
+        }
+
+        .memo p {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        .memo .logo {
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        .memo .green_label {
+            background: #688e55;
+            color: #fff;
+            padding: 14px 18px;
+            display: inline-block;
+            font-size: 14px;
+            margin-right: -31px;
+            line-height: normal;
+            position: absolute;
+            right: 15px;
+            bottom: 0;
+            text-align: right;
+        }
+
+        .memo .green_label span {
+            color: #fff;
+        }
+
+        .memo .resaercher {
+            position: absolute;
+            bottom: -18px;
+            width: 216px;
+            right: -15px;
+        }
+
+        .memo .resaercher img {
+            width: 100%;
+        }
+
+        .pb_100 {
+            padding-bottom: 60px !important;
+        }
+
+        .f_large {
+            font-size: 140%;
+        }
+
+        .arrow_bottom_big {
+            background: #fff;
+            clip-path: polygon(100% 68%, 100% 100%, 0 100%, 0 70%, 50% 100%);
+            width: 100%;
+            height: 114px;
+        }
+
+        .hair_dry_div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+        }
+
+        .hair_dry_div .girl_dry {
+            width: 76%;
+        }
+
+        .hair_dry_div .girl_dry img {
+            width: 100%;
+        }
+
+        .hair_dry_div .hair_dry_txt {
+            flex: 1;
+        }
+
+        .hair_dry_div .dry_div_title {
+            color: #916640;
+            font-size: 28px;
+            line-height: normal;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .hair_dry_div .hair_dry_txt .dry_1 {
+            width: 100%;
+            height: auto;
+        }
+
+        .hair_dry_div .hair_dry_txt .dry_1 img {
+            width: 100%;
+        }
+
+        .box2_1_div {
+            display: flex;
+            gap: 0;
+        }
+
+        .box2_1_div .hair_box {
+            flex: 1;
+            position: relative;
+            padding: 50px 15px 15px 15px;
+        }
+
+        .box2_1_div .hair_box:first-child {
+            background: url(../../img/goods/enherb/border1.png)no-repeat;
+            background-size: 100% auto;
+        }
+
+        .box2_1_div .hair_box:last-child {
+            background: url(../../img/goods/enherb/border2.png)no-repeat;
+            background-size: 100% auto;
+        }
+
+        .box2_1_div .hair_box:first-child .title,
+        .box2_1_div .hair_box:last-child .title {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 6px 17px;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .box2_1_div .hair_box:first-child .title {
+            background: #685247;
+        }
+
+        .box2_1_div .hair_box:last-child .title {
+            background: #756d58;
+        }
+
+        .box2_1_div .hair_box_txt {
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .box2_1_div .hair_box:first-child .hair_box_bottom {
+            position: relative;
+            margin-top: -10px;
+            background: #d6a44f;
+            box-shadow: 0 7px 6px rgba(0, 0, 0, 0.3), 0 0 18px rgba(0, 0, 0, 0.1) inset;
+            padding: 15px;
+        }
+
+        .box2_1_div .hair_box:first-child .hair_box_bottom::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 1px 0 #fff, inset -1px 0 #fff, inset 0 1px #fff, inset 0 -1px #fff;
+            border: #d6a44f solid 8px;
+            top: 0;
+            left: 0;
+        }
+
+        .box2_1_div .hair_box:last-child .hair_box_bottom {
+            position: relative;
+            margin-top: -10px;
+            background: #688e55;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+            padding: 15px;
+        }
+
+        .box2_1_div .hair_box:last-child .hair_box_bottom::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 1px 0 #fff, inset -1px 0 #fff, inset 0 1px #fff, inset 0 -1px #fff;
+            border: #688e55 solid 8px;
+            top: 0;
+            left: 0;
         }
 
 
