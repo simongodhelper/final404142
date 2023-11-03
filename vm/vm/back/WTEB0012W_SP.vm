@@ -1,0 +1,668 @@
+#set ($line_combination_goodsId = ["211", "212"])
+
+#if ($line_combination_goodsId.contains($!{productInfoForm.goodsId}))
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh"><!-- InstanceBegin template="/Templates/tmp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="#ecUrl("/")js/jquery-3.6.0.min.js"></script>
+<script src="#ecUrl("/")js/jquery-migrate-3.3.2.min.js"></script>
+<script src="#ecUrl("/")js/browser-mise-error-fix.js"></script>
+<script src="#ecUrl("/")js/jquery.tools.min.js"></script>
+<script src="#ecUrl("/")js/jquery.colorbox-min.js"></script>
+<script src="#ecUrl("/")js/jquery.fancybox.pack.js"></script>
+<script src="#ecUrl("/")js/site.js"></script>
+<script type="text/javascript" src="#ecUrl("/")js/common.js"></script>
+<script type="text/javascript" src="#ecUrl("/")js/area.js"></script>
+<script type="text/javascript" language="javascript" src="#ecUrl("/")js/function.js"></script>
+<script language="javascript">
+var _ctxPath = "";
+	$(document).ready(function(){
+	    $("#goodsId").val('$!{productInfoForm.goodsId}');
+        executeAction("$app.https('/shopping/shopping')", "productInfoForm");
+	});
+
+</script>
+</head>
+<body>
+<form action="" name="productInfoForm" method="post" id="productInfoForm">
+<input type="hidden" name="_csrf" value="${_csrf.token}" />
+#ecFormHiddenInput("productInfoForm.goodsId" "")
+#ecFormHiddenInput("productInfoForm.advKey" "")
+#ecFormHiddenInput("productInfoForm.lpCode" "")
+</form>
+</body>
+#else
+#if($!{productInfoForm.goodsId} == 1 || $!{productInfoForm.goodsId} == 5 || $!{productInfoForm.goodsId} == 24
+     || $!{productInfoForm.goodsId} == 27 || $!{productInfoForm.goodsId} == 28 || $!{productInfoForm.goodsId} == 29
+	 || $!{productInfoForm.goodsId} == 60 || $!{productInfoForm.goodsId} == 66 || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62")
+	#set($layout="ec/layout/front/layout2.vm")
+	#if($include.exists("ec/product/$!{productInfoForm.goodsId}/schema.vm"))
+	    #parse("ec/product/$!{productInfoForm.goodsId}/schema.vm")
+	#end
+#else
+#set($layout="ec/layout/sp/layout2_sp.vm")
+#end
+<script language="javascript">
+var submitflag = true;
+var _ctxPath = "";
+#if($!{productInfoForm.goodsId} == 1 || $!{productInfoForm.goodsId} == 5 || $!{productInfoForm.goodsId} == 24
+ || $!{productInfoForm.goodsId} == 27 || $!{productInfoForm.goodsId} == 28 || $!{productInfoForm.goodsId} == 29
+ || $!{productInfoForm.goodsId} == 60 || $!{productInfoForm.goodsId} == 66 || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62")
+#else
+$(function() {
+    showmessage();
+});
+function picResize() {
+    $(".pointer").height($(".pointer img").height());
+    $(".filmstrip").css({top:($(".panel").height()+$(".pointer img").height())+"px",left:($(".panel").width()-$(".filmstrip").width())/2+"px"});
+    $(".pointer").css("top", $(".panel").height()+"px");
+    $(".filmstrip li:last").css("padding-right", "0px");
+    $(".filmstrip li.current").each(function(i){
+        var pos = getPosSelf($(this));
+        $(".pointer").css("left", pos.left+($(this).width()/2)-($(".pointer").find("img").width()/2)+'px');
+    });
+}
+function getPosSelf(el) {
+    el = el[0];
+    var left = 0, top = 0;
+    var el_id = el.id;
+    if(el.offsetParent) {
+        do {
+            left += el.offsetLeft;
+            top += el.offsetTop;
+        } while(el = el.offsetParent);
+    }
+    if(el_id == $(".gallery").prop('id')) {
+        return {'left':left,'top':top};
+    } else {
+        var gPos = getPosSelf($(".gallery"));
+        var gLeft = gPos.left;
+        var gTop = gPos.top;
+        return {'left':left-gLeft,'top':top-gTop};
+    }
+}
+window.onload = picResize;
+#end
+
+## 15日
+function shoping15() {
+    $("#goodsId").val(${fixProductCode15});
+    submitForm();
+    return false;
+}
+## vitoas小容量
+function shoping65() {
+    $("#goodsId").val('65');
+    submitForm();
+    return false;
+}
+## 15日之外
+function shoping() {
+    var goodsId = '$!{productInfoForm.goodsId}';
+    if (goodsId=='1a' || goodsId=='1b')
+	    $("#goodsId").val('1');
+    else if  (goodsId=='61a' || goodsId=='61b')
+	    $("#goodsId").val('61');
+    submitForm();
+    return false;
+}
+## 走適能 護膝 L 號1個入（單邊）
+function shoping852() {
+    $("#goodsId").val('852');
+    submitForm();
+    return false;
+}
+## 走適能 護膝 XL號1個入（單邊）
+function shoping853() {
+    $("#goodsId").val('853');
+    submitForm();
+    return false;
+}
+## 恩荷 草本能量洗潤系列(洗髮露+潤髮乳)
+function shoping40() {
+    $("#goodsId").val('40');
+    submitForm();
+    return false;
+}
+## 甦活煥采洗髮露
+function shoping41() {
+    $("#goodsId").val('41');
+    submitForm();
+    return false;
+}
+## 恩荷 深層屏護潤髮乳
+function shoping42() {
+    $("#goodsId").val('42');
+    submitForm();
+    return false;
+}
+## 沐予 親膚洗顏皂組
+function shoping43() {
+    $("#goodsId").val('43');
+    submitForm();
+    return false;
+}
+## 沐予 煥采海洋膠原洗顏皂
+function shoping44() {
+    $("#goodsId").val('44');
+    submitForm();
+    return false;
+}
+## 沐予 淨膚洗卸炭泥洗顏皂
+function shoping45() {
+    $("#goodsId").val('45');
+    submitForm();
+    return false;
+}
+## Vitoas蜜得絲多效極妍鎖濕菁華
+function shoping27() {
+    $("#goodsId").val('27');
+    submitForm();
+    return false;
+}
+## Vitoas蜜得絲多效極妍淨肌卸洗皂
+function shoping28() {
+    $("#goodsId").val('28');
+    submitForm();
+    return false;
+}
+## Vitoas蜜得絲多效極妍淨肌卸洗皂小容量
+function shoping285() {
+    $("#goodsId").val('285');
+    submitForm();
+    return false;
+}
+## Vitoas蜜得絲
+function shoping29() {
+    $("#goodsId").val('29');
+    submitForm();
+    return false;
+}
+## VARON汎倫 經典款
+function shoping261() {
+    $("#goodsId").val('261');
+    submitForm();
+    return false;
+}
+## VARON汎倫 原調款
+function shoping262() {
+    $("#goodsId").val('262');
+    submitForm();
+    return false;
+}
+## VARON汎倫 清新款
+function shoping263() {
+    $("#goodsId").val('263');
+    submitForm();
+    return false;
+}
+
+## VARON汎倫 經典款 20ml
+function shoping264() {
+    $("#goodsId").val('264');
+    submitForm();
+    return false;
+}
+## VARON汎倫 原調款 20ml
+function shoping265() {
+    $("#goodsId").val('265');
+    submitForm();
+    return false;
+}
+## VARON汎倫 清新款 20ml
+function shoping266() {
+    $("#goodsId").val('266');
+    submitForm();
+    return false;
+}
+## 定期1個月
+function contractshoping1(goodsId) {
+    var urlchk = location.href;
+    if (urlchk.indexOf('urlid') >0) {
+        var params = new URLSearchParams(location.search);
+        var lpCode = params.get('urlid');
+        $("#lpCode").val(lpCode);
+    } else if(urlchk.indexOf('contract=1') == -1) {
+        $("#lpCode").val("SSPT10P");
+    }
+    $("#goodsId").val(goodsId);
+    $("#hidContractFlag").val("1");
+    $("#hidDeliverySycle").val("M1");
+	if(goodsId == '27' || goodsId == '28' || goodsId == '29') ## VT 單一配送 配送週期應為2個月
+	{
+		$("#hidDeliverySycle").val("M2");
+	} else if(goodsId == '40' || goodsId == '41' || goodsId == '42') {
+		$("#hidDeliverySycle").val("D45");
+	} else if(goodsId == '43' || goodsId == '44' || goodsId == '45') {
+		$("#hidDeliverySycle").val("M2");
+	} else if(goodsId == '261' || goodsId == '262' || goodsId == '263') {
+		$("#hidDeliverySycle").val("M3");
+	}
+    $("#hidQty").val("1");
+    submitForm();
+    return false;
+}
+## 定期2個月以上
+function contractshoping2(goodsId) {
+    var urlchk = location.href;
+    if (urlchk.indexOf('urlid') >0) {
+        var params = new URLSearchParams(location.search);
+        var lpCode = params.get('urlid');
+        $("#lpCode").val(lpCode);
+    } else if(urlchk.indexOf('contract=1') == -1) {
+        $("#lpCode").val("SSPT10P");
+    }
+    $("#goodsId").val(goodsId);
+    $("#hidContractFlag").val("1");
+	if(goodsId == '47') {
+		$("#hidDeliverySycle").val("M3");
+    	$("#hidQty").val("3");
+	} else if(goodsId == '31') {
+		$("#hidDeliverySycle").val("M1");
+	    $("#hidQty").val("3");
+	} else {
+		$("#hidDeliverySycle").val("");## 使用商品預設的配送週期
+    	$("#hidQty").val("2");
+	}
+    submitForm();
+    return false;
+}
+## 提交Form
+function submitForm() {
+    if(submitflag) {
+        executeAction("$app.https('/shopping/shopping')", "productInfoForm");
+        submitflag=false;
+    }
+}
+## 消息顯示
+function showmessage() {
+   ## 在庫數量
+   var prodQty = ${productQty};
+   ## 庫存不足的場合
+   if(prodQty <= 0) {
+       ## 顯示缺貨中
+       $('#showmessage1').show();
+       $('#showmessage2').css("display","inline");
+       ## 顯示感謝信息
+       $('#prdQty0').css("display","");
+   }
+}
+</script>
+<form action="" name="productInfoForm" method="post" id="productInfoForm">
+<input type="hidden" name="_csrf" value="${_csrf.token}" />
+
+#set($pcount = ${productQty})
+#if($!{productInfoForm.goodsId} == 1)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/milcolla.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>Milcolla 蜜露珂娜</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 3)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/tadas.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>TADAS 比菲禦力菌</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 5)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/juice.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>極之青汁【大麥若葉+明日葉】</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 24)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/sesamin.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>芝麻明EX</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 27)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/vitoas.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>vitoas蜜得絲 多效極妍鎖濕菁華</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 28)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/vitoas.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>vitoas蜜得絲 多效極妍淨肌卸洗皂</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 29)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/vitoas.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>vitoas蜜得絲</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 60)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/rj.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>蜂王乳 + 芝麻明E</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 61)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/maca.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>御瑪卡【精胺酸+鋅】</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 62)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/dha.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>魚油 DHA＆EPA+芝麻明E</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 66)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/lf.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>Liftage麗芙緹PG-EX</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#else
+
+#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_top_sp.vm"))
+    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_top_sp.vm")
+#end
+#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_middle_sp.vm"))
+    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_middle_sp.vm")
+#end
+#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_bottom_sp.vm"))
+    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_bottom_sp.vm")
+#end
+#end
+
+#ecFormHiddenInput("productInfoForm.goodsId" "")
+#ecFormHiddenInput("productInfoForm.advKey" "")
+#ecFormHiddenInput("productInfoForm.lpCode" "")
+<input type="hidden" id="hidContractFlag" name="hidContractFlag" value="" />
+<input type="hidden" id="hidDeliverySycle" name="hidDeliverySycle" value="" />
+<input type="hidden" id="hidQty" name="hidQty" value="" />
+</form>
+#end

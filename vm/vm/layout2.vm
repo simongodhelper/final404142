@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh">
+<head>
+<!------------------ 2020/03/16 Ken Edit Start  ---------------------->
+#if($app.getUser().isAuthenticated())	
+	<!-- Usergram START -->
+	<script type="text/javascript">
+	window.ug_serviceId = '$base64.encodeToString($ecUserId.getBytes("UTF-8"))';
+	</script>
+	<!-- Usergram END -->
+#end
+<!------------------ 2020/03/16 Ken Edit End  ---------------------->
+<!-- Manual_Start_Google Tag Manager ---[$request.requestURI]--- -->
+#parse("/ec/layout/front/gtm_head.vm")
+<!-- Manual_End_Google Tag Manager ---[$request.requestURI]--- -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="distribution" content="Taiwan" />
+<meta name="geo.region" content="tw"/>
+<meta name="robots" content="max-image-preview:large" />
+<meta name="rating" content="general" />
+<meta property="fb:app_id" content="826782244838399" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="shortcut icon" href="https://wellness.suntory.com.tw/img/favicon.ico" />
+<link rel="icon" href="/img/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="https://wellness.suntory.com.tw/img/apple-touch-icon.png" />
+<link rel="preconnect" href="//ssl.google-analytics.com" />
+<link rel="preconnect" href="//www.googletagmanager.com" />
+<link rel="preconnect" href="//www.googleadservices.com" />
+<link rel="preconnect" href="//ajax.googleapis.com" />
+<meta name="copyright" content="Copyright: Suntory Holdings Ltd.">
+
+<!-- for seo -->
+<!-- InstanceBeginEditable name="doctitle" -->
+#if($productInfoForm.goodsId=="1")
+<title>Milcolla 蜜露珂娜 | 台灣三得利</title>
+<meta name="description" content="膠原蛋白粉市佔第一品牌日本三得利蜜露珂娜，獨特添加高濃度光速決膠原蛋白、牛乳賽洛美、光透維生素C，小分子吸收快超有感。一天只要一包，讓妳隨時都有膨‧潤‧亮的自信好氣色！"/>
+<meta name="Subject" content="膠原蛋白"/>
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=1"/>
+<!-- Open Graph protocol metadata start-->
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:title" content="Milcolla 蜜露珂娜 | 台灣三得利">
+<meta property="og:description" content="膠原蛋白粉市佔第一品牌日本三得利蜜露珂娜，獨特添加高濃度光速決膠原蛋白、牛乳賽洛美、光透維生素C，小分子吸收快超有感。一天只要一包，讓妳隨時都有膨‧潤‧亮的自信好氣色！">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=1">
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_1.jpg">
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<!-- Open Graph protocol metadata end-->
+#elseif($productInfoForm.goodsId=="2")
+<title>比菲德氏菌+乳寡醣 | 益生菌乳酸菌使排便順暢 | 台灣三得利</title>
+<meta name="description" content="嚴選的比菲德氏菌(龍根益生菌)及其獨創乳酸菌乳寡醣，幫助排便順暢、解決便秘。比菲德氏益生菌與乳酸菌乳寡醣的黃金組合，讓您排便順暢，享受清爽每一天！三得利「比菲德氏菌+乳寡醣」推薦給每天都想清盈順暢的您！" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=2" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_2.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=2">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="3")
+<title>TADAS 比菲禦力菌 | 台灣三得利</title>
+<meta name="description" content="日本第一家庭常備益生菌-TADAS比菲禦力菌，添加耐胃酸的比菲德氏龍根菌及乳鐵蛋白，幫助排便順暢並調整體質，提升身體保護力，含膳食纖維無多餘添加物的三得利日本益生菌專業營養師推薦。" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=3" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_3.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=3">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="5")
+<title>極之青汁【大麥若葉+明日葉】 | 台灣三得利</title>
+<meta name="description" content="三得利極之青汁，富含膳食纖維與維生素，嚴選大麥若葉及明日葉兩大高纖營養，更添加兒茶素，製成營養又美味的國民青汁，輕鬆補足每日所需蔬菜量！" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=5" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_5.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=5">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="8" || $productInfoForm.goodsId=="60")
+<title>蜂王乳＋芝麻明E | 台灣三得利</title>
+<meta name="description" content="熟齡保養聖品三得利蜂王乳＋芝麻明E，滋潤美容覺帶來持久水潤透亮。芝麻明幫助入睡，蜂王乳補充40種營養，帶來健康與美麗，神采奕奕充滿女性魅力。" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=60" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_60.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=60">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="12" || $productInfoForm.goodsId=="61")
+<title>御瑪卡【精胺酸+鋅】 | 台灣三得利</title>
+<meta name="description" content="三得利御瑪卡-精胺酸+鋅，台日熱銷突破300萬瓶，男性精力補充首選，多種天然食材鞏固體力根基，加上精胺酸與鋅，強勁續航從早到晚體力源源不絕。" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=61" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_61.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=61">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="14")
+<title>健鈣立 | 台灣三得利</title>
+<meta name="description" content="日本三得利「健鈣立」含黃金比例鈣與鎂，幫助維持骨骼健康的及助於骨骼正常發育。更有三大後援：維生素D、乳酮糖、維生素K，一次輕鬆完整補鈣。" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=14" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_14.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=14">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="20" || $productInfoForm.goodsId=="62")
+<title>魚油DHA＆EPA＋芝麻明E | 台灣三得</title>
+<meta name="description" content="日本國民魚油三得利DHA&EPA+芝麻明E，獨創芝麻明E防止DHA與EPA氧化，更能幫助入睡，充分發揮健康能量。台日熱銷3000萬瓶，讓您保持靈活反應及邏輯清晰，魚油品牌第一首選。" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=62" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_62.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=62">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="27")
+<title>vitoas蜜得絲多效極妍鎖濕菁華 | 超高滲透力 完美多效合一 | SUNTORY台灣三得利</title>
+<meta name="description" content="vitoas多效極妍鎖濕菁華，成功地混合化妝水、精華液、乳液．乳霜的成分，將這三種完全迥異的形態組成WOW構造。無需繁瑣的保養步驟，即可依序滲透至肌膚底層，使肌膚滋潤，維持理想狀態。以往大家認為All in One保養品做不到的效果，三得利以新技術實現了!" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=27" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_27.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=27">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="28")
+<title>vitoas蜜得絲多效極妍淨肌卸洗皂 | 卸妝洗顏一次完成！ | SUNTORY台灣三得利</title>
+<meta name="description" content="vitoas多效極妍淨肌卸洗皂，含有極濃密「超微細3效菁華油泡沫」，可以緊密包覆肌膚，深層卸除彩妝與髒汙，並給予肌膚保濕與美肌效果，一個步驟，讓卸妝、清潔、美肌一次輕鬆完成。" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=28" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_28.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=28">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="29")
+<title>vitoas蜜得絲 | 台灣三得利</title>
+<meta name="description" content="三得利蜜得絲多效極妍鎖濕菁華，獨家WOW三滲透技術將抗老成分有效吸收至肌底。All in one一瓶實現化妝水、精華液、乳液．乳霜步驟，每天早晚只有20秒完成保養。持續使用喚回肌膚光澤透亮不輸給歲月。" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=29" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_29.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=29">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="24")
+<title>芝麻明EX | 台灣三得利</title>
+<meta name="description" content="三得利芝麻明EX打造好眠體質與青春氣色。獨家萃取芝麻明幫助入睡，玄米多酚調節生理機能，維生素E抗氧化、皮膚健康。睡不好、體力差、氣色黯淡靠修護好眠，讓你擁有活力與年輕氣色!" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=24" />
+<meta name="Subject" content="膠原蛋白" />
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:title" content="芝麻明EX  | 台灣三得利">
+<meta property="og:description"
+	content="三得利芝麻明EX打造好眠體質與青春氣色。獨家萃取芝麻明幫助入睡，玄米多酚調節生理機能，維生素E抗氧化、皮膚健康。睡不好、體力差、氣色黯淡靠修護好眠，讓你擁有活力與年輕氣色!">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=24">
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_24.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+#elseif($productInfoForm.goodsId=="64")
+<title>固力伸【葡萄糖胺+鯊魚軟骨】 | 台灣三得利</title>
+<meta name="description" content="行動靈活、腳步穩健獨家配方-日本三得利固力伸，葡萄糖胺+軟骨素+咪唑胜肽化合物+維生素D，全方位保養首選信賴品牌，支援您每一步順暢好行。" />
+<meta name="Subject" content="固力伸【葡萄糖胺+鯊魚軟骨】" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=64" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_64.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=64">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="66")
+<title>Liftage麗芙緹PG-EX | 台灣三得利</title>
+<meta name="description" content="三得利Liftage麗芙緹-膠原精華飲，是專為40歲以上熟齡女性所開發的頂級美容飲，嚴選高保水力蛋白聚醣、賽洛美等獨創配方，10天定格青春，由內而外打造膨潤勻亮的好狀態。" />
+<meta name="Subject" content="Liftage麗芙緹PG-EX" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=66" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_66.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=66">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="40")
+<title>enherb 恩荷 草本能量洗潤系列 | 台灣三得利</title>
+<meta name="description" content="三得利enherb 恩荷 草本能量洗潤系列，以細緻柔軟的胺基酸泡沫搭配草本保濕成分，給予頭皮到髮絲最完整的呵護，強韌髮根實現秀髮彈力蓬鬆，輕齡保養的小秘密。" />
+<meta name="Subject" content="enherb 恩荷 甦活煥采洗髮露" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=40" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_40.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=40">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="41")
+<title>三得利恩荷甦活煥采洗髮露，從根本著手，調理頭皮、孕育秀髮！ | SUNTORY台灣三得利</title>
+<meta name="description" content="三得利恩荷甦活煥采洗髮露，促進頭皮新陳代謝，打造健康秀髮基礎！天然草本能量精華、胺基酸溫和洗淨成分、針對老化頭髮，進行輕齡保養，重現蓬鬆秀髮！" />
+<meta name="Subject" content="enherb 恩荷 深層屏護潤髮乳" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=41" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_41.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=41">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="42")
+<title>三得利恩荷深層屏護潤髮乳，三重滲透修護髮絲、重現秀髮光澤！ | SUNTORY台灣三得利</title>
+<meta name="description" content="日本三得利恩荷深層屏護潤髮乳，三重保濕成分，針對細瘦頭髮滲透修補毛鱗片，嚴選草本屏護成分，彈開外來傷害，滋潤年齡髮的健康韌度，閃耀柔順光澤！" />
+<meta name="Subject" content="conoha 沐予 親膚洗顏皂" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=42" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_42.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=42">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="43")
+<title>conoha 沐予 親膚洗顏皂 | 台灣三得利</title>
+<meta name="description" content="conoha 沐予親膚洗顏皂，天然草本精油香氛舒緩放鬆，白天膠原皂保濕滋潤，晚上炭泥皂徹底清潔，濃密細緻泡沫溫和洗淨，呵護素顏淨肌就從洗臉開始！" />
+<meta name="Subject" content="conoha 沐予 親膚洗顏皂" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=43" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_43.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=43">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="44")
+<title>沐予煥采海洋膠原洗顏皂，早晨清洗同時滋潤，洗出水潤素顏淨肌！| SUNTORY台灣三得利</title>
+<meta name="description" content="三得利conoha 沐予煥采海洋膠原洗顏皂，讓一天從洗臉開始清爽！含兩種獨特保濕成分、彈力泡沫與珍貴草本精油，清洗同時滋潤呵護肌膚！日本製造。" />
+<meta name="Subject" content="conoha 沐予 煥采海洋膠原洗顏皂" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=44" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_44.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=44">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="45")
+<title>沐予淨膚洗卸炭泥洗顏皂，炭泥吸附力，洗去夜晚汙垢，洗出素淨肌 | SUNTORY台灣三得利</title>
+<meta name="description" content="三得利conoha 沐予淨膚洗卸炭泥洗顏皂，添加炭、泥、荷荷芭油、紓緩情緒的草本精油，吸附溶解汙垢彩妝，洗出肌膚清透潔淨感，放鬆工作整天的肌膚！" />
+<meta name="Subject" content="conoha 沐予 淨膚洗卸炭泥洗顏皂" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=45" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_45.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=45">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="851")
+<title>走適能護膝 | 台灣三得利</title>
+<meta name="description" content="日本三得利X美津濃合作設計-走適能護膝，動態貼合設計有效達到肌肉平衡，舒適度+服貼感全方位提升，穩定膝蓋、步伐強健的最佳幫手。" />
+<meta name="Subject" content="走適能 護膝" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=851" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_851.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=851">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="47")
+<title>+deO帝悠 擊味紳仕皂 | 台灣三得利</title>
+<meta name="description" content="日本熱銷突破200萬個 +deO帝悠 擊味紳仕皂 含有匯聚了4種多酚萃取物的抗壬烯醛PC以及苦參萃取物 讓您擺脫大叔味及男性特有體味困擾" />
+<meta name="Subject" content="+deO帝悠 擊味紳仕皂" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=47" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_47.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=47">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="33")
+<title>益思健 | 台灣三得利</title>
+<meta name="description" content="益思健結合ARA、DHA、EPA 3大必需脂肪酸，雙效配方幫助維持良好覺察力，積極熱情有精神，生活不缺憾！" />
+<meta name="Subject" content="益思健" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=33" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_33.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=33">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif($productInfoForm.goodsId=="861")
+<title>毛孩 益思健 愛犬健腦樂活配方 | 台灣三得利</title>
+<meta name="description" content="毛孩益思健幫助10歲高齡毛孩及反應逐漸遲鈍的毛孩顧好腦部健康、找回靈敏反應，脂肪酸與蝦紅素兩大黃金成分，確實支援腦部健康，全方位補給毛孩腦力！" />
+<meta name="Subject" content="毛孩 益思健 愛犬健腦樂活配方" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=861" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_861.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=861">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="毛孩 益思健 愛犬健腦樂活配方 | 三得利 毛孩系列 | 台灣三得利" />
+<meta property="og:description" content="毛孩益思健幫助10歲高齡毛孩及反應逐漸遲鈍的毛孩顧好腦部健康、找回靈敏反應，脂肪酸與蝦紅素兩大黃金成分，確實支援腦部健康，全方位補給毛孩腦力！" />
+#elseif($productInfoForm.goodsId=="862")
+<title>毛孩 固力伸 愛犬關節靈活配方 | 台灣三得利</title>
+<meta name="description" content="毛孩固力伸幫助毛孩做好關節保養，隨時自在行動、開心跑跳。添加關節健康三重配方-可以幫助製造軟骨物質的「硫酸軟骨素」及「葡萄糖胺」再搭配「槲皮素plus」關節健康時，肌肉也能維持正常機能，讓毛孩的腳步更有力，行動靈活不卡卡，每一步都走得更順暢！" />
+<meta name="Subject" content="毛孩 固力伸 愛犬關節靈活配方" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=862" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_862.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=862">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="毛孩 固力伸 愛犬關節靈活配方 | 三得利 毛孩系列 | 台灣三得利" />
+<meta property="og:description" content="毛孩固力伸幫助毛孩做好關節保養，隨時自在行動、開心跑跳。添加關節健康三重配方-可以幫助製造軟骨物質的「硫酸軟骨素」及「葡萄糖胺」再搭配「槲皮素plus」關節健康時，肌肉也能維持正常機能，讓毛孩的腳步更有力，行動靈活不卡卡，每一步都走得更順暢" />
+#elseif($productInfoForm.goodsId=="863")
+<title>毛孩 芝麻明E 寵物活力亮澤配方 | 台灣三得利</title>
+<meta name="description" content="毛孩芝麻明E全方位維持毛孩年輕好狀態、亮麗毛色。獨家萃取活力之源-芝麻明，結合「維生素E」促進新陳代謝，同時協助體內抗氧化作用，達成完善的寵物保健，讓毛孩每天神采飛揚、充滿活力。" />
+<meta name="Subject" content="毛孩 芝麻明E 寵物活力亮澤配方" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=863" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_863.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=863">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="毛孩 芝麻明E 寵物活力亮澤配方 | 三得利 毛孩系列 | 台灣三得利" />
+<meta property="og:description" content="毛孩芝麻明E全方位維持毛孩年輕好狀態、亮麗毛色。獨家萃取活力之源-芝麻明，結合「維生素E」促進新陳代謝，同時協助體內抗氧化作用，達成完善的寵物保健，讓毛孩每天神采飛揚、充滿活力。" />
+#elseif($productInfoForm.goodsId=="261")
+<title>VARON汎倫 紳仕多效活顏精華 | 台灣三得利</title>
+<meta name="description" content="全效保養只要1瓶，簡單有效率 輕鬆擁有好氣色，明亮有朝氣 三種香氛選擇，展現專屬型男魅力" />
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/goods_detail?goods_id=261" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/img/ogimage/goods_261.jpg">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:title" content="VARON汎倫 紳仕多效活顏精華" />
+<meta property="og:description" content="全效保養只要1瓶，簡單有效率 輕鬆擁有好氣色，明亮有朝氣 三種香氛選擇，展現專屬型男魅力" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/goods_detail?goods_id=261">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="zh_TW" />
+#elseif ($request.requestURI.contains("/member/shoppingop"))
+<title>SUNTORY日本熱銷保健食品網路商店 | 台灣三得利</title>
+<meta name="description" content="日本SUNTORY官方直營的女性、男性保健食品，商品長年熱銷、廣受各大節目好評!人氣推薦商品如:膠原蛋白粉、瑪卡、芝麻素系列商品。更多保健食品立即選購!" />
+<meta name="google-site-verification" content="SKRkC9w4Kd8E1HdJHZ7J50Z_5sHveOhpdoAzvg_YovU" />
+<meta name="keywords" content="保健食品,男性保健食品,女性保健食品,膠原蛋白,芝麻素"/>	
+<meta name="robots" content="noindex" />
+#elseif ($request.requestURI.contains("/shopping/contract_products"))
+<title>SUNTORY日本熱銷保健食品網路商店 | 台灣三得利</title>
+<meta name="description" content="日本SUNTORY官方直營的女性、男性保健食品，商品長年熱銷、廣受各大節目好評!人氣推薦商品如:膠原蛋白粉、瑪卡、芝麻素系列商品。更多保健食品立即選購!" />
+<meta name="google-site-verification" content="SKRkC9w4Kd8E1HdJHZ7J50Z_5sHveOhpdoAzvg_YovU" />
+<meta name="keywords" content="保健食品,男性保健食品,女性保健食品,膠原蛋白,芝麻素"/>	
+<link rel="canonical" href="https://wellness.suntory.com.tw/shopping/contract_products/" />
+<meta property="og:image" content="https://wellness.suntory.com.tw/common/img/og/og_image_log.png">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/shopping/contract_products/">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#elseif ($request.requestURI.contains("/product/"))
+<title>產品介紹 | 三得利健康網路商店</title>
+<meta name="description" content="商品一覽頁面、日本SUNTORY官方直營的女性、男性保健食品，商品長年熱銷、廣受各大節目好評!人氣推薦商品如:膠原蛋白粉、瑪卡、芝麻素系列商品。更多保健食品立即選購!" />
+<link rel="preconnect" href="//connect.facebook.net">
+<link rel="preconnect" href="//www.googletagmanager.com">
+<meta property="fb:app_id" content="826782244838399" />
+<!-- Open Graph protocol metadata start-->
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:title" content="産品介紹 | 三得利健康網路商店">
+<meta property="og:description" content="商品一覽頁面、日本SUNTORY官方直營的女性、男性保健食品，商品長年熱銷、廣受各大節目好評!人氣推薦商品如:膠原蛋白粉、瑪卡、芝麻素系列商品。更多保健食品立即選購!">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://wellness.suntory.com.tw/common/img/og_image.png">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/product/">
+<!-- Open Graph protocol metadata end-->
+<meta name="robots" content="max-image-preview:large">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://wellness.suntory.com.tw/product/" />
+#else
+<title>三得利健康網路商店 | 日本熱銷保健食品</title>
+<meta name="description" content="SUNTORY三得利，官方直營的日本保健食品，提供您膠原蛋白粉、瑪卡、芝麻素等人氣女性、男性保健食品，長年熱銷好評，最健康安心的保健食品推薦首選。" />
+<meta name="google-site-verification" content="SKRkC9w4Kd8E1HdJHZ7J50Z_5sHveOhpdoAzvg_YovU" />
+<meta name="keywords" content="保健食品,男性保健食品,女性保健食品,膠原蛋白,芝麻素"/>	
+<meta property="og:image" content="https://wellness.suntory.com.tw/common/img/og/og_image_log.png">
+<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://wellness.suntory.com.tw/member/login_windows">
+<meta property="og:site_name" content="三得利健康網路商店">
+<meta property="og:type" content="article" />
+#end
+<!-- InstanceEndEditable -->
+#if($productInfoForm.goodsId=="1" || $productInfoForm.goodsId=="5" || $productInfoForm.goodsId=="24"
+   || $productInfoForm.goodsId=="27" || $productInfoForm.goodsId=="28" || $productInfoForm.goodsId=="29"
+   || $productInfoForm.goodsId=="60" || $productInfoForm.goodsId=="66" || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62" || $productInfoForm.goodsId=="43" || $productInfoForm.goodsId=="44" || $productInfoForm.goodsId=="45")
+#else
+<link href="#ecUrl("/")css/reset.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="#ecUrl("/")css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="#ecUrl("/")css/site.css" rel="stylesheet" type="text/css" media="screen">
+<link href="#ecUrl("/")css/colorbox.css" rel="stylesheet" type="text/css" media="screen">
+#end
+#if ($request.requestURI.contains("shopping") || $request.requestURI.contains("member"))
+<link href="#ecUrl("/")css/shopping.css" rel="stylesheet" type="text/css" media="screen">
+#end
+<!-- START ADD NewRelic Setting 2021-02-05 -->
+$NewRelic.getBrowserTimingHeader()
+<!-- END ADD NewRelic Setting 2021-02-05 -->
+<script src="#ecUrl("/")js/jquery-3.6.0.min.js"></script>
+<script src="#ecUrl("/")js/jquery-migrate-3.3.2.min.js"></script>
+<script src="#ecUrl("/")js/browser-mise-error-fix.js"></script>
+<script src="#ecUrl("/")js/jquery.tools.min.js"></script>
+#if($productInfoForm.goodsId=="1" || $productInfoForm.goodsId=="5" || $productInfoForm.goodsId=="24"
+   || $productInfoForm.goodsId=="27" || $productInfoForm.goodsId=="28" || $productInfoForm.goodsId=="29"
+   || $productInfoForm.goodsId=="60" || $productInfoForm.goodsId=="66" || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62" || $productInfoForm.goodsId=="43" || $productInfoForm.goodsId=="44" || $productInfoForm.goodsId=="45")
+#else
+<script src="#ecUrl("/")js/jquery.colorbox-min.js"></script>
+<script src="#ecUrl("/")js/jquery.fancybox.pack.js"></script>
+<script src="#ecUrl("/")js/site.js"></script>
+#end
+<script type="text/javascript" src="#ecUrl("/")js/common.js?2022225"></script>
+<script type="text/javascript" src="#ecUrl("/")js/area.js"></script>
+<script type="text/javascript" language="javascript" src="#ecUrl("/")js/function.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+#if($request.requestURI.contains("member/shoppingop"))
+<!-- START Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1658798697702210');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1658798697702210&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- START Yahoo Code -->
+<script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'1000317165272','properties':{'pixelId':'438994'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
+<!-- END Yahoo Code -->
+#end
+<!-- END cyber agent -->
+#if($productInfoForm.goodsId=="64")
+    <style type="text/css">
+    body {
+    font-family: Verdana, Microsoft JhengHei, "微軟正黑體", sans-serif;
+}
+    </style>
+#end
+##20180601-----Janet ADD DHA logicad-----end
+<!-- --- show_talk_accout Start        ---[$request.requestURI]--- -->
+#parse("/ec/layout/front/show_talk_accout.vm")
+<!-- --- show_talk_accout end          ---[$request.requestURI]--- -->
+</head>
+<body>
+
+<!-- --- show_talk Start        ---[$request.requestURI]--- -->
+#parse("/ec/layout/front/show_talk_code.vm")
+<!-- --- show_talk end          ---[$request.requestURI]--- -->
+
+<!-- common_header -->
+#parse("/ec/layout/common_header.vm")
+<!-- common_header -->
+<!-- InstanceBeginEditable name="EditRegion3" -->
+$screen_content
+<!-- InstanceEndEditable -->
+<!-- common_footer -->
+#parse("/ec/layout/common_footer.vm")
+<!-- common_footer -->
+<!-- Yahoo AudienceAd Code STRAT -->
+<script type="text/javascript" src="#ecUrl("/")js/suntory.js"></script><script type="text/javascript">g_YWA_funcs.doSiteRetargeting();</script>
+<!-- Yahoo AudienceAd Code END -->
+<!-- Manual_Start Google Tag Manager (noscript) ---[$request.requestURI]--- -->
+#parse("/ec/layout/front/gtm_body.vm")
+<!-- Manual_End Google Tag Manager (noscript) ---[$request.requestURI]--- -->
+<!-- START ADD NewRelic Setting 2021-02-05 -->
+$NewRelic.getBrowserTimingFooter()
+<!-- END ADD NewRelic Setting 2021-02-05 -->
+</body>
+<!-- InstanceEnd --></html>

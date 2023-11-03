@@ -1,0 +1,500 @@
+<!-- contents00 -->
+<section class="contents00">
+
+<!-- contents_nav -->
+<ul class="contents_nav">
+    <li class="btn_ingredients"><a href="#feature">系列特點</a></li>
+    <li class="btn_ingredients"><a href="#ingredients">商品一覽</a></li>
+    <li class="btn_tips"><a href="#tips">愛用者<br class="sp_item">心得</a></li>
+</ul>
+<!-- /contents_nav -->
+
+<!-- targets -->
+<section class="targets">
+    <h2>推薦給這樣的你</h2>
+    <ul class="targets_list">
+        <li>希望<em>保濕滋潤、洗卸潔淨</em>肌膚的妳</li>
+        <li>喜歡<em>成分天然、無害環境</em>商品的妳</li>
+        <li>想要<em>簡單舒適、照護肌膚</em>的妳</li>
+        <li>期待<em>美麗潔淨、素顏亮肌</em>的妳</li>
+    </ul>
+</section>
+<!-- /targets -->
+
+</section>
+
+<!-- contents01 -->
+<section id="feature" class="w1160 t_center">
+    <div class="tips pa_LR15" style="background: none; padding-bottom: 0;">
+        <h2>conoha 沐予</h2>
+        <p class="lead">呵護肌膚，從洗顏開始</p>
+        <p class="lead3">潔淨同時潤澤，感受自然並放鬆的生活…</p>
+    </div>
+    <img data-src="/img/goods/conoha/43.png" src="/img/goods/conoha/43.png" alt="潔淨同時潤澤，感受自然並放鬆的生活…" width="750"
+        height="567" loading="lazy" class="lazyload">
+</section>
+<!-- /contents01 -->
+
+<!-- contents02 -->
+<section class="w1160 t_center">
+    <div class="tips pa_LR15" style="background: none; padding-bottom: 0;">
+        <h2>實現人與自然，舒適地<br class="phone_only">維持平衡、相互呵護</h2>
+        <p class="lead">溫和親膚、呵護自然，天天都舒活自得</p>
+        <p class="lead2">就讓conoha 沐予 為妳煥新早晨、放鬆夜晚</p>
+        <p class="lead3">三得利秉持<span class="green1 bold">人類與大自然相互呵護</span>的理念，<br>
+            以對肌膚溫和，同時呵護大自然，創造 conoha沐予。<br>
+            <span class="green1 bold">珍惜大自然</span>給予恩惠，選擇使用不會損傷大地的栽培原料。<br>
+            同時採用<span class="green1 bold">天然草本精油</span>，釋放舒服香氛，<br>
+            實現<span class="green1 bold">人與自然平衡共生。</span>
+        </p>
+    </div>
+    <img data-src="/img/goods/conoha/sea.png" src="/img/goods/conoha/sea.png" alt="sea" width="750" height="414"
+        loading="lazy" class="lazyload">
+</section>
+<!-- /contents02 -->
+
+<!-- contents03 -->
+<section class="w1160 t_center">
+    <div class="tips pa_LR15" style="background: none; padding-bottom: 0;">
+        <h2>添加獨特高度保濕成分Lipidure<sup>®</sup>​</h2>
+        <p class="lead">洗完保持肌膚原有的柔滑水嫩</p>
+        <p class="lead2">高保濕成分Lipidure<sup>®</sup>是與皮膚成分相似的保濕成分</p>
+        <p class="lead3">Lipidure<sup>®</sup>為與皮膚成分相似的高度保濕成分，<br>
+            <span class="green1 bold">保濕力為玻尿酸的兩倍</span>。能提高角質層的含水量，確實<br>
+            <span class="green1 bold">鎖水防止水分蒸發</span>，增加保水長效性。<br>
+            可<span class="green1 bold">提高屏障效果、保護肌膚不受傷害</span>。
+        </p>
+    </div>
+    <img data-src="/img/goods/conoha/pic3.jpg" src="/img/goods/conoha/pic3.jpg" alt="洗完保持肌膚原有的柔滑水嫩" width="750"
+        height="414" loading="lazy" class="lazyload">
+</section>
+<!-- /contents03 -->
+
+<!-- contents04 -->
+<section class="w750">
+    <div class="tips pa_LR15" style="background: none; padding-bottom: 0;">
+        <h2>高分解重組法，能輕鬆搓出綿密泡沫​</h2>
+        <p class="lead">採用特殊技術 「高分解重組製法」</p>
+        <p class="lead2">能迅速搓揉出深入毛孔的細緻濃密泡沫</p>
+        <p class="lead3"><span class="green1 bold">高分解重組製法</span>是從肥皂的成分中選出<br>
+            起泡性佳、能有效率地洗去汙垢的成分，<br>
+            均勻搭配後，成為洗顏皂基底。
+        </p>
+    </div>
+    <div class="bg-4">
+        <div class="box3_div w600">
+            <div>
+                <p><img data-src="/img/goods/conoha/oil_1.svg" src="/img/goods/conoha/oil_1.svg" alt="構成肥皂的油脂"
+                        loading="lazy" class="lazyload"></p>構成肥皂<br>的油脂
+            </div>
+            <div>
+                <p><img data-src="/img/goods/conoha/oil_2.svg" src="/img/goods/conoha/oil_2.svg" alt="精細地分解油脂"
+                        loading="lazy" class="lazyload"></p>精細地<br>分解油脂
+            </div>
+            <div>
+                <p><img src="/img/goods/conoha/oil_3.svg" src="/img/goods/conoha/oil_3.svg" alt="挑選優越起泡性與洗淨力的成分"
+                        loading="lazy" class="lazyload"></p>
+                挑選優越起泡性<br>與洗淨力的成分<br>後再次重組
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /contents04 -->
+
+<!-- contents05 -->
+<section>
+    <div class="w1160">
+        <div class="tips pa_LR15" style="background: none; padding-bottom: 0;">
+            <h2>泡沫細緻有彈性，只為溫和洗淨</h2>
+            <p class="lead">泡沫分子深入毛孔之中</p>
+            <p class="lead2">比一般洗顏皂更綿密細緻、更有彈性</p>
+            <p class="lead3">將沐予洗顏皂慢慢搓揉起泡後，其泡沫大小約為數10～200微米*。<br>
+                細緻的泡沫分子能進入約只有0.2毫米大小的毛孔，<br>
+                深入毛孔並清爽舒適地洗淨。*1微米 = 1毫米的千分之一<br>
+            </p>
+        </div>
+        <div class="box2_1_div">
+            <div>
+                <p>
+                    一般洗顏皂<br>
+                    <span>泡沫分子大且少</span><br>
+                    難以進入毛孔清除污垢
+                </p>
+                <img data-src="/img/goods/conoha/pic5.png" src="/img/goods/conoha/pic5.png" alt="泡沫分子大且少"
+                    width="312" height="207" loading="lazy" class="lazyload">
+            </div>
+            <div>
+                <p class="green1">
+                    沐予洗顏皂<br>
+                    <span>泡沫細緻且濃密</span><br>
+                    能深入毛孔，洗淨污垢
+                </p>
+                <img data-src="/img/goods/conoha/pic6.png" src="/img/goods/conoha/pic6.png" alt="泡沫細緻且濃密"
+                    width="312" height="207" loading="lazy" class="lazyload">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /contents05 -->
+
+<!-- contents06 -->
+<section class="w1160 t_center">
+    <div class="tips pa_LR15" style="background: none; padding-bottom: 0;">
+        <h2>肌膚保養第一步 — 洗臉</h2>
+        <p class="lead">洗臉是最基本動作，請每天持續保養使用。</p>
+        <p class="lead2">為了確實溫和洗淨，請正確地搓出綿密泡沫</p>
+        <p class="lead3">大自然對肌膚的親密呵護，成形為沐予洗顏皂，<br>
+            不論是泡沫、保濕甚至是香氛，將保養肌膚最基本的動作「洗臉」，<br>
+            也能變得十分舒適，就讓沐予洗顏皂來溫柔照顧妳！
+        </p>
+    </div>
+    <img data-src="/img/goods/conoha/pic7.png" src="/img/goods/conoha/pic7.png" alt="肌膚保養第一步 — 洗臉" width="750"
+        height="469" loading="lazy" class="lazyload">
+</section>
+<!-- /contents06 -->
+
+<!-- contents07 -->
+<section id="ingredients" class="bg_green">
+    <div class="width1070">
+        <div class="tips" style="background: none; padding-bottom: 0;">
+            <h2>conoha 沐予洗顏皂 商品一覽</h2>
+        </div>
+        <div class="box2_div">
+            <div class="box2" onclick="location.href='/product/goods_detail?goods_id=45'">
+                <div class="step">
+                    <div class="label_div">
+                        <div class="label">晚上洗淨並紓緩放鬆</div>
+                    </div>
+                </div>
+                <div class="box2_in">
+                    淨膚洗卸炭泥洗顏皂
+                    <img data-src="/img/goods/conoha/45_1.png" src="/img/goods/conoha/45_1.png" alt="淨膚洗卸炭泥洗顏皂"
+                        width="325" height="243" loading="lazy" class="lazyloaded">
+                    <div class="btn_1">
+                        <p>了解更多</p>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2" onclick="location.href='/product/goods_detail?goods_id=44'">
+                <div class="step">
+                    <div class="label_div">
+                        <div class="label">白天清洗兼保濕滋潤</div>
+                    </div>
+                </div>
+                <div class="box2_in">
+                    煥采海洋膠原洗顏皂
+                    <img data-src="/img/goods/conoha/44_1.png" src="/img/goods/conoha/44_1.png" alt="煥采海洋膠原洗顏皂"
+                        width="207" height="243" loading="lazy" class="lazyloaded">
+                    <div class="btn_1">
+                        <p>了解更多</p>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /contents07 -->
+
+<!--tips--->
+<section class="tips green_bg" id="tips">
+    <h2>愛用者使用過後的真實感想</h2>
+    <ul class="tips_list">
+        <li>
+            <div class="text">
+                <div class="label">
+                    <h3><span>30代女性</span></h3>
+                    <p class="date"><span class="green1 bold">淨肌保濕</span>，有被呵護的感覺！</p>
+                </div>
+                <p class="comment">
+                    紮實的泡沫與清爽的香味，泡沫很細緻而且很好沖洗，草本精油的味道很舒服，早上洗完讓人感覺很有活力！
+                </p>
+                <figure><img data-src="/img/goods/conoha/30.png" src="/img/goods/conoha/30.png" alt="30"
+                        loading="lazy" width="570" height="380" class="lazyloaded"></figure>
+            </div>
+        </li>
+        <li>
+            <div class="text">
+                <div class="label">
+                    <h3><span>40代女性</span></h3>
+                    <p class="date">細緻柔滑，<span class="green1 bold">草本香氛令人放鬆！</span></p>
+                </div>
+                <p class="comment">
+                    泡泡很細跟綿密，輕輕搓揉就能產生很多泡泡，而且很好沖洗，洗完還有舒服的草本精油香，真的有種療癒的神奇作用！
+                </p>
+                <figure><img data-src="/img/goods/conoha/40.png" src="/img/goods/conoha/40.png" alt="30"
+                        loading="lazy" width="570" height="380" class="lazyloaded"></figure>
+            </div>
+        </li>
+        <li>
+            <div class="text">
+                <div class="label">
+                    <h3><span>50代女性</span></h3>
+                    <p class="date">保持<span class="green1 bold">水潤亮顏，又有活力！</span></p>
+                </div>
+                <p class="comment">
+                    早上洗完臉，常常感覺又亮了一階！很滋潤，完全沒有緊繃的感覺！天然精油的香味也很棒，心情會跟著好起來！
+                </p>
+                <figure><img data-src="/img/goods/conoha/50.png" src="/img/goods/conoha/50.png" alt="30"
+                        loading="lazy" width="570" height="380" class="lazyloaded"></figure>
+            </div>
+        </li>
+    </ul>
+</section>
+<!--/tips--->
+
+<!-- details -->
+<section class="details" id="details">
+    <h2>conoha沐予 親膚洗顏皂 <br class="phone_only">商品詳細資訊</h2>
+    <p class="lead">日本製造，品質安心有保障！</p>
+
+    <div class="question_answer">
+        <p class="question">我很擔心食物的安全性，例如：<br class="sp_item">商品使用的原料、製作過程等…</p>
+        <p class="answer">不用擔心，三得利「conoha沐予 親膚洗顏皂」是具有百年歷史的日本三得利所製作！</p>
+    </div>
+    <ul class="details_list">
+        <li>
+            <figure><img data-src="/img/goods/sesamin/img_details01.jpg" src="/img/goods/sesamin/img_details01.jpg"
+                    alt="總公司" loading="lazy" width="280" height="200" loading="lazy" class="lazyloaded"></figure>
+            <h3>嚴格確保高品質</h3>
+            <p>對大自然蘊藏的能量所孕育的保健食品，轉以科學角度剖析驗證其品質，每個環節層層把關，是三得利保健食品藉由貫徹品質安全做出的安心承諾。</p>
+        </li>
+        <li>
+            <figure class="borderd"><img data-src="/img/goods/sesamin/img_details02.jpg"
+                    src="/img/goods/sesamin/img_details02.jpg" alt="SGS檢驗" loading="lazy" width="280" height="280"
+                    loading="lazy" class="lazyloaded">
+            </figure>
+            <h3>SGS檢驗通過</h3>
+            <p>三得利「conoha沐予 親膚洗顏皂」不僅精心挑選原料；更從生產至配送、堅持最嚴格的品質把關；日本製造；在台灣、更通過SGS檢驗、品質安心、讓您更放心。</p>
+        </li>
+    </ul>
+    <p class="btn_link"><a href="/qanda/detail/000120.html"><span>我一直以為三得利是專門生產酒類及飲料的食品公司？</span></a></p>
+</section>
+<!-- /details -->
+
+<!-- q_and_a -->
+<section class="q_and_a" id="q_and_a">
+    <h2>Q &amp; A</h2>
+    <div class="q_and_a_group">
+        <section class="q_and_a_contents">
+            <h3>關於「conoha沐予 煥采海洋膠原洗顏皂」</h3>
+            <ul class="q_and_a_list">
+                <li><a href="/qanda/detail/000115.html">為什麼其他網站賣得更便宜？且無法於其他通路購買呢？</a></li>
+                <li><a href="/qanda/detail/000120.html">我一直以為三得利是專門生產酒類及飲料的食品公司？</a></li>
+                <li><a href="/qanda/detail/000223.html">需要用起泡網起泡嗎？</a></li>
+            </ul>
+        </section>
+        <section class="q_and_a_contents">
+            <h3>購物須知</h3>
+            <ul class="q_and_a_list">
+                <li><a href="/qanda/detail/000062.html">需要運費、手續費嗎？</a></li>
+                <li><a href="/qanda/detail/000065.html">從訂購完成到收到貨物，需要幾天的時間？</a></li>
+                <li><a href="/qanda/detail/000016.html">可以透過什麼方式訂購商品？</a></li>
+                <li><a href="/qanda/detail/000051.html">付款方式？</a></li>
+            </ul>
+        </section>
+    </div>
+</section>
+<!-- /q_and_a -->
+
+<!-- recommended_products -->
+<section class="recommended_products" id="recommended_products">
+<h2>其他推薦商品</h2>
+<ul class="recommended_list">
+    <li>
+        <a href="/product/goods_detail?goods_id=29">
+            <div class="img_block">
+                <p class="award"><img data-src="/top/img/vitoas_prize.png" src="/top/img/vitoas_prize.png" width="78"
+                        height="78" loading="lazy" alt="vitoas蜜得絲_award"></p>
+                <figure><img data-src="/top/img/vitoas.png" src="/top/img/vitoas.png" width="180" height="169"
+                        loading="lazy" alt="vitoas蜜得絲"></figure>
+            </div>
+            <div class="text_block">
+                <div class="products_title" style="height: 54px;">
+                    <h3>vitoas 蜜得絲</h3>
+                </div>
+                <p class="text">極簡保養實現理想原生肌只要兩個步驟！</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/product/goods_detail?goods_id=60">
+            <div class="img_block">
+                <p class="award"><img data-src="/top/img/royal_jelly_prize.png" src="/top/img/royal_jelly_prize.png"
+                        width="78" height="78" loading="lazy" alt="蜂王乳 + 芝麻明E_award"></p>
+                <figure><img data-src="/top/img/royal_jelly.png" src="/top/img/royal_jelly.png" width="180" height="169"
+                        loading="lazy" alt="蜂王乳 + 芝麻明E"></figure>
+            </div>
+            <div class="text_block">
+                <div class="products_title" style="height: 81px;">
+                    <h3>蜂王乳<br class="phone_only">+芝麻明E</h3>
+                </div>
+                <p class="text">
+                </p>
+                <p>全方位養顏調理聖品，<br>擁好眠，煥發持久紅潤透亮</p>
+                <p></p>
+            </div>
+        </a>
+    </li>
+</ul>
+</section>
+<!-- /recommended_products -->
+<!--select_purchase_btn_bar-->
+<div class="select_purchase_btn_bar">
+    <div class="inner">
+        <button class="btn_close" type="button"></button>
+        <p class="btn_select_purchase" style="margin: 0;"><a href="#purchase">選擇購買方案</a></p>
+    </div>
+</div>
+<!--/select_purchase_btn_bar-->
+</div>
+<!-- /product_contents -->
+</div>
+
+<!-- modal_container -->
+<div class="modal_container">
+    <div class="modal_container_in">
+        <h2 class="modal_title">優惠折扣價目表</h2>
+        <p class="text">全台宅配免運費，不限數量！</p>
+        <div class="price_list">
+            <p class="popup_title">單個</p>
+            <table class="price_list_table">
+                <caption>多重購折扣價目表</caption>
+                <tbody>
+                    <tr>
+                        <th>組數</th>
+                        <th>折扣數</th>
+                        <th>折扣金額</th>
+                        <th>折扣後總金額</th>
+                    </tr>
+                    <tr>
+                        <td class="label">1個</td>
+                        <td class="blank">-</td>
+                        <td class="blank">-</td>
+                        <td class="blank">-</td>
+                    </tr>
+                    <tr>
+                        <td class="label">2個</td>
+                        <td class="number">95折</td>
+                        <td class="price">省NT$75</td>
+                        <td class="total">NT$1,425</td>
+                    </tr>
+                    <tr>
+                        <td class="label">3個</td>
+                        <td class="number">9折</td>
+                        <td class="price">省NT$225</td>
+                        <td class="total">NT$2,025</td>
+                    </tr>
+                    <tr>
+                        <td class="label">4個</td>
+                        <td class="number">9折</td>
+                        <td class="price">省NT$300</td>
+                        <td class="total">NT$2,700</td>
+                    </tr>
+                    <tr>
+                        <td class="label">5個</td>
+                        <td class="number">85折</td>
+                        <td class="price">省NT$562</td>
+                        <td class="total">NT$3,188</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p class="popup_title">兩個入/組 (１組包含:煥采海洋膠原洗顏皂１個 與 淨膚洗卸炭泥洗顏皂１個)</p>
+            <table class="price_list_table">
+                <caption>多重購折扣價目表</caption>
+                <tbody>
+                    <tr>
+                        <th>組數</th>
+                        <th>折扣數</th>
+                        <th>折扣金額</th>
+                        <th>折扣後總金額</th>
+                    </tr>
+                    <tr>
+                        <td class="label">2個(1組)</td>
+                        <td class="blank">-</td>
+                        <td class="blank">-</td>
+                        <td class="blank">-</td>
+                    </tr>
+                    <tr>
+                        <td class="label">4個(2組)</td>
+                        <td class="number">95折</td>
+                        <td class="price">省NT$150</td>
+                        <td class="total">NT$2,850</td>
+                    </tr>
+                    <tr>
+                        <td class="label">6個(3組)</td>
+                        <td class="number">9折</td>
+                        <td class="price">省NT$450</td>
+                        <td class="total">NT$4,050</td>
+                    </tr>
+                    <tr>
+                        <td class="label">8個(4組)</td>
+                        <td class="number">9折</td>
+                        <td class="price">省NT$600</td>
+                        <td class="total">NT$5,400</td>
+                    </tr>
+                    <tr>
+                        <td class="label">10個(5組)</td>
+                        <td class="number">85折</td>
+                        <td class="price">省NT$1,125</td>
+                        <td class="total">NT$6,375</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn_close">關閉</div>
+        <div class="btn_close_x"></div>
+    </div>
+</div>
+<!-- /modal_container -->
+
+<div class="overlay"></div>
+</div>
+<script src="/js/goods/smooth_scroll.js"></script>
+<script src="/js/goods/jquery.matchHeight-min.js"></script>
+<script>
+$(function() {
+	//Show Benefits
+	$( 'input[name="buyProduct"]:radio' ).change( function() {
+		$(".regular_extra").addClass("active");
+	});
+	//modal
+	$('.overlay').on('click',function(){
+		$('.modal_container').removeClass('active');
+		$('.overlay').removeClass('active');
+	});
+	$('.btn_close').on('click',function(){
+		$('.modal_container').removeClass('active');
+		$('.overlay').removeClass('active');
+	});
+	$('.btn_close_x').on('click',function(){
+		$('.modal_container').removeClass('active');
+		$('.overlay').removeClass('active');
+	});
+	$('.btn_modal a').on('click',function(){
+		$('.overlay').addClass('active');
+		$('.modal_container').addClass('active');
+	});
+});
+
+// matchHeight
+$('.ingredients_list01').matchHeight();
+$('.ingredients_list02').matchHeight();
+$('.products_title').matchHeight();
+// select_purchase_btn_bar
+$(".select_purchase_btn_bar .btn_close").click(function(){
+	// $('.select_purchase_btn_bar').fadeOut("fast");
+	$('.select_purchase_btn_bar').removeClass('active');
+});
+$(window).scroll(function() {
+	if ( $(this).scrollTop() > 2000){
+		// $('.select_purchase_btn_bar').fadeIn("fast");
+		$('.select_purchase_btn_bar').addClass('active');
+	} else {
+		// $('.select_purchase_btn_bar').stop().fadeOut("fast");
+		$('.select_purchase_btn_bar').removeClass('active');
+	}
+});
+</script>

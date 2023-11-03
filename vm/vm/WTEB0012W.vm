@@ -1,0 +1,2040 @@
+#set ($line_combination_goodsId = ["211", "212"])
+
+#if ($line_combination_goodsId.contains($!{productInfoForm.goodsId}))
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh"><!-- InstanceBegin template="/Templates/tmp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="#ecUrl("/")js/jquery-3.6.0.min.js"></script>
+<script src="#ecUrl("/")js/jquery-migrate-3.3.2.min.js"></script>
+<script src="#ecUrl("/")js/browser-mise-error-fix.js"></script>
+<script src="#ecUrl("/")js/jquery.tools.min.js"></script>
+<script src="#ecUrl("/")js/jquery.colorbox-min.js"></script>
+<script src="#ecUrl("/")js/jquery.fancybox.pack.js"></script>
+<script src="#ecUrl("/")js/site.js"></script>
+<script type="text/javascript" src="#ecUrl("/")js/common.js"></script>
+<script type="text/javascript" src="#ecUrl("/")js/area.js"></script>
+<script type="text/javascript" language="javascript" src="#ecUrl("/")js/function.js"></script>
+<script language="javascript">
+var _ctxPath = "";
+	$(document).ready(function(){
+	    $("#goodsId").val('$!{productInfoForm.goodsId}');
+        executeAction("$app.https('/shopping/shopping')");
+	});
+
+</script>
+</head>
+<body>
+<form action="" name="productInfoForm" method="post">
+<input type="hidden" name="_csrf" value="${_csrf.token}" />
+#ecFormHiddenInput("productInfoForm.goodsId" "")
+#ecFormHiddenInput("productInfoForm.advKey" "")
+#ecFormHiddenInput("productInfoForm.lpCode" "")
+</form>
+</body>
+#else
+#set($layout="ec/layout/front/layout2.vm")
+<script language="javascript">
+	$('document').ready(function() {
+        $('label').click(function() {
+            $('label').removeClass('active_1');
+            $(this).addClass('active_1');
+        });
+    });
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+    $('document').ready(function() {
+        $('#btn_close1').click(function() {
+            $('.mask1').removeClass('d_b');
+        });
+    });
+    $('document').ready(function() {
+        $('#btn_close2').click(function() {
+            $('.mask2').removeClass('d_b');
+        });
+    });
+    $('document').ready(function() {
+        $('#btn_close3').click(function() {
+            $('.mask3').removeClass('d_b');
+        });
+    });
+    $('document').ready(function() {
+        $('#btn_close4').click(function() {
+            $('.mask4').removeClass('d_b');
+        });
+    });
+    $('document').ready(function() {
+            $('.mask').click(function() {
+                $('.mask').removeClass('d_b');
+            });
+        });
+## 提交標示
+var submitflag = true;
+var _ctxPath = "";
+$(document).ready(function() {
+    showmessage();
+});
+## 15日之外
+function shoping() {
+    var goodsId = '$!{productInfoForm.goodsId}';
+    if (goodsId=='1a' || goodsId=='1b')
+	    $("#goodsId").val('1');
+    else if  (goodsId=='61a' || goodsId=='61b')
+	    $("#goodsId").val('61');
+    submitForm();
+    return false;
+}
+## 15日
+function shoping15() {
+    $("#goodsId").val(${fixProductCode15});
+    submitForm();
+    return false;
+}
+## vitoas小容量
+function shoping65() {
+    $("#goodsId").val('65');
+    submitForm();
+    return false;
+}
+## 走適能 護膝 L 號1個入（單邊）
+function shoping852() {
+    $("#goodsId").val('852');
+    submitForm();
+    return false;
+}
+## 走適能 護膝 XL號1個入（單邊）
+function shoping853() {
+    $("#goodsId").val('853');
+    submitForm();
+    return false;
+}
+## 恩荷 草本能量洗潤系列(洗髮露+潤髮乳)
+function shoping40() {
+    $("#goodsId").val('40');
+    submitForm();
+    return false;
+}
+## 甦活煥采洗髮露
+function shoping41() {
+    $("#goodsId").val('41');
+    submitForm();
+    return false;
+}
+## 恩荷 深層屏護潤髮乳
+function shoping42() {
+    $("#goodsId").val('42');
+    submitForm();
+    return false;
+}
+## 沐予 親膚洗顏皂組
+function shoping43() {
+    $("#goodsId").val('43');
+    submitForm();
+    return false;
+}
+## 沐予 煥采海洋膠原洗顏皂
+function shoping44() {
+    $("#goodsId").val('44');
+    submitForm();
+    return false;
+}
+## 沐予 淨膚洗卸炭泥洗顏皂
+function shoping45() {
+    $("#goodsId").val('45');
+    submitForm();
+    return false;
+}
+## Vitoas蜜得絲多效極妍鎖濕菁華
+function shoping27() {
+    $("#goodsId").val('27');
+    submitForm();
+    return false;
+}
+## Vitoas蜜得絲多效極妍淨肌卸洗皂
+function shoping28() {
+    $("#goodsId").val('28');
+    submitForm();
+    return false;
+}
+## Vitoas蜜得絲多效極妍淨肌卸洗皂小容量
+function shoping285() {
+    $("#goodsId").val('285');
+    submitForm();
+    return false;
+}
+## Vitoas蜜得絲
+function shoping29() {
+    $("#goodsId").val('29');
+    submitForm();
+    return false;
+}
+
+## VARON汎倫 經典款
+function shoping261() {
+    $("#goodsId").val('261');
+    submitForm();
+    return false;
+}
+## VARON汎倫 原調款
+function shoping262() {
+    $("#goodsId").val('262');
+    submitForm();
+    return false;
+}
+## VARON汎倫 清新款
+function shoping263() {
+    $("#goodsId").val('263');
+    submitForm();
+    return false;
+}
+
+## VARON汎倫 經典款 20ml
+function shoping264() {
+    $("#goodsId").val('264');
+    submitForm();
+    return false;
+}
+## VARON汎倫 原調款 20ml
+function shoping265() {
+    $("#goodsId").val('265');
+    submitForm();
+    return false;
+}
+## VARON汎倫 清新款 20ml
+function shoping266() {
+    $("#goodsId").val('266');
+    submitForm();
+    return false;
+}
+
+## 定期1個月
+function contractshoping1(goodsId) {
+    var urlchk = location.href;
+    if (urlchk.indexOf('urlid') >0) {
+        var params = new URLSearchParams(location.search);
+        var lpCode = params.get('urlid');
+        $("#lpCode").val(lpCode);
+    } else if(urlchk.indexOf('contract=1') == -1) {
+        $("#lpCode").val("SSPT10P");
+    }
+    $("#goodsId").val(goodsId);
+    $("#hidContractFlag").val("1");
+    $("#hidDeliverySycle").val("M1");
+	if(goodsId == '27' || goodsId == '28' || goodsId == '29' || goodsId == '43' || goodsId == '44' || goodsId == '45') ## VT 單一配送 配送週期應為2個月
+	{
+		$("#hidDeliverySycle").val("M2");
+	} else if(goodsId == '40' || goodsId == '41' || goodsId == '42') {
+		$("#hidDeliverySycle").val("D45");
+	} else if(goodsId == '261' || goodsId == '262' || goodsId == '263') {
+		$("#hidDeliverySycle").val("M3");
+	}
+    $("#hidQty").val("1");
+    submitForm();
+    return false;
+}
+## 定期2個月以上
+function contractshoping2(goodsId) {
+    var urlchk = location.href;
+    if (urlchk.indexOf('urlid') >0) {
+        var params = new URLSearchParams(location.search);
+        var lpCode = params.get('urlid');
+        $("#lpCode").val(lpCode);
+    } else if(urlchk.indexOf('contract=1') == -1) {
+        $("#lpCode").val("SSPT10P");
+    }
+    $("#goodsId").val(goodsId);
+    $("#hidContractFlag").val("1");
+	$("#hidDeliverySycle").val("");## 使用商品預設的配送週期
+	if(goodsId == '47') {
+		$("#hidDeliverySycle").val("M3");## 使用商品預設的配送週期
+	} else if(goodsId == '31') {
+		$("#hidDeliverySycle").val("M1");## 使用商品預設的配送週期
+	} else {
+		$("#hidDeliverySycle").val("");## 使用商品預設的配送週期
+	}
+	if(goodsId == '31' || goodsId == '47') {
+	    $("#hidQty").val("3");
+	} else {
+	    $("#hidQty").val("2");
+	}
+
+    submitForm();
+    return false;
+}
+## 提交Form
+function submitForm() {
+    if(submitflag) {
+        executeAction("$app.https('/shopping/shopping')", "productInfoForm");
+        submitflag=false;
+    }
+}
+## 消息顯示
+function showmessage() {
+   ## 在庫數量
+   var prodQty = ${productQty};
+   ## 庫存不足的場合
+   if(prodQty <= 0) {
+       ## 顯示缺貨中     
+       $('#showmessage1').css("display","inline");
+       $('#showmessage2').css("display","inline");
+       ## 顯示感謝信息
+       $('#prdQty0').css("display","");
+       $('#prdQty1').css("display","");
+   }
+}
+</script>
+
+
+<form action="" name="productInfoForm" method="post" id="productInfoForm">
+<input type="hidden" name="_csrf" value="${_csrf.token}" />
+#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_top_pc.vm") 
+	|| $include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+#set($img1Path="#ecUrl('')" + $imagePath1)
+#set($img2Path="#ecUrl('')" + $imagePath2)
+#set($img3Path="#ecUrl('')" + $imagePath3)
+#set($img6Path="#ecUrl('')" + $imagePath6)
+#set($pcount = ${productQty})
+#set($pdCode = $!{productInfoForm.goodsId})
+#if($!{productInfoForm.goodsId} == 1)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/milcolla.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 3)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/tadas.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 5)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/juice.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 24)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/sesamin.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 27)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/vitoas.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 28)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/vitoas.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 29)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/vitoas.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 43)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/conoha.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 44)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/conoha.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 45)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/conoha.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 60)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/rj.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 61)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/maca.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 62)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/dha.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 66)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/lf.css" rel="stylesheet" type="text/css" media="all">
+#else
+    <link href="../css/pc_pro.css" rel="stylesheet" type="text/css" media="print,screen and (min-width:768px)">
+    <link href="../css/pc_radio_checkbox.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+#end
+    #if($pdCode == 33 || $pdCode == 861 || $pdCode == 862 || $pdCode == 863)
+        <div class="content omega_aid">
+    #elseif($pdCode == 261)
+        <div class="content varon">
+    #else
+        <div class="content">
+	#end
+    #if($pdCode == 861 || $pdCode == 862 || $pdCode == 863)
+        <div class="breadcrumbs" style='font-family:"Noto Sans TC", sans-serif;'>
+            <ol>
+                <li><a href="/">三得利健康網路商店</a></li>
+                <li><a href="/product/">產品介紹</a></li>
+                <li><a href="/products/pethealth/">三得利 毛孩系列</a></li>
+                <li>$!{productInfo.productName}</li>
+            </ol>
+        </div>
+    #elseif($pdCode == 261 || $pdCode == 262 || $pdCode == 263)
+        <div class="breadcrumbs" style='font-family:"Noto Sans TC", sans-serif;'>
+            <ol>
+                <li><a href="/">三得利健康網路商店</a></li>
+                <li><a href="/product/">產品介紹</a></li>
+                <li>VARON汎倫 紳仕多效活顏精華</li>
+            </ol>
+        </div>
+    #elseif($pdCode == 1)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>Milcolla 蜜露珂娜</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+    #elseif($pdCode == 3)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>TADAS 比菲禦力菌</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+    #elseif($pdCode == 5)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>極之青汁【大麥若葉+明日葉】</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+    #elseif($pdCode == 24)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>芝麻明EX</li>
+			</ol>
+		</div>
+	#elseif($pdCode == 27)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>vitoas蜜得絲 多效極妍鎖濕菁華</li>
+			</ol>
+		</div>
+	#elseif($pdCode == 28)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>vitoas蜜得絲 多效極妍淨肌卸洗皂</li>
+			</ol>
+		</div>
+	#elseif($pdCode == 29)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>vitoas蜜得絲</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+    #elseif($pdCode == 43)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>conoha 沐予 親膚洗顏皂</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+    #elseif($pdCode == 44)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>conoha 沐予 煥采海洋膠原洗顏皂</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+     #elseif($pdCode == 45)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>conoha 沐予 淨膚洗卸炭泥洗顏皂</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+	#elseif($pdCode == 60)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>蜂王乳 + 芝麻明E</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+    #elseif($pdCode == 61)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>御瑪卡【精胺酸+鋅】</li>
+			</ol>
+		</div>
+        <!-- /breadcrumbs -->
+    #elseif($pdCode == 62)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>魚油 DHA＆EPA+芝麻明E</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+    #elseif($pdCode == 66)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>Liftage麗芙緹PG-EX</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+    #else
+        <div class="breadcrumbs" style='font-family:"Noto Sans TC", sans-serif;'>
+            <ol>
+                <li><a href="/">三得利健康網路商店</a></li>
+                <li><a href="/product/">產品介紹</a></li>
+                <li>$!{productInfo.productName}</li>
+            </ol>
+        </div>
+	#end
+    #if($pdCode == 851)
+        <h1>走適能 護膝</h1>
+    #elseif($pdCode == 261 || $pdCode == 262 || $pdCode == 263)
+        <h1>VARON汎倫 紳仕多效活顏精華</h1>
+    #elseif($pdCode == 1 || $pdCode == 5 || $pdCode == 24 || $pdCode == 27 || $pdCode == 28 || $pdCode == 29 || $pdCode == 60 || $pdCode == 66 || $pdCode == 3 || $pdCode == 61 || $pdCode == 62 || $pdCode == 43 || $pdCode == 44 || $pdCode == 45)
+    #else
+        <h1>$!{productInfo.productName}</h1>
+	#end
+    #if($pdCode == 33 || $pdCode == 861 || $pdCode == 862 || $pdCode == 863 || $pdCode == 261)
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_top_pc.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_top_pc.vm")
+		#end
+	    #if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail1.vm"))
+	        #parse("ec/product/$!{productInfoForm.goodsId}/detail1.vm")
+	    #end
+	    #if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail2.vm"))
+	        #parse("ec/product/$!{productInfoForm.goodsId}/detail2.vm")
+	    #end
+    #elseif($pdCode == 1 || $pdCode == 5 || $pdCode == 24 || $pdCode == 27 || $pdCode == 28 || $pdCode == 29 || $pdCode == 60 || $pdCode == 66 || $pdCode == 3 || $pdCode == 61 || $pdCode == 62 || $pdCode == 43 || $pdCode == 44 || $pdCode == 45)
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+	#else
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_top_pc.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_top_pc.vm")
+		#end
+	    </div>
+	    <div class="w950">
+	    #if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail1.vm"))
+	        #parse("ec/product/$!{productInfoForm.goodsId}/detail1.vm")
+	    #end
+	    </div>
+	    <div class="content border_orange">
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_bottom_pc.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_bottom_pc.vm")
+		#end
+	    </div>
+	    <div class="w950">
+	    #if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail2.vm"))
+	        #parse("ec/product/$!{productInfoForm.goodsId}/detail2.vm")
+	    #end
+	    </div>
+	#end
+
+#else
+
+
+
+
+#set($img1Path="#ecUrl('')" + $imagePath1)
+#set($img2Path="#ecUrl('')" + $imagePath2)
+#set($img3Path="#ecUrl('')" + $imagePath3)
+#set($img6Path="#ecUrl('')" + $imagePath6)
+#set($pcount = ${productQty})
+#set($pdCode = $!{productInfoForm.goodsId})
+#if($pdCode == 1)
+#elseif($pdCode == 2)
+    #set($img1alt="比菲德氏益生菌-各大節目好評推薦")
+    #set($img2alt="比菲德氏菌+乳寡醣")
+    #set($img3alt="比菲德氏菌(益生乳酸菌)內容物說明")
+    #set($img1salt="(小)比菲德氏益生菌-各大節目好評推薦")
+    #set($img2salt="(小)比菲德氏菌+乳寡醣")
+    #set($img3salt="(小)比菲德氏菌(益生乳酸菌)內容物說明")
+#elseif($pdCode == 3)
+    #set($img1alt="比菲德氏益生菌-各大節目好評推薦")
+    #set($img2alt="TADAS 比菲禦力菌")
+    #set($img3alt="比菲德氏菌(益生乳酸菌)內容物說明")
+    #set($img1salt="(小)比菲德氏益生菌-各大節目好評推薦")
+    #set($img2salt="(小)TADAS 比菲禦力菌")
+    #set($img3salt="(小)比菲德氏菌(益生乳酸菌)內容物說明")
+#elseif($pdCode == 5)
+    #set($img1alt="極之青汁-日式抹茶風味 輕鬆補給蔬菜能量")
+    #set($img2alt="極之青汁-日本熱銷3億杯突破")
+    #set($img3alt="極之青汁內容物說明")
+    #set($img1salt="(小)極之青汁-日式抹茶風味 輕鬆補給蔬菜能量")
+    #set($img2salt="(小)極之青汁-日本熱銷3億杯突破")
+    #set($img3salt="(小)極之青汁內容物說明")
+#elseif($pdCode == 8)
+    #set($img1alt="蜂王乳+芝麻明E-各大節目好評推薦")
+    #set($img2alt="蜂王乳+芝麻明E-日本熱銷118萬瓶")
+    #set($img3alt="蜂王乳+芝麻明E-內容物說明")
+    #set($img1salt="(小)蜂王乳+芝麻明E-各大節目好評推薦")
+    #set($img2salt="(小)蜂王乳+芝麻明E-日本熱銷118萬瓶")
+    #set($img3salt="(小)蜂王乳+芝麻明E-內容物說明")
+#elseif($pdCode == 60)
+    #set($img1alt="蜂王乳+芝麻明E-各大節目好評推薦")
+    #set($img2alt="蜂王乳+芝麻明E-台日熱銷突破200萬瓶")
+    #set($img3alt="蜂王乳+芝麻明E-內容物說明")
+    #set($img1salt="(小)蜂王乳+芝麻明E-各大節目好評推薦")
+    #set($img2salt="(小)蜂王乳+芝麻明E-台日熱銷突破200萬瓶")
+    #set($img3salt="(小)蜂王乳+芝麻明E-內容物說明")
+#elseif($pdCode == 12 || $pdCode == 61)
+    #set($img1alt="御瑪卡【精胺酸+鋅】-各大節目好評推薦")
+    #set($img2alt="御瑪卡【精胺酸+鋅】-日本熱銷破300萬瓶")
+    #set($img3alt="御瑪卡【精胺酸+鋅】-內容營養標示說明")
+    #set($img1salt="(小)御瑪卡【精胺酸+鋅】-各大節目好評推薦")
+    #set($img2salt="(小)御瑪卡【精胺酸+鋅】-日本熱銷破300萬瓶")
+    #set($img3salt="(小)御瑪卡【精胺酸+鋅】-內容營養標示說明")
+#elseif($pdCode == 14)
+    #set($img1alt="鈣&鎂輕鬆補充鈣質")
+    #set($img2alt="鈣&鎂")
+    #set($img3alt="鈣&鎂內容物說明")
+    #set($img1salt="(小)鈣&鎂輕鬆補充鈣質")
+    #set($img2salt="(小)鈣&鎂")
+    #set($img3salt="(小)鈣&鎂內容物說明")
+#elseif($pdCode == 20 || $pdCode == 62)
+    #set($img1alt="魚油 DHA & EPA +芝麻明E-各大節目好評推薦")
+    #set($img2alt="魚油 DHA & EPA +芝麻明E-日本保健食品市場銷售連續No.1")
+    #set($img3alt="魚油 DHA & EPA +芝麻明E-內容物說明")
+    #set($img1salt="(小)魚油 DHA & EPA +芝麻明E-各大節目好評推薦")
+    #set($img2salt="(小)魚油 DHA & EPA +芝麻明E-日本保健食品市場銷售連續No.1")
+    #set($img3salt="(小)魚油 DHA & EPA +芝麻明E-內容物說明")
+#elseif($pdCode == 23 || $pdCode == 27)
+    #set($img1alt="vitoas蜜得絲多效極妍鎖濕菁華")
+    #set($img2alt="vitoas蜜得絲多效極妍鎖濕菁華-乳液狀")
+    #set($img3alt="vitoas蜜得絲多效極妍鎖濕菁華-內容物說明")
+    #set($img1salt="(小)vitoas蜜得絲多效極妍鎖濕菁華")
+    #set($img2salt="(小)vitoas蜜得絲多效極妍鎖濕菁華-乳液狀")
+    #set($img3salt="(小)vitoas蜜得絲多效極妍鎖濕菁華-內容物說明")
+#elseif($pdCode == 28)
+    #set($img1alt="vitoas蜜得絲多效極妍淨肌卸洗皂")
+    #set($img2alt="vitoas蜜得絲多效極妍淨肌卸洗皂")
+    #set($img3alt="vitoas蜜得絲多效極妍淨肌卸洗皂")
+    #set($img1salt="(小)vitoas蜜得絲多效極妍淨肌卸洗皂")
+    #set($img2salt="(小)vitoas蜜得絲多效極妍淨肌卸洗皂")
+    #set($img3salt="(小)vitoas蜜得絲多效極妍淨肌卸洗皂")
+#elseif($pdCode == 29)
+    #set($img1alt="vitoas蜜得絲-簡單2步驟．完成基礎保養")
+    #set($img2alt="vitoas蜜得絲多效極妍鎖濕菁華-三重滲透X潤澤肌底")
+    #set($img3alt="vitoas蜜得絲多效極妍淨肌卸洗皂-濃密泡沫X保濕洗淨")
+    #set($img1salt="(小)vitoas蜜得絲-簡單2步驟．完成基礎保養")
+    #set($img2salt="(小)vitoas蜜得絲多效極妍鎖濕菁華-三重滲透X潤澤肌底")
+    #set($img3salt="(小)vitoas蜜得絲多效極妍淨肌卸洗皂-濃密泡沫X保濕洗淨")
+#elseif($pdCode == 24)
+    #set($img1alt="芝麻明EX-建議每日食用3顆")
+    #set($img2alt="芝麻明EX日本平均6秒售出1瓶")
+    #set($img3alt="芝麻明EX內容物說明")
+    #set($img1salt="(小)芝麻明EX-建議每日食用3顆")
+    #set($img2salt="(小)芝麻明EX日本平均6秒售出1瓶")
+    #set($img3salt="(小)芝麻明EX內容物說明")
+#elseif($pdCode == 64)
+    #set($img1alt="葡萄糖胺+軟骨素【固力伸】建議每日食用量")
+    #set($img2alt="葡萄糖胺+軟骨素【固力伸】獨家關鍵配方")
+    #set($img3alt="葡萄糖胺+軟骨素【固力伸】內容物說明")
+    #set($img1salt="(小)葡萄糖胺+軟骨素【固力伸】建議每日食用量")
+    #set($img2salt="(小)葡萄糖胺+軟骨素【固力伸】獨家關鍵配方")
+    #set($img3salt="(小)葡萄糖胺+軟骨素【固力伸】內容物說明")
+#elseif($pdCode == 66)
+    #set($img1alt="Liftage麗芙緹PG-EX  建議每日飲用量")
+    #set($img2alt="Liftage麗芙緹PG-EX  原料成分說明")
+    #set($img3alt="Liftage麗芙緹PG-EX  內容物說明")
+    #set($img1salt="(小)Liftage麗芙緹PG-EX  建議每日飲用量")
+    #set($img2salt="(小)Liftage麗芙緹PG-EX  原料成分說明")
+    #set($img3salt="(小)Liftage麗芙緹PG-EX  內容物說明")
+#elseif($pdCode == 40)
+    #set($img1alt="enherb 恩荷 草本能量洗潤系列")
+    #set($img2alt="enherb 恩荷 草本能量洗潤系列")
+    #set($img3alt="enherb 恩荷 草本能量洗潤系列")
+    #set($img1salt="(小)enherb 恩荷 草本能量洗潤系列")
+    #set($img2salt="(小)enherb 恩荷 草本能量洗潤系列")
+    #set($img3salt="(小)enherb 恩荷 草本能量洗潤系列")
+#elseif($pdCode == 41)
+    #set($img1alt="enherb 恩荷 甦活煥采洗髮露")
+    #set($img2alt="enherb 恩荷 甦活煥采洗髮露")
+    #set($img3alt="enherb 恩荷 甦活煥采洗髮露")
+    #set($img1salt="(小)enherb 恩荷 甦活煥采洗髮露")
+    #set($img2salt="(小)enherb 恩荷 甦活煥采洗髮露")
+    #set($img3salt="(小)enherb 恩荷 甦活煥采洗髮露")
+#elseif($pdCode == 42)
+    #set($img1alt="enherb 恩荷 深層屏護潤髮乳")
+    #set($img2alt="enherb 恩荷 深層屏護潤髮乳")
+    #set($img3alt="enherb 恩荷 深層屏護潤髮乳")
+    #set($img1salt="(小)enherb 恩荷 深層屏護潤髮乳")
+    #set($img2salt="(小)enherb 恩荷 深層屏護潤髮乳")
+    #set($img3salt="(小)enherb 恩荷 深層屏護潤髮乳")
+#elseif($pdCode == 43)
+    #set($img1alt="conoha 沐予 親膚洗顏皂(組)")
+    #set($img2alt="conoha 沐予 親膚洗顏皂(組)")
+    #set($img3alt="conoha 沐予 親膚洗顏皂(組)")
+    #set($img1salt="(小)conoha 沐予 親膚洗顏皂(組)")
+    #set($img2salt="(小)conoha 沐予 親膚洗顏皂(組)")
+    #set($img3salt="(小)conoha 沐予 親膚洗顏皂(組)")
+#elseif($pdCode == 44)
+    #set($img1alt="conoha 沐予 煥采海洋膠原洗顏皂")
+    #set($img2alt="conoha 沐予 煥采海洋膠原洗顏皂")
+    #set($img3alt="conoha 沐予 煥采海洋膠原洗顏皂")
+    #set($img1salt="(小)conoha 沐予 煥采海洋膠原洗顏皂")
+    #set($img2salt="(小)conoha 沐予 煥采海洋膠原洗顏皂")
+    #set($img3salt="(小)conoha 沐予 煥采海洋膠原洗顏皂")
+#elseif($pdCode == 45)
+    #set($img1alt="conoha 沐予 淨膚洗卸炭泥洗顏皂")
+    #set($img2alt="conoha 沐予 淨膚洗卸炭泥洗顏皂")
+    #set($img3alt="conoha 沐予 淨膚洗卸炭泥洗顏皂")
+    #set($img1salt="(小)conoha 沐予 淨膚洗卸炭泥洗顏皂")
+    #set($img2salt="(小)conoha 沐予 淨膚洗卸炭泥洗顏皂")
+    #set($img3salt="(小)conoha 沐予 淨膚洗卸炭泥洗顏皂")
+#elseif($pdCode == 851)
+    #set($img1alt="三得利走適能護膝-協助穩定膝蓋、支撐肌肉平衡")
+    #set($img2alt="三得利走適能護膝使用說明與注意事項")
+    #set($img3alt="三得利走適能護膝-使用5日後88%使用者實際感受到能穩定膝蓋")
+    #set($img1salt="(小)三得利走適能護膝-協助穩定膝蓋、支撐肌肉平衡")
+    #set($img2salt="(小)三得利走適能護膝使用說明與注意事項")
+    #set($img3salt="(小)三得利走適能護膝-使用5日後88%使用者實際感受到能穩定膝蓋")
+#elseif($pdCode == 47)
+    #set($img1alt="+deO帝悠 擊味紳仕皂")
+    #set($img2alt="+deO帝悠 擊味紳仕皂")
+    #set($img3alt="+deO帝悠 擊味紳仕皂")
+    #set($img1salt="(小)+deO帝悠 擊味紳仕皂")
+    #set($img2salt="(小)+deO帝悠 擊味紳仕皂")
+    #set($img3salt="(小)+deO帝悠 擊味紳仕皂")
+#else
+    #set($img1alt="")
+    #set($img2alt="")
+    #set($img3alt="")
+    #set($img1salt="")
+    #set($img2salt="")
+    #set($img3salt="")
+#end
+#if($pdCode == 66)
+<div class="b950px p10_main">
+	<div class="good_wrap"><img src="$app.cdnDomain('/img/good04.png')" alt="台日熱銷突破 800萬瓶" class="good01" style="width: 130px;"></div>
+#elseif($pdCode == 1)
+<div class="b950px milcolla">
+        <div class="good_wrap">
+			<img src="$app.cdnDomain('/img/good01.png')" class="good01" alt="台日熱銷超越350萬盒">
+        </div>
+#elseif($pdCode == 40 || $pdCode == 41 || $pdCode == 42 || $pdCode == 43 || $pdCode == 44 || $pdCode == 45 || $pdCode == 29)
+<div class="b950px p11_main">
+#elseif($pdCode == 5)
+<div class="b950px juice">
+        <div class="good_wrap">
+			<img src="$app.cdnDomain('/img/good010.png')" alt="日本熱銷3億杯突破" class="good01"  />
+        </div>
+#elseif($pdCode == 851)
+<div class="b950px p21_main">
+	<div class="good_wrap"><img src="$app.cdnDomain('/img/good011.png')" alt="走適能護膝為三得利與美津濃共同企劃與研發之獨家產品" class="good01" style="top: 20px;right: 8px;"></div>
+#elseif($pdCode == 24)
+<div class="b1164px">
+        <div class="good_wrap">
+			<img src="$app.cdnDomain('/img/good08-01.png')" class="good01" alt="" style="right: 160px;top: 30px;" />
+            <img src="$app.cdnDomain('/img/good08.png')" class="good01" alt="日本愛用者累計200萬人" />	
+		</div>
+#elseif($pdCode == 47)
+<div class="b950px deO_main">
+	<div class="good_wrap"><img src="$app.cdnDomain('/img/good012.png')" alt="" class="good01" style="top: 70px;" /></div>
+#else
+<div class="b950px">
+        <div class="good_wrap">		
+#if($pdCode == 2)
+			<img src="$app.cdnDomain('/img/good03.png')" alt="比菲德氏菌搭配乳寡醣的組合依據調查結果90%使用者表示有感" class="good01" />
+#elseif($pdCode == 8)
+			<img src="$app.cdnDomain('/img/good02.png')" alt="日本熱銷" class="good01" />
+#elseif($pdCode == 12 || $pdCode == 61)
+			<img src="$app.cdnDomain('/img/good05.png')" alt="日本瑪卡類銷售No.1" class="good01"  style="top:70px;right: 10px;" />
+#elseif($pdCode == 20 || $pdCode == 62)
+			<img src="$app.cdnDomain('/img/good06.png')" alt="日本DHA類連續9年銷售No.1" class="good01" style="top:30px;" />
+#elseif($pdCode == 60)
+			<img src="$app.cdnDomain('/img/good09.png')" alt="台日熱銷突破200萬瓶" class="good01" />
+#end
+        </div>
+#end
+    <div class="pleft">
+#if($pdCode == 24)
+        <div id="panes2">
+            <div>
+                <a href="$img1Path" class="zoom"></a><img src="$img1Path" height="378" width="398" alt="$img1alt" />
+            </div>
+            <div>
+                <a href="$img2Path" class="zoom"></a><img src="$img2Path" height="378" width="398" alt="$img2alt" />
+            </div>
+            <div>
+                <a href="$img3Path" class="zoom"></a><img src="$img3Path" height="378" width="398" alt="$img3alt" />
+            </div>
+        </div>
+#else
+        <div id="panes2">
+            <div>
+                <a href="$img1Path" class="zoom"></a><img src="$img1Path" height="331" width="349" alt="$img1alt" />
+            </div>
+            <div>
+                <a href="$img2Path" class="zoom"></a><img src="$img2Path" height="331" width="349" alt="$img2alt" />
+            </div>
+            <div>
+                <a href="$img3Path" class="zoom"></a><img src="$img3Path" height="331" width="349" alt="$img3alt" />
+            </div>
+        </div>
+#end
+        <div id="tab_nav2">
+            <ul>
+                <li><a href="#1"><img src="$img1Path" height="109" width="104" alt="$img1salt"/></a></li>
+                <li><a href="#2"><img src="$img2Path" height="109" width="104" alt="$img2salt"/></a></li>
+                <li><a href="#3"><img src="$img3Path" height="109" width="104" alt="$img3salt"/></a></li>
+            </ul>
+        </div>
+        <script>
+        $(function() {
+            $("#tab_nav2 ul").tabs("#panes2 > div", {effect: 'fade', fadeOutSpeed: 400, rotate: true}).slideshow({autoplay: true, interval: 5000});
+            $(".zoom").colorbox();
+        });
+        </script>
+#if($pdCode == 27)
+	<div class="ps" style="text-align: left; margin-bottom: 10px;">蜜得絲20 mL壓頭新改版，銀/橘色壓頭皆為三得利官方直營配送，您可以安心保養、享受美麗！</div>
+#end
+    </div>
+    <div class="pright">
+        #if($pdCode == 1)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 2)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#0066cc;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【商品升級改版中】</font>
+          #else
+            <h1><div class="main-title" style="color:#0066cc;">$!{productInfo.productName}</div></h1>
+	        #end
+		
+		#elseif($pdCode == 3)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#0066cc;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#0066cc;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 5)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#00633d;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#00633d;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 8)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#cc9900;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;"></font>
+          #else
+            <h1><div class="main-title" style="color:#cc9900;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 60)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#cc9900;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#cc9900;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 12)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#d1111c;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#d1111c;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 61)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#d1111c;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#d1111c;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 14)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#003399;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#003399;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 20)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#3071b9;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#3071b9;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 62)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#3071b9;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#3071b9;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 23 || $pdCode == 27 || $pdCode == 28 || $pdCode == 29)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#ff6600;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#ff6600;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 24)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#993300;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#993300;">$!{productInfo.productName}</div></h1>
+	        #end
+
+        #elseif($pdCode == 64)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#00739f;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#00739f;"><strong style="font-weight:normal;">$!{productInfo.productName}</strong></div></h1>
+	        #end
+
+        #elseif($pdCode == 66)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#f2448a;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#f2448a;"><strong style="font-weight:normal;">$!{productInfo.productName}</strong></div></h1>
+	        #end
+
+        #elseif($pdCode == 40 || $pdCode == 41 || $pdCode == 42)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#004b12;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#004b12;"><strong style="font-weight:normal;">$!{productInfo.productName}</strong></div></h1>
+	        #end
+
+        #elseif($pdCode == 43 || $pdCode == 44 || $pdCode == 45)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#759427;">$!{productInfo.productName}</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#759427;"><strong style="font-weight:normal;">$!{productInfo.productName}</strong></div></h1>
+	        #end
+        #elseif($pdCode == 851)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#e45b00;">走適能 護膝</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#e45b00;"><strong style="font-weight:normal;">走適能 護膝</strong></div></h1>
+	        #end
+
+        #elseif($pdCode == 47)
+
+	        #if(${productQty} == 0)
+            <h1><div class="main-title" style="color:#000000;">+deO帝悠 擊味紳仕皂</div></h1><font id="showmessage1" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+          #else
+            <h1><div class="main-title" style="color:#000000;"><strong style="font-weight:normal;">+deO帝悠 擊味紳仕皂</strong></div></h1>
+	        #end
+        #end
+        ## 商品説明エリア①
+        #if($include.exists("ec/product/$!{productInfoForm.goodsId}/description1.vm"))
+            #parse("ec/product/$!{productInfoForm.goodsId}/description1.vm")
+        #end
+    #if($!{productInfoForm.goodsId} == 40)
+		    <div class="box01 box01-1">
+			      <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+			      <table>
+				        <tr>
+					        <td>甦活煥采洗髮露(250mL)</td><td class="color"><span>NT$ </span> 750<div>(1瓶入)</div></td>
+                    #if($pcount > 0)
+                    <td><a style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping41();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+				        </tr>
+                <tr>
+                  <td>深層屏護潤髮乳(250g)</td><td class="color"><span>NT$ </span> 750<div>(1瓶入)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping42();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                <tr>
+                  <td>甦活煥采洗髮露(250mL)<span class="plus">+</span>深層屏護潤髮乳(250g)</td><td class="color"><span>NT$ </span> 1,500<div>(2瓶入/組)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+			      </table>
+		    </div>
+    #elseif($!{productInfoForm.goodsId} == 41)
+		    <div class="box01 box01-1">
+			      <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+			      <table>
+				        <tr>
+					        <td>甦活煥采洗髮露(250mL)</td><td class="color"><span>NT$ </span> 750<div>(1瓶入)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping41();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+				        </tr>
+                <tr>
+                  <td>甦活煥采洗髮露(250mL)<span class="plus">+</span>深層屏護潤髮乳(250g)</td><td class="color"><span>NT$ </span> 1,500<div>(2瓶入/組)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping40();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+			      </table>
+		    </div>
+    #elseif($!{productInfoForm.goodsId} == 42)
+		    <div class="box01 box01-1">
+			      <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+			      <table>
+                <tr>
+                  <td>深層屏護潤髮乳(250g)</td><td class="color"><span>NT$ </span> 750<div>(1瓶入)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping42();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                <tr>
+                  <td>甦活煥采洗髮露(250mL)<span class="plus">+</span>深層屏護潤髮乳(250g)</td><td class="color"><span>NT$ </span> 1,500<div>(2瓶入/組)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping40();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+			      </table>
+		    </div>
+    #elseif($!{productInfoForm.goodsId} == 43)
+		    <div class="box01 box01-1">
+			      <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+			      <table>
+				        <tr>
+					        <td>煥采海洋膠原洗顏皂<br><small>(推薦白天使用)</small></td><td class="color"><span>NT$ </span> 750<div>(1個入)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping44();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+				        </tr>
+                <tr>
+                  <td>淨膚洗卸炭泥洗顏皂<br><small>(推薦夜晚使用)</small></td><td class="color"><span>NT$ </span> 750<div>(1個入)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping45();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                <tr>
+                  <td>煥采海洋膠原洗顏皂<span class="plus">+</span>淨膚洗卸炭泥洗顏皂</td><td class="color"><span>NT$ </span> 1,500<div>(2個入/組)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping43();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+			      </table>
+		    </div>
+    #elseif($!{productInfoForm.goodsId} == 44)
+		    <div class="box01 box01-1">
+			      <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+			      <table>
+				        <tr>
+					        <td>煥采海洋膠原洗顏皂<br><small>(推薦白天使用)</small></td><td class="color"><span>NT$ </span> 750<div>(1個入)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping44();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+				        </tr>
+                <tr>
+                  <td>煥采海洋膠原洗顏皂<span class="plus">+</span>淨膚洗卸炭泥洗顏皂</td><td class="color"><span>NT$ </span> 1,500<div>(2個入/組)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping43();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+			      </table>
+		    </div>
+    #elseif($!{productInfoForm.goodsId} == 45)
+		    <div class="box01 box01-1">
+			      <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+			      <table>
+                <tr>
+                  <td>淨膚洗卸炭泥洗顏皂<br><small>(推薦夜晚使用)</small></td><td class="color"><span>NT$ </span> 750<div>(1個入)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping45();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                <tr>
+                  <td>煥采海洋膠原洗顏皂<span class="plus">+</span>淨膚洗卸炭泥洗顏皂</td><td class="color"><span>NT$ </span> 1,500<div>(2個入/組)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping43();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+			      </table>
+		    </div>
+	#elseif($!{productInfoForm.goodsId} == 61)
+		<div class="box11">
+			<div class="in t1 top light">
+				<div class="tit">健康定期購<font><big>8</big>折</font></div>
+				<img src="$app.cdnDomain('/img/icon-sale.png')" class="sale">
+				<div class="tit2">♦同商品兩瓶以上&nbsp;&nbsp;<small>\首次出貨</small>增量10<small>%/</small></div>
+				<ul class="l_s">
+					<li>
+						<div class="r">
+							<div>
+								30日份<div class="use"><small> （120顆）</small></div>
+								<font>NT$</font>1,680<font>/瓶</font>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping2('61');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage01.html')" class="stage_pop">定期配送兩瓶最優惠？</a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="in t1 link">
+				<div class="tit2">♦單一瓶配送</div>
+				<ul class="l_s">
+					<li>
+						<div class="r">
+							<div>
+								30日份<div class="use"><small> （120顆）</small></div>
+								<font>NT$</font>1,680<font>/瓶</font>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping1('61');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage02.html')" class="stage_pop">健康定期購有哪些優點？</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	#elseif($!{productInfoForm.goodsId} == 1)
+		<div class="box11">
+			<div class="in t1 top light">
+				<div class="tit">健康定期購<font><big>8</big>折</font></div>
+				<img src="$app.cdnDomain('/img/icon-sale.png')" class="sale">
+				<div class="tit2">&diams;同商品兩盒以上&nbsp;&nbsp;<small>\首次出貨</small>增量10<small>%/</small></div>
+				<ul class="l_s">
+					<li>
+						<div class="r">
+							<div>
+								30日份<div class="use"><small> （30包入）</small></div>
+								<font>NT$</font>1,464<font>/盒</font>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping2('1');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage01.html')" class="stage_pop">定期配送兩盒最優惠？</a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="in t1 link">
+				<div class="tit2">&diams;單一盒配送</div>
+				<ul class="l_s">
+					<li>
+						<div class="r">
+							<div>
+								30日份<div class="use"><small> （30包入）</small></div>
+								<font>NT$</font>1,464<font>/盒</font>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping1('1');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage02.html')" class="stage_pop">健康定期購有哪些優點？</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+    #elseif($!{productInfoForm.goodsId} == 851)
+		    <div class="box01">
+			      <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+			      <table>
+				        <tr>
+					        <td><span>M</span>號 1個入（單邊） </td>
+						<td class="color"><span>NT$ </span> $number.format('###,###',$productInfo.netPrice)</td>
+						#if($pcount > 0)
+						<td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping();">加入購物車</a></td>
+						#else
+						<td></td>
+						#end
+					</tr>
+			                <tr>
+			 			<td><span>L</span>號 1個入（單邊） </td>
+						<td class="color"><span>NT$ </span> $number.format('###,###',$productInfo.netPrice)</td>
+						#if($pcount > 0)
+						<td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping852();">加入購物車</a></td>
+						#else
+						<td></td>
+						#end
+			                </tr>
+			                <tr>
+			 			<td><span>XL</span>號 1個入（單邊） </td>
+						<td class="color"><span>NT$ </span> $number.format('###,###',$productInfo.netPrice)</td>
+						#if($pcount > 0)
+						<td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping853();">加入購物車</a></td>
+						#else
+						<td></td>
+						#end
+			                </tr>
+			      </table>
+		    </div>
+	#elseif($!{productInfoForm.goodsId} == 47)
+		<div class="box11">
+			<div class="in t1 top light">
+				<div class="tit">健康定期購<font><big>8</big>折</font></div>
+				<div class="tit2">♦同商品兩個以上&nbsp;<small>\首次出貨</small>送明星商品增量包<sup>※</sup></div>
+				<ul class="l_s">
+					<li>
+						<div class="r">
+							<div>
+								約1個月份&nbsp;&nbsp;
+								<font>NT$</font>520<div class="use"><small> （1個入）</small></div>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping2('47');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage01.html')" class="stage_pop">定期配送兩個最優惠？</a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="in t1 link">
+				<div class="tit2">♦單一個配送</div>
+				<ul class="l_s">
+					<li>
+						<div class="r">
+							<div>
+								約1個月份&nbsp;&nbsp;
+								<font>NT$</font>520<div class="use"><small> （1個入）</small></div>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping1('47');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage02.html')" class="stage_pop">健康定期購有哪些優點？</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+    #else
+        <div class="box01">
+			<span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+           
+            <table>
+				#if($!{productInfoForm.goodsId} == 5)
+                <tr>
+                    <td style="font-size: 18px;">$!{productInfo.amountDesc}</td>
+                    <td class="color" width="125"><font style="font-size:16px;font-weight:bloder;color:#663300">NT$ </font> $number.format('###,###',$productInfo.netPrice)</td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                #else
+                <tr>
+                    <td>$!{productInfo.amountDesc}</td>
+                    <td class="color" width="125"><font style="font-size:16px;font-weight:bloder;color:#663300">NT$ </font> $number.format('###,###',$productInfo.netPrice)</td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                #end
+            </table>
+        </div>
+    #end
+        <div id="prdQty0" style="margin-top:10px;display:none;color:red;">
+            #if($!{productInfoForm.goodsId} == 23)
+            ※11/2(一)起將調整價格，目前系統更新中暫停訂購，如有問題請洽客服中心。
+            #elseif($!{productInfoForm.goodsId} == 8)
+            <B>蜂王乳+芝麻明E將於11/23(一)全新改版，同時調降價格，詳情請洽客服中心。</B>
+            #elseif($!{productInfoForm.goodsId} == 2)
+            <B>全新成分升級、包裝同步改版，新商品「TADAS比菲禦力菌」將於8/7正式開賣，希望您能持續支持及愛用！</B>
+            #else
+            <B>【感謝大獲好評，目前庫存不足中。下次進貨會另行通知，不好意思，造成您的困擾，敬請見諒。】</B>
+            #end
+        </div>
+		
+            #if($!{productInfoForm.goodsId} == 60  || $!{productInfoForm.goodsId} == 62)
+				<div style="color:#663300; padding-left: 15px; padding-top: 10px; font-size: 16px;"><span class="bold">支援您每日的健康，調降為新價格!</span></div>
+            #end
+				
+        ## 商品説明エリア②
+        #if($include.exists("ec/product/$!{productInfoForm.goodsId}/description2.vm"))
+            #parse("ec/product/$!{productInfoForm.goodsId}/description2.vm")
+        #end
+    </div>
+    <span class="dot"></span>
+    ##商品詳細エリア①
+    #if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail1.vm"))
+        #parse("ec/product/$!{productInfoForm.goodsId}/detail1.vm")
+    #end
+    #if($pdCode == 14)
+    <div class="p0112" style="padding-top:20px;padding-bottom:20px; margin-top: 40px;">
+    #elseif($pdCode == 40 || $pdCode == 41 || $pdCode == 42 || $pdCode == 43 || $pdCode == 44 || $pdCode == 45)
+    <div class="p0112" style="padding-top:0;padding-bottom:0;margin-bottom:40px;">
+    #elseif($pdCode == 47)
+    <div class="p0112" style="padding:0; border: none;">
+    #else
+    <div class="p0112" style="padding-top:0;padding-bottom:0;">
+    #end
+    #if($pdCode == 23 || $pdCode == 27 || $pdCode == 28 || $pdCode == 29 || $pdCode == 24 || $pdCode == 64)
+		#if($pdCode == 23 || $pdCode == 27)
+			<div class="pleft2" style="padding-top: 40px;">
+		#else
+			<div class="pleft2" style="padding-top: 30px;">
+		#end
+    #else
+        <div class="pleft2">
+    #end
+        #if($pdCode == 1)
+            <img src="$img6Path" height="330" width="330" alt="「蜜露珂娜」膠原蛋白粉，成分升級新登場，各大節日一致好評推薦！">
+        #elseif($pdCode == 2)
+            <img src="$img6Path" height="330" width="330" alt="比菲德氏菌+乳寡醣">
+		#elseif($pdCode == 3)
+            <img src="$img6Path" height="330" width="330" alt="TADAS比菲禦力菌">
+        #elseif($pdCode == 5)
+		    <img src="$img6Path" alt="極之青汁【大麥若葉+明日葉】">
+        #elseif($pdCode == 8)
+            <img src="$img6Path" height="310" width="330" alt="蜂王乳+芝麻明E">
+        #elseif($pdCode == 60)
+            <img src="$img6Path" height="330" width="330" alt="蜂王乳+芝麻明E-台日熱銷突破200萬瓶">
+        #elseif($pdCode == 12 || $pdCode == 61)
+            <img src="$img6Path" height="330" width="330" alt="御瑪卡【精胺酸+鋅】、補充活力的男性保健食品">
+        #elseif($pdCode == 14)
+            <img src="$img6Path" height="330" width="330" alt="鈣＆鎂">
+        #elseif($pdCode == 20 || $pdCode == 62)
+            <img src="$img6Path" height="331" width="349" alt="魚油 DHA & EPA +芝麻明E">
+        #elseif($pdCode == 23 || $pdCode == 27)
+            <img src="$img6Path" alt="vitoas蜜得絲 多效極妍鎖濕菁華">
+        #elseif($pdCode == 28)
+            <img src="$img6Path" alt="vitoas蜜得絲 多效極妍淨肌卸洗皂">
+        #elseif($pdCode == 29)
+            <img src="$img6Path" alt="vitoas蜜得絲">
+        #elseif($pdCode == 24)
+            <img src="$img6Path" alt="芝麻明EX">
+        #elseif($pdCode == 64)
+            <img src="$img6Path" alt="固力伸【葡萄糖胺+鯊魚軟骨】每日建議食用量">
+        #elseif($pdCode == 66)
+            <img src="$img6Path" alt="Liftage麗芙緹PG-EX 每日建議飲用量">
+        #elseif($pdCode == 40)
+            <img src="$img6Path" alt="enherb 恩荷  草本能量洗潤系列" style="margin-top:40px;">
+        #elseif($pdCode == 41)
+            <img src="$img6Path" alt="enherb 恩荷 甦活煥采洗髮露" style="margin-top:40px;">
+        #elseif($pdCode == 42)
+            <img src="$img6Path" alt="enherb 恩荷 深層屏護潤髮乳" style="margin-top:40px;">
+        #elseif($pdCode == 43)
+            <img src="$img6Path" alt="conoha 沐予  親膚洗顏皂(組)" style="margin-top:40px;">
+        #elseif($pdCode == 44)
+            <img src="$img6Path" alt="conoha 沐予 煥采海洋膠原洗顏皂" style="margin-top:40px;">
+        #elseif($pdCode == 45)
+            <img src="$img6Path" alt="conoha 沐予 淨膚洗卸炭泥洗顏皂" style="margin-top:40px;">
+        #elseif($pdCode == 851)
+            <img src="$img6Path" alt="走適能 護膝">
+        #elseif($pdCode == 47)
+            <img src="$img6Path" height="310" width="330" alt="+deO帝悠 擊味紳仕皂">
+        #else
+            <img src="$img6Path" height="330" width="330" alt="">
+        #end
+    </div>
+    <div class="pright">
+            #if($pdCode == 5 || $pdCode == 12 || $pdCode == 20 || $pdCode == 61 || $pdCode == 62 || $pdCode == 64 )
+                <div class="bottom-title" style="padding-bottom: 38px;">
+            #else
+                <div class="bottom-title">
+            #end
+            #if($pdCode == 1)
+
+			        #if(${productQty} == 0)
+                <h1><div class="title1">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 2)
+
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#0066cc;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【商品升級改版中】</font>
+		          #else
+                <h1><div class="title1" style="color:#0066cc;">$!{productInfo.productName}</div></h1>
+			        #end
+			#elseif($pdCode == 3 )
+
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#0066cc;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#0066cc;">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 5)
+
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#00633d;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#00633d;">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 8)
+
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#cc9900;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;"></font>
+		          #else
+                <h1><div class="title1" style="color:#cc9900;">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 60)
+
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#cc9900;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;"></font>
+		          #else
+                <h1><div class="title1" style="color:#cc9900;">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 12)
+
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#d1111c;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#d1111c;">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 61)
+
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#d1111c;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#d1111c;">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 14)
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#003399;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#003399;">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 20)
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#3071b9;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#3071b9;">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 62)
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#3071b9;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#3071b9;">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 23 || $pdCode == 27 || $pdCode == 28 || $pdCode == 29)
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#ff6600;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;"></font>
+		          #else
+                <h1><div class="title1" style="color:#ff6600;">$!{productInfo.productName}</div></h1>
+			        #end
+
+            #elseif($pdCode == 24)
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#993300;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#993300;">$!{productInfo.productName}</div></h1>
+			        #end
+            #elseif($pdCode == 64)
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#00739f;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#00739f;">$!{productInfo.productName}</div></h1>
+			        #end
+            #elseif($pdCode == 66)
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#f2448a;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#f2448a;">$!{productInfo.productName}</div></h1>
+			        #end
+            #elseif($pdCode == 40 || $pdCode == 41 ||$pdCode == 42)
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#004b12;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#004b12;">$!{productInfo.productName}</div></h1>
+			        #end
+            #elseif($pdCode == 43 || $pdCode == 44 ||$pdCode == 45)
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#759427;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#759427;">$!{productInfo.productName}</div></h1>
+			        #end
+            #elseif($pdCode == 47)
+			        #if(${productQty} == 0)
+                <h1><div class="title1" style="color:#000000;">$!{productInfo.productName}</div></h1><font id="showmessage2" style="color:#FF66cc;display:none;font-size:16px;">【缺貨中】</font>
+		          #else
+                <h1><div class="title1" style="color:#000000;">$!{productInfo.productName}</div></h1>
+			        #end
+            #end
+            ##商品説明エリア③
+            #if($include.exists("ec/product/$!{productInfoForm.goodsId}/description3.vm"))
+                #parse("ec/product/$!{productInfoForm.goodsId}/description3.vm")
+            #end
+        </div>
+        #if($pdCode == 23 || $pdCode == 27)
+        <ul class="list01">
+          <li><strong style="font-weight:normal;">獨家超高滲透力技術</strong></li>
+          <li><strong style="font-weight:normal;">洗顏後僅需一瓶，完美多效合一</strong></li>
+          <li><strong style="font-weight:normal;">嚴選萃取多種珍貴成分</strong></li>
+        </ul>
+	<span class="vitoas" style="font-weight:bold;margin-top: -35px;"><font>●</font>日本原裝進口！全台免費宅配</span>
+        #end
+        #if($!{productInfoForm.goodsId} == 28)
+	<ul class="list01">
+		<li><strong style="font-weight:normal;">卸妝+洗顏+美肌 一次實現</strong></li>
+		<li><strong style="font-weight:normal;">獨特<超微細3效菁華油泡沫>，深層清潔毛孔</strong></li>
+		<li><strong style="font-weight:normal;">洗淨同時滋潤，提升後續保養滲透力</strong></li>
+	</ul>
+	<span class="vitoas" style="font-weight:bold;margin-top: -35px;"><font>●</font>日本原裝進口！全台免費宅配</span>
+        #end
+    #if($!{productInfoForm.goodsId} == 40)
+        <div class="box01 box01-1">
+            <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+            <table>
+                <tbody>
+                <tr>
+                    <td>甦活煥采洗髮露(250mL)<span class="plus">+</span>深層屏護潤髮乳(250g)</td>
+                    <td class="color"><span>NT$ </span> 1,500<div>(2瓶入/組)</div></td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop2" onclick="return shoping40();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    #elseif($!{productInfoForm.goodsId} == 41)
+        <div class="box01 box01-1">
+            <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+            <table>
+                <tbody>
+                <tr>
+                    <td>甦活煥采洗髮露(250mL)</td>
+                    <td class="color"><span>NT$ </span> 750<div>(1瓶入)</div></td>
+                    #if($pcount > 0)
+                    <td><a style="cursor:pointer" class="buy" id="shop2" onclick="return shoping41();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    #elseif($!{productInfoForm.goodsId} == 43)
+        <div class="box01 box01-1">
+            <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+            <table>
+                <tbody>
+                <tr>
+                    <td>煥采海洋膠原洗顏皂<span class="plus">+</span>淨膚洗卸炭泥洗顏皂</td><td class="color"><span>NT$ </span> 1,500<div>(2個入/組)</div></td>
+                    #if($pcount > 0)
+                    <td><a style="cursor:pointer" class="buy" id="shop2" onclick="return shoping43();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    #elseif($!{productInfoForm.goodsId} == 44)
+        <div class="box01 box01-1">
+            <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+            <table>
+                <tbody>
+                <tr>
+                    <td>煥采海洋膠原洗顏皂<br><small>(推薦白天使用)</small></td><td class="color"><span>NT$ </span> 750<div>(1個入)</div></td>
+                    #if($pcount > 0)
+                    <td><a style="cursor:pointer" class="buy" id="shop2" onclick="return shoping44();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    #elseif($!{productInfoForm.goodsId} == 45)
+        <div class="box01 box01-1">
+            <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+            <table>
+                <tbody>
+                <tr>
+                    <td>淨膚洗卸炭泥洗顏皂<br><small>(推薦夜晚使用)</small></td><td class="color"><span>NT$ </span> 750<div>(1個入)</div></td>
+                    #if($pcount > 0)
+                    <td><a style="cursor:pointer" class="buy" id="shop2" onclick="return shoping45();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    #elseif($!{productInfoForm.goodsId} == 42)
+        <div class="box01 box01-1">
+            <span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+            <table>
+                <tbody>
+                <tr>
+                    <td>深層屏護潤髮乳(250g)</td>
+                    <td class="color"><span>NT$ </span> 750<div>(1瓶入)</div></td>
+                    #if($pcount > 0)
+                    <td><a style="cursor:pointer" class="buy" id="shop2" onclick="return shoping42();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    #elseif($!{productInfoForm.goodsId} == 29)
+        <div class="box11">
+			<div class="in t1 top">
+				<div class="tit">健康定期購<font><big>8</big>折</font></div>
+				<div class="tit2">♦同商品兩組以上&nbsp;&nbsp;<small>\首次出貨送</small>增量包<small>/</small></div>
+				<ul>
+					<li>
+						<div class="r">
+							多效極妍鎖濕菁華<small> (120mL)</small><div class="plus">＋</div>多效極妍淨肌卸洗皂<small> (80g)</small><span class="price"><font>NT$</font>3,384<font>/組</font></span>
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping2('29');">加入購物車</a>
+						</div>
+					</li>
+				</ul>
+				<div class="qaa4" style=""><a href="$app.cdnDomain('/products/stage01.html')" class="stage_pop">定期配送兩組最優惠？</a></div>
+				<div class="ps" style="">※以上商品增量包皆以vitoas蜜得絲多效極妍鎖濕菁華贈送</div>
+			</div>
+			<div class="in t1">
+				<div class="tit2">♦單一組配送</div>
+				<ul>
+					<li>
+						<div class="r">
+							多效極妍鎖濕菁華<small> (120mL)</small><div class="plus">＋</div>多效極妍淨肌卸洗皂<small> (80g)</small><span class="price"><font>NT$</font>3,384<font>/組</font></span>
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping1('29');">加入購物車</a>
+						</div>
+					</li>
+				</ul>
+				<div class="qaa4" style=""><a href="$app.cdnDomain('/products/stage02.html')" class="stage_pop">健康定期購有哪些優點？</a></div>
+			</div>
+		</div>
+    #elseif($!{productInfoForm.goodsId} == 28)
+		<div class="box11 small">
+			<div class="in t1 top">
+				<div class="tit">健康定期購<font><big>8</big>折</font></div>
+				<div class="tit2">♦同商品兩個以上&nbsp;<small>\首次出貨送</small>增量包<sup>※</sup><small>/</small></div>
+				<ul>
+					<li>
+						<div class="r">
+							早晚使用2個月份<small> (80g)</small><span class="price"><font>NT$</font>864<font>/個</font></span><br>
+							<a style="cursor:pointer" class="buy2" onclick="return contractshoping2('28');">加入購物車</a>
+						</div>
+						<div class="qaa4" style=""><a href="$app.cdnDomain('/products/stage01.html')" class="stage_pop">定期配送兩個最優惠？</a></div>
+					</li>
+				</ul>		
+			</div>
+			<div class="in t1 link">
+				<div class="tit2">♦單一個配送</div>
+				<ul>
+					<li>
+						<div class="r">
+							早晚使用2個月份<small> (80g)</small><span class="price"><font>NT$</font>864<font>/個</font></span><br>
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping1('28');">加入購物車</a>
+						</div>
+						<div class="qaa4" style=""><a href="$app.cdnDomain('/products/stage02.html')" class="stage_pop">健康定期購有哪些優點？</a></div>
+					</li>
+				</ul>
+				<div class="ps" style="">※增量包為vitoas蜜得絲多效極妍鎖濕菁華(僅限定期購同商品兩個以上首次出貨贈送)</div>
+			</div>
+		</div>
+	#elseif($!{productInfoForm.goodsId} == 27)
+		<div class="box11 small">
+			<div class="in t1 top">
+				<div class="tit">健康定期購<font><big>8</big>折</font></div>
+				<div class="tit2">♦同商品兩瓶以上&nbsp;&nbsp;<small>\首次出貨送</small>增量包<small>/</small></div>
+				<ul>
+					<li>
+						<div class="r">
+							早晚使用2個月份<small> (120mL)</small><span class="price"><font>NT$</font>2,520<font>/瓶</font></span><br>
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping2('27');">加入購物車</a>
+						</div>
+						<div class="qaa4" style=""><a href="$app.cdnDomain('/products/stage01.html')" class="stage_pop">定期配送兩瓶最優惠？</a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="in t1 link">
+				<div class="tit2">♦單一瓶配送</div>
+				<ul>
+					<li>
+						<div class="r">
+							早晚使用2個月份<small> (120mL)</small><span class="price"><font>NT$</font>2,520<font>/瓶</font></span>
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping1('27');">加入購物車</a>
+						</div>
+						<div class="qaa4" style=""><a href="$app.cdnDomain('/products/stage02.html')" class="stage_pop">健康定期購有哪些優點？</a></div>
+					</li>
+				</ul>
+<!--				<div class="ps" style="">※以上商品增量包皆以vitoas蜜得絲多效極妍鎖濕菁華贈送</div>-->
+			</div>
+		</div>
+	#elseif($!{productInfoForm.goodsId} == 61)
+		<div class="box11">
+			<div class="in t1 top">
+				<div class="tit">健康定期購<font><big>8</big>折</font></div>
+				<div class="tit2">♦同商品兩瓶以上&nbsp;&nbsp;<small>\首次出貨</small>增量10<small>%/</small></div>
+				<ul class="auto l_s">
+					<li>
+						<div class="r">
+							<div>
+								30日份<div class="use"><small> （120顆）</small></div>
+								<font>NT$</font>1,680<font>/瓶</font>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping2('61');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage01.html')" class="stage_pop">定期配送兩瓶最優惠？</a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="in t1 link">
+				<div class="tit2">♦單一瓶配送</div>
+				<ul class="auto l_s">
+					<li>
+						<div class="r">
+							<div>
+								30日份<div class="use"><small> （120顆）</small></div>
+								<font>NT$</font>1,680<font>/瓶</font>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping1('61');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage02.html')" class="stage_pop">健康定期購有哪些優點？</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	#elseif($!{productInfoForm.goodsId} == 1)
+		<div class="box11">
+			<div class="in t1 top">
+				<div class="tit">健康定期購<font><big>8</big>折</font></div>
+				<div class="tit2">♦同商品兩盒以上&nbsp;&nbsp;<small>\首次出貨</small>增量10<small>%/</small></div>
+				<ul class="auto l_s">
+					<li>
+						<div class="r">
+							<div>
+								30日份<div class="use"><small> （30包入）</small></div>
+								<font>NT$</font>1,464<font>/盒</font>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping2('1');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage01.html')" class="stage_pop">定期配送兩盒最優惠？</a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="in t1 link">
+				<div class="tit2">♦單一盒配送</div>
+				<ul class="auto l_s">
+					<li>
+						<div class="r">
+							<div>
+								30日份<div class="use"><small> （30包入）</small></div>
+								<font>NT$</font>1,464<font>/盒</font>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping1('1');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage02.html')" class="stage_pop">健康定期購有哪些優點？</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	#elseif($!{productInfoForm.goodsId} == 47)
+		<div class="box11">
+			<div class="in t1 top">
+				<div class="tit">健康定期購<font><big>8</big>折</font></div>
+				<div class="tit2">♦同商品兩個以上&nbsp;<small>\首次出貨</small>送明星商品增量包<sup>※</sup></div>
+				<ul class="auto l_s">
+					<li>
+						<div class="r">
+							<div>
+								約1個月份&nbsp;&nbsp;
+								<font>NT$</font>520<div class="use"><small> （1個入）</small></div>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping2('47');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage01.html')" class="stage_pop">定期配送兩瓶最優惠？</a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="in t1 link">
+				<div class="tit2">♦單一個配送</div>
+				<ul class="auto l_s">
+					<li>
+						<div class="r">
+							<div>
+								約1個月份&nbsp;&nbsp;
+								<font>NT$</font>520<div class="use"><small> （1個入）</small></div>
+							</div>					
+							<a  style="cursor:pointer" class="buy2" onclick="return contractshoping1('47');" style="bottom: 18px;">加入購物車</a>
+						</div>
+						<div class="qaa4"><a href="$app.cdnDomain('/products/stage02.html')" class="stage_pop">健康定期購有哪些優點？</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+    #else
+        <div class="box01">
+			<span style="height:20px;overflow:hidden;padding:0;">&nbsp;</span>
+            
+            <table >
+                #if($!{productInfoForm.goodsId} == 23)
+                <tr>
+                    <td style="font-size: 16px;">早晚使用10天份(20mL)</td>
+                    <td class="color"><span>NT$ </span> 890</td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop65_1" onclick="return shoping65();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                <tr>
+                    <td style="font-size: 16px;">早晚使用$!{productInfo.amountDesc}</td>
+                    <td class="color" width="125"><span>NT$ </span> $number.format('###,###',$productInfo.netPrice)</td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop65_2" onclick="return shoping();">加入購物車</a></td>
+                    #else
+                    <td width="226"></td>
+                    #end
+                </tr>
+                #elseif($!{productInfoForm.goodsId} == 5)
+                <tr>
+                    <td style="font-size: 18px;">$!{productInfo.amountDesc}</td>
+                    <td class="color" width="125"><font style="font-size:16px;font-weight:bloder;color:#663300">NT$ </font> $number.format('###,###',$productInfo.netPrice)</td>
+                    #if($pcount > 0)
+                    <td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping();">加入購物車</a></td>
+                    #else
+                    <td></td>
+                    #end
+                </tr>
+                #elseif($!{productInfoForm.goodsId} == 851)
+					<tbody>
+						<tr>
+							<td><span>M</span>號 1個入（單邊） </td><td class="color"><span>NT$ </span> $number.format('###,###',$productInfo.netPrice)</td>
+									#if($pcount > 0)
+									<td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping();">加入購物車</a></td>
+									#else
+									<td width="226"></td>
+									#end
+						</tr>
+						<tr>
+							<td><span>L</span>號 1個入（單邊） </td><td class="color"><span>NT$ </span> $number.format('###,###',$productInfo.netPrice)</td>
+									#if($pcount > 0)
+									<td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping852();">加入購物車</a></td>
+									#else
+									<td width="226"></td>
+									#end
+						</tr>
+						<tr>
+							<td><span>XL</span>號 1個入（單邊） </td><td class="color"><span>NT$ </span> $number.format('###,###',$productInfo.netPrice)</td>
+									#if($pcount > 0)
+									<td><a  style="cursor:pointer" class="buy" id="shop_1" onclick="return shoping853();">加入購物車</a></td>
+									#else
+									<td width="226"></td>
+									#end
+						</tr>
+					</tbody>
+	            #else
+                <tr>
+                    <td>$!{productInfo.amountDesc}</td>
+                    <td class="color" width="125"><span>NT$ </span> $number.format('###,###',$productInfo.netPrice)</td>
+                    #if($pcount > 0)
+                    <td><a style="cursor:pointer" class="buy" id="shop_2" onclick="return shoping();">加入購物車</a></td>
+                    #else
+                    <td width="226"></td>
+                    #end
+                </tr>
+                #end
+            </table>
+        </div>
+    #end
+        <div id="prdQty1" style="margin-top:10px;display:none;color:red;">
+            #if($!{productInfoForm.goodsId} == 23)
+            <B>※11/2(一)起將調整價格，目前系統更新中暫停訂購，如有問題請洽客服中心。</B>
+            #elseif($!{productInfoForm.goodsId} == 8)
+            <B>蜂王乳+芝麻明E將於11/23(一)全新改版，同時調降價格，詳情請洽客服中心。</B>
+            #elseif($!{productInfoForm.goodsId} == 2)
+            <B>全新成分升級、包裝同步改版，新商品「TADAS比菲禦力菌」將於8/7正式開賣，希望您能持續支持及愛用！</B>
+            #else
+            <B>【感謝大獲好評，目前庫存不足中。下次進貨會另行通知，不好意思，造成您的困擾，敬請見諒。】</B>
+            #end
+        </div>
+				
+		#if($!{productInfoForm.goodsId} == 60 || $!{productInfoForm.goodsId} == 62)
+			<div style="color:#663300; padding-left: 15px; padding-top: 10px; font-size: 16px;"><span class="bold">支援您每日的健康，調降為新價格!</span></div>
+		#end
+				
+        ##商品説明エリア④
+        #if($include.exists("ec/product/$!{productInfoForm.goodsId}/description4.vm"))
+            #parse("ec/product/$!{productInfoForm.goodsId}/description4.vm")
+        #end  
+    </div>
+    <span class="dot"></span>
+    </div>
+    <br />
+    ##商品詳細エリア②
+    #if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail2.vm"))
+        #parse("ec/product/$!{productInfoForm.goodsId}/detail2.vm")
+    #end
+    <br>
+</div>
+
+
+
+
+#end
+
+#ecFormHiddenInput("productInfoForm.goodsId" "")
+#ecFormHiddenInput("productInfoForm.advKey" "")
+#ecFormHiddenInput("productInfoForm.lpCode" "")
+<input type="hidden" id="hidContractFlag" name="hidContractFlag" value="" />
+<input type="hidden" id="hidDeliverySycle" name="hidDeliverySycle" value="" />
+<input type="hidden" id="hidQty" name="hidQty" value="" />
+
+</form>
+#if($include.exists("ec/product/$!{productInfoForm.goodsId}/schema.vm"))
+    #parse("ec/product/$!{productInfoForm.goodsId}/schema.vm")
+#end
+#end
