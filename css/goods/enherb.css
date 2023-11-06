@@ -176,6 +176,8 @@
 
     .brown {
         color: #996e33 !important;
+        color: #916640 !important;
+        font-weight: bold;
     }
 
     .brown1 {
@@ -268,6 +270,8 @@
 
     .bg_green {
         background: #f7fee2;
+    .bg_brown {
+        background: #ded1c5;
     }
 
     .bold {
@@ -329,7 +333,6 @@
     .w900 {
         max-width: 100%;
         margin: auto;
-        padding: 0 15px;
         line-height: normal;
     }
 
@@ -355,7 +358,8 @@
 
     .w1160,
     .w1160_1,
-    .w750 {
+    .w750,
+    .w900 {
         width: auto;
     }
 
@@ -365,6 +369,7 @@
 
     .w750 {
         width: auto;
+        padding: 0 15px;
     }
 
     .bg_1 {
@@ -817,17 +822,6 @@
         margin-bottom: 15px;
     }
 
-    /*.modal_container_in {
-        display: flex;
-        flex-flow: column nowrap;
-        height: calc(100vh - 122px) !important;
-    }
-
-    .modal_container .btn_close {
-        padding: 10px 0;
-        height: 12vw;
-    }*/
-
     .price_list {
         flex-grow: 1;
         overflow-y: auto;
@@ -929,10 +923,6 @@
         font-size: 4vw;
     }
 
-    /*.modal_container .text {
-        margin: 0 0 2vw 0;
-    }*/
-
     .btn_modal button {
         border: none;
         color: #0072ef;
@@ -946,6 +936,137 @@
     .btn_modal button:active {
         color: #00bbff;
         text-decoration: underline;
+    }
+
+    .white {
+        color: #fff !important;
+    }
+
+    .arrow_bottom::before {
+        position: absolute;
+        content: "";
+        width: 104px;
+        height: 46px;
+        background: url(../../img/goods/enherb/arrow.png) no-repeat;
+        background-size: 100% auto;
+        bottom: -16vw;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 60px;
+        z-index: 1;
+    }
+
+    /**/
+    .memo {
+        background: #fff;
+        position: relative;
+        padding: 6vw;
+    }
+
+    .memo::before,
+    .memo::after {
+        position: absolute;
+        content: "";
+        box-shadow: 0 20px 15px rgba(101, 101, 101, .4);
+        transform: rotate(354deg);
+        left: 15px;
+        top: 61%;
+        bottom: 17px;
+        width: 45%;
+        background: #9B7468;
+        z-index: 0;
+    }
+
+    .memo::after {
+        transform: rotate(5deg) !important;
+        left: inherit;
+        right: 15px !important;
+    }
+
+    .memo>.memo_in {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        background: #fff;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+        z-index: 2;
+    }
+
+    .memo>.memo_in>div {
+        border: #ccc solid 1px;
+        width: calc(100% - 5vw);
+        height: calc(100% - 5vw);
+        padding: 3vw;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+
+    .memo .title {
+        color: #916640;
+        font-size: 4.5555vw;
+        font-weight: bold;
+        padding-bottom: 12px;
+    }
+
+    .memo p {
+        font-size: 3.4vw;
+        line-height: 5vw;
+    }
+
+    .memo .logo {
+        width: 50%;
+        margin: 3vw 0 0 0;
+    }
+
+    .memo .green_label {
+        background: #688e55;
+        color: #fff;
+        padding: 2vw;
+        display: inline-block;
+        font-size: 3.2vw;
+        margin-right: 0;
+        line-height: normal;
+        position: absolute;
+        right: -3vw;
+        bottom: 0;
+        text-align: right;
+    }
+
+    .memo .green_label span {
+        color: #fff;
+    }
+
+    .memo .resaercher {
+        position: absolute;
+        bottom: -3vw;
+        width: 46vw;
+        right: -3vw;
+    }
+
+    .memo .resaercher img {
+        width: 100%;
+    }
+
+    .resaercher_padding {
+        padding-bottom: 21vw;
+    }
+
+    .bg-1 {
+        padding: 0 !important;
+        background: #e3eede;
+        position: relative;
+    }
+
+    .arrow_bottom_big {
+        background: #fff;
+        clip-path: polygon(100% 68%, 100% 100%, 0 100%, 0 70%, 50% 100%);
+        width: 100%;
+        height: 114px;
     }
 
 
@@ -1569,11 +1690,7 @@
             margin-bottom: 31px !important;
         }
 
-        .bg-1 {
-            margin-top: 20px;
-            padding: 0 !important;
-            background: #e3eede;
-        }
+
 
         .purchase .supply.red {
             color: #eb0000;
@@ -2001,72 +2118,399 @@
             height: 46px;
             background: url(../../img/goods/enherb/arrow.png) no-repeat;
             background-size: 100% auto;
-            bottom: -60px;
+            bottom: -50px;
             left: 50%;
             transform: translateX(-50%);
             padding-bottom: 60px;
+            z-index: 1;
         }
 
-        .box {
-            width: 40%;
-            height: 200px;
-            background-color: white;
-            margin: 25px 15px;
-            border-radius: 5px;
+        /**/
+        .memo {
+            background: #fff;
+            position: relative;
+            padding: 30px 15px;
         }
 
-        .box h3 {
-            font-family: 'Didact Gothic', sans-serif;
-            font-weight: normal;
-            text-align: center;
-            padding-top: 60px;
+        .memo::before,
+        .memo::after {
+            position: absolute;
+            content: "";
+            box-shadow: 0 20px 15px rgba(101, 101, 101, .4);
+            transform: rotate(354deg);
+            left: 15px;
+            top: 61%;
+            bottom: 17px;
+            width: 45%;
+            background: #9B7468;
+            z-index: 0;
+        }
+
+        .memo::after {
+            transform: rotate(5deg) !important;
+            left: inherit;
+            right: 15px !important;
+        }
+
+        .memo>.memo_in {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            background: #fff;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+            z-index: 2;
+        }
+
+        .memo>.memo_in>div {
+            border: #ccc solid 1px;
+            width: calc(100% - 30px);
+            height: calc(100% - 30px);
+            padding: 15px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+
+        .memo .title {
+            color: #916640;
+            font-size: 22px;
+            font-weight: bold;
+            padding-bottom: 12px;
+        }
+
+        .memo p {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        .memo .logo {
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        .memo .green_label {
+            background: #688e55;
+            color: #fff;
+            padding: 14px 18px;
+            display: inline-block;
+            font-size: 14px;
+            margin-right: -31px;
+            line-height: normal;
+            position: absolute;
+            right: 15px;
+            bottom: 0;
+            text-align: right;
+        }
+
+        .memo .green_label span {
             color: #fff;
         }
 
-        .box1 {
-            background-color: #EBA39E;
+        .memo .resaercher {
+            position: absolute;
+            bottom: -18px;
+            width: 216px;
+            right: -15px;
         }
 
-        .shadow1 {
+        .memo .resaercher img {
+            width: 100%;
+        }
+
+        .pb_100 {
+            padding-bottom: 60px !important;
+        }
+
+        .f_large {
+            font-size: 140%;
+        }
+
+        .arrow_bottom_big {
+            background: #fff;
+            clip-path: polygon(100% 68%, 100% 100%, 0 100%, 0 70%, 50% 100%);
+            width: 100%;
+            height: 114px;
+        }
+
+        .hair_dry_div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             position: relative;
         }
 
-        .shadow1 {
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+        .hair_dry_div .girl_dry {
+            width: 76%;
         }
 
-        .shadow1 h3 {
-            width: 87%;
-            height: 100px;
-            margin-left: 6%;
-            border: 2px dashed #F7EEEE;
-            border-radius: 5px;
+        .hair_dry_div .girl_dry img {
+            width: 100%;
         }
 
-        .shadow1:before,
-        .shadow1:after {
+        .hair_dry_div .hair_dry_txt {
+            flex: 1;
+        }
+
+        .hair_dry_div .dry_div_title {
+            color: #916640;
+            font-size: 28px;
+            line-height: normal;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .hair_dry_div .hair_dry_txt .dry_1 {
+            width: 100%;
+            height: auto;
+        }
+
+        .hair_dry_div .hair_dry_txt .dry_1 img {
+            width: 100%;
+        }
+
+        .box2_1_div {
+            display: flex;
+            gap: 0;
+        }
+
+        .box2_1_div .hair_box {
+            flex: 1;
+            position: relative;
+            padding: 50px 15px 0 15px;
+        }
+
+        .box2_1_div .hair_box:first-child {
+            background: url(../../img/goods/enherb/border1.png)no-repeat;
+            background-size: 100% auto;
+        }
+
+        .box2_1_div .hair_box:first-child::before {
             position: absolute;
             content: "";
-            bottom: 12px;
-            left: 15px;
-            top: 80%;
-            width: 45%;
-            background: #9B7468;
-            z-index: -1;
-            -webkit-box-shadow: 0 20px 15px #9B7468;
-            -moz-box-shadow: 0 20px 15px #9B7468;
-            box-shadow: 0 20px 15px #9B7468;
-            -webkit-transform: rotate(-6deg);
-            -moz-transform: rotate(-6deg);
-            transform: rotate(-6deg);
+            background: url(../../img/goods/enherb/border1-2.png) no-repeat;
+            background-size: auto 100%;
+            width: 47px;
+            height: 43px;
+            bottom: -5px;
+            left: 6px;
+            z-index: 1;
         }
 
-        .shadow1:after {
-            -webkit-transform: rotate(6deg);
-            -moz-transform: rotate(6deg);
-            transform: rotate(6deg);
-            right: 15px;
-            left: auto;
+        .box2_1_div .hair_box:last-child {
+            background: url(../../img/goods/enherb/border2.png)no-repeat;
+            background-size: 100% auto;
+        }
+
+        .box2_1_div .hair_box:last-child::before {
+            position: absolute;
+            content: "";
+            background: url(../../img/goods/enherb/border2-2.png) no-repeat;
+            background-size: auto 100%;
+            width: 75px;
+            height: 67px;
+            bottom: -18px;
+            right: 6px;
+            z-index: 1;
+        }
+
+        .box2_1_div .hair_box:first-child .title,
+        .box2_1_div .hair_box:last-child .title {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 6px 17px;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .box2_1_div .hair_box:first-child .title {
+            background: #685247;
+        }
+
+        .box2_1_div .hair_box:last-child .title {
+            background: #756d58;
+        }
+
+        .box2_1_div .hair_box_txt {
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .box2_1_div .hair_box:first-child .hair_box_bottom {
+            position: relative;
+            margin-top: 0;
+            background: #d6a44f;
+            box-shadow: 0 7px 6px rgba(0, 0, 0, 0.3), 0 0 18px rgba(0, 0, 0, 0.1) inset;
+            padding: 20px 40px;
+        }
+
+        .box2_1_div .hair_box:first-child .hair_box_bottom::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 1px 0 #ffffffa1, inset -1px 0 #ffffffa1, inset 0 1px #ffffffa1, inset 0 -1px #ffffffa1;
+            border: #D6A44E solid 5px;
+            top: 0;
+            left: 0;
+        }
+
+        .box2_1_div .hair_box .hair_box_bottom::after {
+            position: absolute;
+            content: "";
+            width: 72px;
+            height: 45px;
+            background: url(../../img/goods/enherb/border1-1.png) no-repeat;
+            background-size: auto 100%;
+            left: -34px;
+            top: 8%;
+        }
+
+        .box2_1_div .hair_box:last-child .hair_box_bottom {
+            position: relative;
+            margin-top: 0;
+            background: #688e55;
+            box-shadow: 0 7px 6px rgba(0, 0, 0, 0.3), 0 0 18px rgba(0, 0, 0, 0.1) inset;
+            padding: 20px 40px;
+        }
+
+        .box2_1_div .hair_box:last-child .hair_box_bottom::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 1px 0 #ffffffa1, inset -1px 0 #ffffffa1, inset 0 1px #ffffffa1, inset 0 -1px #ffffffa1;
+            border: #688e55 solid 6px;
+            top: 0;
+            left: 0;
+        }
+
+        .box2_1_div .hair_box_bottom_flex {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+        }
+
+        .box2_1_div .hair_box_bottom_flex p {
+            width: 16%;
+            text-decoration: underline;
+            color: #fff;
+            font-size: 23px;
+        }
+
+        .box2_1_div .hair_box_bottom_flex div {
+            flex: 1;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .box2_1_div .flex_between {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px 12px 20px;
+            align-items: flex-end;
+        }
+
+        .box2_1_div .flex_between .radius_div {
+            width: 29%;
+        }
+
+        .box2_1_div .flex_between .radius_div:nth-child(1) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box2_1_div .flex_between .radius_div:nth-child(2) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box2_1_div .flex_between .radius {
+            border-radius: 9px;
+            color: #fff;
+            font-size: 14px;
+            padding: 1px 10px 4px 10px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .box2_1_div .flex_between .radius_div p {
+            font-size: 11px;
+            line-height: 18px;
+        }
+
+        .box2_1_div .hair_box:nth-child(1) .radius_div:nth-child(1) .radius,
+        .box2_1_div .hair_box:nth-child(2) .radius_div:nth-child(1) .radius {
+            background: #496d37;
+        }
+
+        .box2_1_div .hair_box:nth-child(1) .radius_div:nth-child(2) .radius,
+        .box2_1_div .hair_box:nth-child(2) .radius_div:nth-child(2) .radius {
+            background: #626262;
+        }
+
+        .box2_1_div .hair_box:nth-child(1) .arrow_div>p {
+            color: #624b48;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .box2_1_div .hair_box:nth-child(2) .arrow_div>p {
+            color: #756d58;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .box2_1_div .arrow_div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 23px 0 46px 0;
+        }
+
+        .box2_1_div .hair_box .arrow {
+            color: #fff;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 14px 0px 14px 23px;
+            margin-top: 20px;
+            position: relative;
+            margin-left: -31px;
+        }
+
+        .box2_1_div .hair_box .arrow:after {
+            position: absolute;
+            content: "";
+            clip-path: polygon(60% 0%, 100% 50%, 60% 100%);
+            top: 50%;
+            right: -30px;
+            transform: translateY(-50%);
+            width: 75px;
+            height: 79px;
+        }
+
+        .box2_1_div .hair_box:nth-child(1) .arrow:after,
+        .box2_1_div .hair_box:nth-child(1) .arrow {
+            background: #614c4b;
+        }
+
+        .box2_1_div .hair_box:nth-child(2) .arrow:after,
+        .box2_1_div .hair_box:nth-child(2) .arrow {
+            background: #756d58;
         }
 
         /*git*/
@@ -2074,15 +2518,23 @@
             display: none;
         }
 
-        .git_master_changechangechangechangechange666 {
+        /*我不改再修*/
+        .git_master_simon2_change {
             display: none;
         }
+
+        /*我不改再修*/
+
 
         .git_master_simon2 {
             display: block;
         }
 
         .git_master_change1 {
+            display: block;
+        }
+
+        .git_master_simon2 {
             display: block;
         }
 
