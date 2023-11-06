@@ -175,6 +175,7 @@
     }
 
     .brown {
+        color: #996e33 !important;
         color: #916640 !important;
         font-weight: bold;
     }
@@ -267,6 +268,8 @@
         color: #916640 !important;
     }
 
+    .bg_green {
+        background: #f7fee2;
     .bg_brown {
         background: #ded1c5;
     }
