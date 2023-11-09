@@ -194,7 +194,7 @@
     }
 
     .tips_list .label {
-        border-left: 0.5333333333333vw #163e96 solid !important;
+        border-left: 0.5333333333333vw #916640 solid !important;
     }
 
     .precautions_table td .nutrition_table {
@@ -356,6 +356,7 @@
     .w1160,
     .w1160_1,
     .w750,
+    .w860,
     .w900 {
         width: auto;
     }
@@ -438,6 +439,11 @@
 
     .w950 {
         width: auto;
+    }
+
+    .tips_list {
+        width: 1400px !important;
+        padding: 40px 160px 30px 160px !important;
     }
 
     .p_01 {
@@ -954,7 +960,7 @@
         padding-bottom: 12vw;
     }
 
-    .arrow_bottom::before {
+    /* .arrow_bottom::before {
         position: absolute;
         content: "";
         width: 104px;
@@ -966,7 +972,7 @@
         transform: translateX(-50%);
         padding-bottom: 60px;
         z-index: 1;
-    }
+    } */
 
     /**/
     .memo {
@@ -1065,17 +1071,67 @@
     }
 
     .resaercher_padding {
-        padding-bottom: 21vw;
+        padding-bottom: 21vw !important;
+    }
+
+    .bg_enherb {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(240, 243, 247, 1) 100%);
+    }
+
+    .bg-1_arrow {
+        background: #dae7d6;
+        position: relative;
+        padding-bottom: 0 !important;
+    }
+
+    .bg-2_arrow {
+        background: rgba(255, 255, 255, 1);
+        position: relative;
+        padding-bottom: 0 !important;
     }
 
     .bg-1 {
-        background: #e3eede;
-        position: relative;
+        background: #dae7d6 !important;
+    }
+
+    .bg-1_arrow::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 150px;
+        left: 0;
+        bottom: -1px;
+        background: #fff;
+        clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0 0%, 50% 100%);
+    }
+
+    .bg-2_arrow::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 150px;
+        left: 0;
+        bottom: -1px;
+        background: #e2eddd;
+        clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0 0%, 50% 100%);
     }
 
     .bg-2 {
         background: #e2eddd;
+    }
+
+    .bg-3 {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(228, 232, 235, 1) 37%, rgba(228, 232, 235, 1) 87%, rgba(255, 255, 255, 1) 100%);
         position: relative;
+    }
+
+    .bg-4 {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(228, 232, 235, 1) 65%, rgb(243 243 243) 87%);
+        position: relative;
+    }
+
+    .bg-5 {
+        background: #f3f3f3 !important;
     }
 
     .arrow_bottom_big {
@@ -1381,6 +1437,11 @@
         /*------------------------------------------------------------
     [PC]contents01
     ------------------------------------------------------------ */
+        .w1400 {
+            width: 1400px;
+            margin: auto;
+        }
+
         .contents01 {
             width: 100%;
             position: static;
@@ -1645,7 +1706,7 @@
 
         .tips_list,
         .tips .note {
-            background: #f7fee2 !important;
+            background: #ddd0c5 !important;
             margin-top: 0 !important;
         }
 
@@ -1656,7 +1717,7 @@
         }
 
         .tips_list .label {
-            border-left: 2px #163e96 solid !important;
+            border-left: 2px #916640 solid !important;
         }
 
         .precautions_table td .nutrition_table {
@@ -1787,12 +1848,12 @@
             font-weight: bold;
         }
 
-        .pt_100 {
-            padding-top: 29px;
+        .pt_125 {
+            padding-top: 125px !important;
         }
 
-        .pb_100 {
-            padding-bottom: 100px;
+        .pb_130 {
+            padding-bottom: 130px !important;
         }
 
         .detail {
@@ -1825,6 +1886,7 @@
             margin: 0 auto;
             font-size: 16px;
             line-height: 27px;
+            position: relative;
         }
 
         .cyan {
@@ -1856,6 +1918,11 @@
 
         .w750 {
             width: 750px;
+            margin: auto;
+        }
+
+        .w860 {
+            width: 860px;
             margin: auto;
         }
 
@@ -2216,11 +2283,6 @@
             position: relative;
         }
 
-        .bg-4 {
-            padding: 74px 0 30px 0;
-            position: relative;
-        }
-
         .message {
             font-size: 16px !important;
             color: #eb0000 !important;
@@ -2411,28 +2473,28 @@
 
         .arrow_bottom {
             position: relative;
-            padding-bottom: 47px;
+            padding-bottom: 0;
         }
 
-        .arrow_bottom::before {
+        /* .arrow_bottom::before {
             position: absolute;
             content: "";
             width: 104px;
             height: 46px;
             background: url(../../img/goods/enherb/arrow.png) no-repeat;
             background-size: 100% auto;
-            bottom: -50px;
+            bottom: -49px;
             left: 50%;
             transform: translateX(-50%);
             padding-bottom: 60px;
             z-index: 1;
-        }
+        } */
 
         /**/
         .memo {
             background: #fff;
             position: relative;
-            padding: 30px 15px;
+            padding: 44px 15px 50px 15px;
         }
 
         .memo::before,
@@ -2471,7 +2533,7 @@
             border: #ccc solid 1px;
             width: calc(100% - 30px);
             height: calc(100% - 30px);
-            padding: 15px;
+            padding: 33px 40px;
             position: absolute;
             transform: translate(-50%, -50%);
             left: 50%;
@@ -2487,25 +2549,25 @@
 
         .memo p {
             font-size: 16px;
-            line-height: 28px;
+            line-height: 31px;
         }
 
         .memo .logo {
-            width: 200px;
+            width: 270px;
             margin-top: 20px;
         }
 
         .memo .green_label {
             background: #688e55;
             color: #fff;
-            padding: 14px 18px;
+            padding: 8px 18px;
             display: inline-block;
             font-size: 14px;
             margin-right: -31px;
             line-height: normal;
             position: absolute;
-            right: 15px;
-            bottom: 0;
+            right: 50px;
+            bottom: 0px;
             text-align: right;
         }
 
@@ -2515,13 +2577,17 @@
 
         .memo .resaercher {
             position: absolute;
-            bottom: -18px;
-            width: 216px;
+            bottom: -22px;
+            width: 56%;
             right: -15px;
         }
 
         .memo .resaercher img {
             width: 100%;
+        }
+
+        .resaercher_padding {
+            padding-bottom: 104px !important;
         }
 
         .pb_100 {
@@ -2534,9 +2600,9 @@
 
         .arrow_bottom_big {
             background: #fff;
-            clip-path: polygon(100% 68%, 100% 100%, 0 100%, 0 70%, 50% 100%);
+            clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0 0%, 50% 100%);
             width: 100%;
-            height: 114px;
+            height: 150px;
         }
 
         .hair_dry_div {
@@ -2544,6 +2610,7 @@
             flex-direction: row;
             align-items: center;
             position: relative;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 16%, rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 0.95) 80%, rgba(255, 255, 255, 0) 100%);
         }
 
         .hair_dry_div .girl_dry {
@@ -2584,6 +2651,7 @@
             display: flex;
             gap: 0;
             flex-direction: row;
+            margin-bottom: 65px;
         }
 
         .box2_1_div .hair_box {
@@ -2747,7 +2815,7 @@
             border-radius: 9px;
             color: #fff;
             font-size: 14px;
-            padding: 1px 10px 4px 10px;
+            padding: 4px 10px;
             display: inline-block;
             margin-bottom: 5px;
         }
@@ -2834,7 +2902,7 @@
         .white_box_div .white_box {
             background: #fff;
             border-radius: 10px;
-            padding: 20px;
+            padding: 20px 50px;
         }
 
         .white_box_div .white_box>.title {
@@ -2848,12 +2916,12 @@
         }
 
         .white_box_div .white_box>div {
-            margin-top: 10px;
+            margin-top: 24px;
         }
 
         .white_box_div .white_box>div>.title1,
         .white_box_div .white_box_4 .title1 {
-            color: #688e55;
+            color: #916640;
             font-weight: bold;
             margin: 12px 0 4px 0;
         }
@@ -2875,7 +2943,7 @@
 
         .white_box_div .white_box:nth-child(3) .white_box_4 {
             display: flex;
-            gap: 20px;
+            gap: 53px;
         }
 
         .white_box_div .white_box:nth-child(3) .white_box_4 div {
@@ -2895,29 +2963,248 @@
             width: 100%;
         }
 
-        /*git*/
-        .git1103-1 {
-            display: none;
+        .hair_step_div {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            margin-top: 110px;
         }
 
-        /*我不改再修*/
-        .git_master_simon2_change {
-            display: none;
+        .hair_step_div .enherb41 {
+            position: absolute;
+            top: -19%;
+            right: 3%;
+            width: 230px;
         }
 
-        /*我不改再修*/
-
-
-        .git_master_simon2 {
-            display: block;
+        .hair_step_div .round {
+            border-radius: 100%;
+            background: #fff;
+            position: relative;
+            width: 250px;
+            height: 250px;
+            padding: 0;
         }
 
-        .git_master_change1 {
-            display: block;
+        .hair_step_div .step_left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 98px;
         }
 
-        .git_master_simon2 {
-            display: block;
+        .hair_step_div .step_right {
+            flex: 1;
+            display: flex;
+            gap: 0px;
+            align-items: center;
         }
+
+        .hair_step_div p {
+            font-size: 18px;
+            line-height: 29px;
+        }
+
+        .hair_step_div .step_left .round:nth-child(1) {
+            margin-left: -10px;
+        }
+
+        .hair_step_div .step_left .round:nth-child(1)::before {
+            position: absolute;
+            content: "";
+            width: 456px;
+            height: 225px;
+            background: url(../../img/goods/enherb/q1.svg) no-repeat;
+            background-size: auto 69%;
+            bottom: -79px;
+            left: -5px;
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        .hair_step_div .step_left .round:nth-child(2) {
+            margin-left: 49px;
+        }
+
+        .hair_step_div .step_left .round:nth-child(2)::before {
+            position: absolute;
+            content: "";
+            width: 512px;
+            height: 126px;
+            background: url(../../img/goods/enherb/q2.svg) no-repeat;
+            background-size: auto 98%;
+            top: -34px;
+            left: -63px;
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        .hair_step_div .step_left .round:nth-child(1) img:nth-child(1),
+        .hair_step_div .step_left .round:nth-child(2) img:nth-child(1) {
+            position: absolute;
+            top: 9px;
+            left: -2px;
+            width: 120px;
+        }
+
+        .hair_step_div .step_left .round:nth-child(1) img:nth-child(2) {
+            position: absolute;
+            top: -12px;
+            right: -57px;
+            width: 185px;
+        }
+
+        .hair_step_div .step_left .round:nth-child(2) img:nth-child(2) {
+            position: absolute;
+            bottom: -55px;
+            left: -51px;
+            width: 150px;
+        }
+
+        .hair_step_div .step_left .round:nth-child(1) p {
+            width: 43%;
+            text-align: left;
+            padding-top: 91px;
+            margin-left: 36px;
+        }
+
+        .hair_step_div .step_left .round:nth-child(2) p {
+            width: 48%;
+            text-align: left;
+            padding-top: 61px;
+            margin-left: 48%;
+        }
+
+        .hair_step_div .step_right .round {
+            margin-left: -27px;
+            margin-top: -37px;
+        }
+
+        .hair_step_div .step_right .round img:nth-child(1) {
+            position: absolute;
+            top: 14px;
+            left: -2px;
+            width: 120px;
+        }
+
+        .hair_step_div .step_right .round img:nth-child(2) {
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            width: 138px;
+        }
+
+        .hair_step_div .step_right .round p {
+            width: 48%;
+            text-align: left;
+            padding-top: 85px;
+            margin-left: 14%;
+        }
+
+        .position_a_1 img:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 250px;
+        }
+
+        .position_a_1 img:nth-child(2) {
+            position: absolute;
+            bottom: -120px;
+            right: 0;
+            width: 280px;
+        }
+
+        .position_a_2 img:nth-child(1) {
+            position: absolute;
+            bottom: -41px;
+            left: -70px;
+            width: 157px;
+            z-index: 3;
+        }
+
+        .position_a_2 img:nth-child(2) {
+            position: absolute;
+            bottom: -136px;
+            right: -198px;
+            width: 257px;
+            z-index: 3;
+        }
+
+        .position_a_3 img:nth-child(1) {
+            position: absolute;
+            bottom: 0;
+            left: -38%;
+            width: 300px;
+            z-index: 3;
+            mix-blend-mode: darken;
+        }
+
+        .tips_ab {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .arrow_position {
+            position: absolute;
+            bottom: -63px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .flowers {
+            position: relative;
+            /* margin-bottom: 100px; */
+        }
+
+        .flowers p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        .girl42_txt {
+            font-size: 21px;
+            line-height: 34px;
+            text-align: left;
+            margin-left: -21%;
+            margin-top: 19%;
+        }
+
+        .pic_42 {
+            margin-top: 417px;
+        }
+    }
+
+    /*git*/
+    .git1103-1 {
+        display: none;
+    }
+
+    /*æˆ‘ä¸æ”¹å†ä¿®*/
+    .git_master_simon2_change {
+        display: none;
+    }
+
+    /*æˆ‘ä¸æ”¹å†ä¿®*/
+
+
+    .git_master_simon2 {
+        display: block;
+    }
+
+    .git_master_change1 {
+        display: block;
+    }
+
+    .git_master_simon2 {
+        display: block;
+    }
 
     }
