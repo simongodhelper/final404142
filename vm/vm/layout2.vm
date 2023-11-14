@@ -386,7 +386,7 @@
 <!-- InstanceEndEditable -->
 #if($productInfoForm.goodsId=="1" || $productInfoForm.goodsId=="5" || $productInfoForm.goodsId=="24"
    || $productInfoForm.goodsId=="27" || $productInfoForm.goodsId=="28" || $productInfoForm.goodsId=="29"
-   || $productInfoForm.goodsId=="60" || $productInfoForm.goodsId=="66" || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62" || $productInfoForm.goodsId=="43" || $productInfoForm.goodsId=="44" || $productInfoForm.goodsId=="45")
+   || $productInfoForm.goodsId=="60" || $productInfoForm.goodsId=="66" || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62" || $productInfoForm.goodsId=="43" || $productInfoForm.goodsId=="44" || $productInfoForm.goodsId=="45" || $productInfoForm.goodsId=="261" || $productInfoForm.goodsId=="40" || $productInfoForm.goodsId=="41" || $productInfoForm.goodsId=="42")
 #else
 <link href="#ecUrl("/")css/reset.min.css" rel="stylesheet" type="text/css" media="screen">
 <link href="#ecUrl("/")css/jquery.fancybox.css" rel="stylesheet" type="text/css">
@@ -405,7 +405,7 @@ $NewRelic.getBrowserTimingHeader()
 <script src="#ecUrl("/")js/jquery.tools.min.js"></script>
 #if($productInfoForm.goodsId=="1" || $productInfoForm.goodsId=="5" || $productInfoForm.goodsId=="24"
    || $productInfoForm.goodsId=="27" || $productInfoForm.goodsId=="28" || $productInfoForm.goodsId=="29"
-   || $productInfoForm.goodsId=="60" || $productInfoForm.goodsId=="66" || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62" || $productInfoForm.goodsId=="43" || $productInfoForm.goodsId=="44" || $productInfoForm.goodsId=="45")
+   || $productInfoForm.goodsId=="60" || $productInfoForm.goodsId=="66" || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62" || $productInfoForm.goodsId=="43" || $productInfoForm.goodsId=="44" || $productInfoForm.goodsId=="45" || $productInfoForm.goodsId=="261" || $productInfoForm.goodsId=="40" || $productInfoForm.goodsId=="41" || $productInfoForm.goodsId=="42")
 #else
 <script src="#ecUrl("/")js/jquery.colorbox-min.js"></script>
 <script src="#ecUrl("/")js/jquery.fancybox.pack.js"></script>

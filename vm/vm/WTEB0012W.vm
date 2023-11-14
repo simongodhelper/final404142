@@ -223,7 +223,7 @@ function contractshoping1(goodsId) {
     $("#goodsId").val(goodsId);
     $("#hidContractFlag").val("1");
     $("#hidDeliverySycle").val("M1");
-	if(goodsId == '27' || goodsId == '28' || goodsId == '29' || goodsId == '43' || goodsId == '44' || goodsId == '45') ## VT 單一配送 配送週期應為2個月
+	if(goodsId == '27' || goodsId == '28' || goodsId == '29' || goodsId == '43' || goodsId == '44' || goodsId == '45' || goodsId == '40' || goodsId == '41' || goodsId == '42') ## VT 單一配送 配送週期應為2個月
 	{
 		$("#hidDeliverySycle").val("M2");
 	} else if(goodsId == '40' || goodsId == '41' || goodsId == '42') {
@@ -339,6 +339,21 @@ function showmessage() {
     <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
 	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
 	<link href="/css/goods/conoha.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 40)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/enherb.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 41)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/enherb.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 42)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/enherb.css" rel="stylesheet" type="text/css" media="all">
 #elseif($!{productInfoForm.goodsId} == 44)
     <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
     <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
@@ -369,6 +384,11 @@ function showmessage() {
     <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
 	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
 	<link href="/css/goods/lf.css" rel="stylesheet" type="text/css" media="all">
+#elseif($!{productInfoForm.goodsId} == 261)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+    <link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/goods/varon.css" rel="stylesheet" type="text/css" media="all">
 #else
     <link href="../css/pc_pro.css" rel="stylesheet" type="text/css" media="print,screen and (min-width:768px)">
     <link href="../css/pc_radio_checkbox.css" rel="stylesheet" type="text/css">
@@ -377,8 +397,6 @@ function showmessage() {
 #end
     #if($pdCode == 33 || $pdCode == 861 || $pdCode == 862 || $pdCode == 863)
         <div class="content omega_aid">
-    #elseif($pdCode == 261)
-        <div class="content varon">
     #else
         <div class="content">
 	#end
@@ -494,6 +512,48 @@ function showmessage() {
 			</ol>
 		</div>
 		<!-- /breadcrumbs -->
+    #elseif($pdCode == 40)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>enherb 恩荷 草本能量洗潤系列</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+    #elseif($pdCode == 41)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>enherb 恩荷 甦活煥采洗髮露</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+    #elseif($pdCode == 42)
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>enherb 恩荷 深層屏護潤髮乳</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
     #elseif($pdCode == 43)
 		<!-- breadcrumbs -->
 		<div class="breadcrumbs">
@@ -604,12 +664,12 @@ function showmessage() {
     #if($pdCode == 851)
         <h1>走適能 護膝</h1>
     #elseif($pdCode == 261 || $pdCode == 262 || $pdCode == 263)
-        <h1>VARON汎倫 紳仕多效活顏精華</h1>
-    #elseif($pdCode == 1 || $pdCode == 5 || $pdCode == 24 || $pdCode == 27 || $pdCode == 28 || $pdCode == 29 || $pdCode == 60 || $pdCode == 66 || $pdCode == 3 || $pdCode == 61 || $pdCode == 62 || $pdCode == 43 || $pdCode == 44 || $pdCode == 45)
+        
+    #elseif($pdCode == 1 || $pdCode == 5 || $pdCode == 24 || $pdCode == 27 || $pdCode == 28 || $pdCode == 29 || $pdCode == 60 || $pdCode == 66 || $pdCode == 3 || $pdCode == 61 || $pdCode == 62 || $pdCode == 43 || $pdCode == 44 || $pdCode == 45 || $pdCode == 40 || $pdCode == 41 || $pdCode == 42)
     #else
         <h1>$!{productInfo.productName}</h1>
 	#end
-    #if($pdCode == 33 || $pdCode == 861 || $pdCode == 862 || $pdCode == 863 || $pdCode == 261)
+    #if($pdCode == 33 || $pdCode == 861 || $pdCode == 862 || $pdCode == 863)
 		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_top_pc.vm"))
 		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_top_pc.vm")
 		#end
@@ -619,7 +679,7 @@ function showmessage() {
 	    #if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail2.vm"))
 	        #parse("ec/product/$!{productInfoForm.goodsId}/detail2.vm")
 	    #end
-    #elseif($pdCode == 1 || $pdCode == 5 || $pdCode == 24 || $pdCode == 27 || $pdCode == 28 || $pdCode == 29 || $pdCode == 60 || $pdCode == 66 || $pdCode == 3 || $pdCode == 61 || $pdCode == 62 || $pdCode == 43 || $pdCode == 44 || $pdCode == 45)
+    #elseif($pdCode == 1 || $pdCode == 5 || $pdCode == 24 || $pdCode == 27 || $pdCode == 28 || $pdCode == 29 || $pdCode == 60 || $pdCode == 66 || $pdCode == 3 || $pdCode == 61 || $pdCode == 62 || $pdCode == 43 || $pdCode == 44 || $pdCode == 45 || $pdCode == 261 || $pdCode == 40 || $pdCode == 41 || $pdCode == 42)
 		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
 		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
 		#end

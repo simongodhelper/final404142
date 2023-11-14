@@ -35,7 +35,7 @@ var _ctxPath = "";
 #else
 #if($!{productInfoForm.goodsId} == 1 || $!{productInfoForm.goodsId} == 5 || $!{productInfoForm.goodsId} == 24
      || $!{productInfoForm.goodsId} == 27 || $!{productInfoForm.goodsId} == 28 || $!{productInfoForm.goodsId} == 29
-	 || $!{productInfoForm.goodsId} == 60 || $!{productInfoForm.goodsId} == 66 || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62")
+	 || $!{productInfoForm.goodsId} == 60 || $!{productInfoForm.goodsId} == 66 || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62" || $productInfoForm.goodsId=="43" || $productInfoForm.goodsId=="44" || $productInfoForm.goodsId=="45" || $productInfoForm.goodsId=="261")
 	#set($layout="ec/layout/front/layout2.vm")
 	#if($include.exists("ec/product/$!{productInfoForm.goodsId}/schema.vm"))
 	    #parse("ec/product/$!{productInfoForm.goodsId}/schema.vm")
@@ -48,7 +48,7 @@ var submitflag = true;
 var _ctxPath = "";
 #if($!{productInfoForm.goodsId} == 1 || $!{productInfoForm.goodsId} == 5 || $!{productInfoForm.goodsId} == 24
  || $!{productInfoForm.goodsId} == 27 || $!{productInfoForm.goodsId} == 28 || $!{productInfoForm.goodsId} == 29
- || $!{productInfoForm.goodsId} == 60 || $!{productInfoForm.goodsId} == 66 || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62")
+ || $!{productInfoForm.goodsId} == 60 || $!{productInfoForm.goodsId} == 66 || $productInfoForm.goodsId=="3" || $productInfoForm.goodsId=="61" || $productInfoForm.goodsId=="62" || $productInfoForm.goodsId=="43" || $productInfoForm.goodsId=="44" || $productInfoForm.goodsId=="45" || $productInfoForm.goodsId=="261")
 #else
 $(function() {
     showmessage();
@@ -517,6 +517,102 @@ function showmessage() {
 		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
 		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
 		#end
+#elseif($!{productInfoForm.goodsId} == 43)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/conoha.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>conoha 沐予 親膚洗顏皂</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 44)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/conoha.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>conoha 沐予 煥采海洋膠原洗顏皂</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 45)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/conoha.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>conoha 沐予 淨膚洗卸炭泥洗顏皂</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
 #elseif($!{productInfoForm.goodsId} == 60)
     <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
     <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
@@ -636,6 +732,38 @@ function showmessage() {
 					<a href="/product/">產品介紹</a>
 				</li>
 				<li>Liftage麗芙緹PG-EX</li>
+			</ol>
+		</div>
+		<!-- /breadcrumbs -->
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/detail_$!{productInfoForm.goodsId}_primary.vm")
+		#end
+		#if($include.exists("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm"))
+		    #parse("ec/product/$!{productInfoForm.goodsId}/contents_$!{productInfoForm.goodsId}.vm")
+		#end
+#elseif($!{productInfoForm.goodsId} == 261)
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_sp.css" media="only screen and (max-width:767px)" />
+    <link rel="stylesheet" type="text/css" href="/common/css/contents_pc.css" media="print,screen and (min-width:768px)" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
+	<link href="/css/goods/common.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/goods/varon.css" rel="stylesheet" type="text/css" media="all">
+<script language="javascript">
+    $('document').ready(function() {
+        $('#btn_close').click(function() {
+            $('.mask').removeClass('d_b');
+        });
+    });
+</script>
+<div class="content">
+		<div class="breadcrumbs">
+			<ol>
+				<li>
+					<a href="/">三得利健康網路商店</a>
+				</li>
+				<li>
+					<a href="/product/">產品介紹</a>
+				</li>
+				<li>VARON汎倫 紳仕多效活顏精華</li>
 			</ol>
 		</div>
 		<!-- /breadcrumbs -->

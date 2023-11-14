@@ -47,11 +47,41 @@
     function addCard(){
             var selectVal = $('input[name=buyProduct]:checked').val();
 			if (selectVal == "1") {
-				return shoping45();
+				return shoping41();
+			} else if  (selectVal == "2") {
+				return shoping42();
 			} else if  (selectVal == "3") {
-				return contractshoping1('45');
+				return shoping40();
 			} else if  (selectVal == "4") {
-				return contractshoping2('45');
+				return contractshoping2('41');
+			} else if  (selectVal == "5") {
+				return contractshoping2('42');
+			} else if  (selectVal == "6") {
+				return contractshoping2('40');
+			} else if  (selectVal == "7") {
+				return contractshoping1('41');
+			} else if  (selectVal == "8") {
+				return contractshoping1('42');
+			} else if  (selectVal == "9") {
+				return contractshoping1('40');
+			} else if  (selectVal == "10") {
+				return shoping41();
+			} else if  (selectVal == "11") {
+				return shoping42();
+			} else if  (selectVal == "12") {
+				return shoping40();
+			} else if  (selectVal == "13") {
+				return contractshoping2('41');
+			} else if  (selectVal == "14") {
+				return contractshoping2('42');
+			} else if  (selectVal == "15") {
+				return contractshoping2('40');
+			} else if  (selectVal == "16") {
+				return contractshoping1('41');
+			} else if  (selectVal == "17") {
+				return contractshoping1('42');
+			} else if  (selectVal == "18") {
+				return contractshoping1('40');
 			} else {
                 $('.mask').addClass('d_b');
 			} 
@@ -67,38 +97,52 @@
 <!-- product_contents -->
 <div class="product_contents">
 
-<!-- primary -->
 <section class="primary">
-    <h1>conoha沐予 淨膚洗卸炭泥洗顏皂</h1>
+    <h1>enherb 恩荷 草本能量洗潤系列</h1>
     <!-- main_visual -->
     <section class="main_visual">
         <div class="img_block">
-            <figure class="main_visual_img"><img src="/img/goods/43_1.jpg" width="520" height="418"
-                    alt="conoha沐予 淨膚洗卸炭泥洗顏皂"></figure>
+            <figure class="main_visual_img"><img src="../img/goods/40_1.jpg" width="520" height="418"
+                    alt="enherb 恩荷 草本能量洗潤系列"></figure>
         </div>
         <div class="text">
-            <h2>使用天然炭、泥及荷荷芭油，<br class="phone_only">深度清潔潤澤滿</h2>
-            <h2 class="brown">獨家細緻綿密泡沫，<br class="phone_only">一次洗卸回復淨肌素顏</h2>
-            <h2 class="green1">添加天然草本精油，<br class="phone_only">溫和親膚、療癒身心​​​​</h2>
+            <h2>細緻柔軟的胺基酸泡沫，<br class="phone_only">溫和潔淨頭皮與髮根</h2>
+            <h2 class="brown">嚴選天然草本能量，<br class="phone_only">保濕、滋養、活絡頭皮</h2>
+            <h2 class="brown1">優雅的東方花卉香味，<br class="phone_only">洗髮同時享受放鬆香氛</h2>
         </div>
     </section>
     <!-- /main_visual -->
     <!-- purchase -->
     <section class="purchase" id="purchase">
+        <ul class="purchase_tab">
+            <li class="current"><span>組合</span></li>
+            <li><a href="/product/goods_detail?goods_id=41"
+                    onclick="dataLayer.push({'event':'gaEvent','eventCategory':'goods_id=41','eventAction':'click','eventLabel':'tab_goods_id=41'});"><span>洗髮露</span></a>
+            </li>
+            <li><a href="/product/goods_detail?goods_id=42"
+                    onclick="dataLayer.push({'event':'gaEvent','eventCategory':'goods_id=42','eventAction':'click','eventLabel':'tab_goods_id=42'});"><span>潤髮乳</span></a>
+            </li>
+        </ul>
         <!-- one_time -->
         <section class="one_time">
             <h2>單次購入</h2>
             <div class="purchase_contents">
                 <div class="radio_container">
-                    <input type="radio" name="buyProduct" id="once" value="1">
-                    <label for="once">
+                    <input type="radio" name="buyProduct" id="once3" value="3">
+                    <label for="once3">
                         <div class="label_group">
-                            <p class="name">淨膚洗卸炭泥洗顏皂<span>(推薦夜晚使用)</span></p>
+                            <p class="name">甦活煥采洗髮露<span>(250mL)</span></p>
+                            <p class="plus">+</p>
+                            <p class="name">深層屏護潤髮乳<span>(250g)</span></p>
                         </div>
-                        <p class="price">NT$<span class="number">750</span>/組</p>
+                        <p class="price">NT$<span class="number">1,500</span>/組</p>
                     </label>
                 </div>
-                <p class="btn_modal"><a href="javascript:void(0);">買越多省越多，每盒最低NT$638</a></p>
+                <p class="btn_modal"><button>買越多省越多，每盒最低NT$1,200</button></p>
+                <ul>
+                    <li>同系列不同商品恕無法享有2瓶以上混合購買之優惠。</li>
+                    <li>例如：enherb甦活煥采洗髮露1瓶+深層屏護潤髮乳1瓶，不適用2瓶95折之優惠。</li>
+                </ul>
             </div>
         </section>
         <!-- /one_time -->
@@ -108,27 +152,31 @@
             <p class="banner_off">健康提起購8折</p>
             <div class="purchase_contents">
                 <div class="radio_container">
-                    <input type="radio" name="buyProduct" id="regular" value="3">
-                    <label for="regular">
+                    <input type="radio" name="buyProduct" id="regular3" value="6">
+                    <label for="regular3">
                         <div class="label_group">
-                            <p class="message">每2個月配送1個</p>
-                            <p class="name">淨膚洗卸炭泥洗顏皂<span>(推薦夜晚使用)</span></p>
-                        </div>
-                        <p class="price">NT$<span class="number red">600</span>/盒</p>
-                    </label>
-                    <input type="radio" name="buyProduct" id="regular2" value="4">
-                    <label for="regular2">
-                        <div class="label_group_wrap">
-                            <div class="label_group">
-                                <p class="message">每4個月配送2個</p>
-                                <p class="name">淨膚洗卸炭泥洗顏皂<span>(推薦夜晚使用)</span></p>
-                            </div>
+                            <b class="message">同商品每3瓶月配送2瓶/組</b>
+                            <p class="name">甦活煥采洗髮露<span>(250mL)</span></p>
+                            <p class="plus">+</p>
+                            <p class="name">深層屏護潤髮乳<span>(250g)</span></p>
                         </div>
                         <b class="message t_right">首次出貨送明星商品增量包</b>
-                        <p class="price">NT$<span class="number red">600</span>/盒</p>
+                        <p class="price">NT$<span class="number red">1,275</span>/組</p>
+                    </label>
+                    <input type="radio" name="buyProduct" id="regular6" value="9">
+                    <label for="regular6">
+                        <div class="label_group_wrap">
+                            <div class="label_group">
+                                <b class="message">每45天配送1瓶/組</b>
+                                <p class="name">甦活煥采洗髮露<span>(250mL)</span></p>
+                                <p class="plus">+</p>
+                                <p class="name">深層屏護潤髮乳<span>(250g)</span></p>
+                            </div>
+                        </div>
+                        <p class="price">NT$<span class="number red">1,200</span>/組</p>
                     </label>
                 </div>
-                <p class="link"><a href="/shopping/contract_products/">定期配送兩盒最優惠？</a>
+                <p class="link"><a href="/regulardelivery/">定期配送兩盒最優惠？</a>
                 </p>
             </div>
 
@@ -152,7 +200,7 @@
                         <li class="benefit02">
                             <h4>好康2</h4>
                             <div class="data">
-                                <p class="conditions">購買兩個以上</p>
+                                <p class="conditions">購買兩瓶以上</p>
                                 <div class="offers">
                                     <div class="note">
                                         <p class="small">首次加</p>
@@ -185,7 +233,7 @@
                     </ul>
                     <div class="regular_extra_footer">
                         <p class="note">加入健康定期購，無需每月下單，一次輕鬆購，定期定量配送到府</p>
-                        <p class="link"><a href="/shopping/contract_products/">點擊看更多</a></p>
+                        <p class="link"><a href="/regulardelivery/">點擊看更多</a></p>
                     </div>
                 </div>
             </section>
@@ -202,5 +250,4 @@
     </section>
     <!-- /purchase -->
 </section>
-<!-- primary -->
 

@@ -47,11 +47,11 @@
     function addCard(){
             var selectVal = $('input[name=buyProduct]:checked').val();
 			if (selectVal == "1") {
-				return shoping44();
+				return shoping42();
 			} else if  (selectVal == "3") {
-				return contractshoping1('44');
+				return contractshoping1('42');
 			} else if  (selectVal == "4") {
-				return contractshoping2('44');
+				return contractshoping2('42');
 			} else {
                 $('.mask').addClass('d_b');
 			} 
@@ -69,22 +69,31 @@
 
 <!-- primary -->
 <section class="primary">
-    <h1>conoha沐予 煥采海洋膠原洗顏皂</h1>
+    <h1>enherb 恩荷 深層屏護潤髮乳</h1>
     <!-- main_visual -->
     <section class="main_visual">
         <div class="img_block">
-            <figure class="main_visual_img"><img src="/img/goods/43_1.jpg" width="520" height="418"
-                    alt="conoha沐予 煥采海洋膠原洗顏皂"></figure>
+            <figure class="main_visual_img"><img src="../img/goods/42_1.jpg" width="520" height="418"
+                    alt="enherb 恩荷 深層屏護潤髮乳"></figure>
         </div>
         <div class="text">
-            <h2>特別添加雙重高保濕成分，<br class="phone_only">維持水潤飽滿</h2>
-            <h2 class="brown">獨家細緻綿密泡沫，<br class="phone_only">清潔滋潤洗後不緊繃</h2>
-            <h2 class="green1">草本精油、天然舒醒香氛，<br class="phone_only">感受煥采活力​​​​</h2>
+            <h2>萃取草本精華，<br class="phone_only">活絡頭皮健康同步滋養髮根</h2>
+            <h2 class="brown">溫和的胺基酸泡沫，<br class="phone_only">每日溫柔洗淨頭皮與髮絲</h2>
+            <h2 class="green1">無添加矽靈，<br class="phone_only">清新甦活、秀髮蓬鬆更強韌​​​​</h2>
         </div>
     </section>
     <!-- /main_visual -->
     <!-- purchase -->
     <section class="purchase" id="purchase">
+        <ul class="purchase_tab">
+            <li><a href="/product/goods_detail?goods_id=41"
+                    onclick="dataLayer.push({'event':'gaEvent','eventCategory':'goods_id=41','eventAction':'click','eventLabel':'tab_goods_id=41'});"><span>組合</span></a>
+            </li>
+            <li><a href="/product/goods_detail?goods_id=42"
+                    onclick="dataLayer.push({'event':'gaEvent','eventCategory':'goods_id=42','eventAction':'click','eventLabel':'tab_goods_id=42'});"><span>洗髮露</span></a>
+            </li>
+            <li class="current"><span>潤髮乳</span></li>
+        </ul>
         <!-- one_time -->
         <section class="one_time">
             <h2>單次購入</h2>
@@ -93,12 +102,12 @@
                     <input type="radio" name="buyProduct" id="once" value="1">
                     <label for="once">
                         <div class="label_group">
-                            <p class="name">煥采海洋膠原洗顏皂<span>(推薦早晨使用)</span></p>
+                            <p class="name">甦活煥采洗髮露<span>(250mL)</span></p>
                         </div>
                         <p class="price">NT$<span class="number">750</span>/組</p>
                     </label>
                 </div>
-                <p class="btn_modal"><a href="javascript:void(0);">買越多省越多，每盒最低NT$638</a></p>
+                <p class="btn_modal"><button>買越多省越多，每盒最低NT$638</button></p>
             </div>
         </section>
         <!-- /one_time -->
@@ -112,23 +121,23 @@
                     <label for="regular">
                         <div class="label_group">
                             <p class="message">每2個月配送1個</p>
-                            <p class="name">煥采海洋膠原洗顏皂<span>(推薦早晨使用)</span></p>
+                            <p class="name">淨膚洗卸炭泥洗顏皂<span>(推薦夜晚使用)</span></p>
                         </div>
-                        <p class="price">NT$<span class="number red">600</span>/盒</p>
+                        <p class="price">NT$<span class="number red">600</span>/瓶</p>
                     </label>
                     <input type="radio" name="buyProduct" id="regular2" value="4">
                     <label for="regular2">
                         <div class="label_group_wrap">
                             <div class="label_group">
                                 <p class="message">每4個月配送2個</p>
-                                <p class="name">煥采海洋膠原洗顏皂<span>(推薦早晨使用)</span></p>
+                                <p class="name">淨膚洗卸炭泥洗顏皂<span>(推薦夜晚使用)</span></p>
                             </div>
                         </div>
                         <b class="message t_right">首次出貨送明星商品增量包</b>
-                        <p class="price">NT$<span class="number red">600</span>/盒</p>
+                        <p class="price">NT$<span class="number red">600</span>/瓶</p>
                     </label>
                 </div>
-                <p class="link"><a href="/shopping/contract_products/">定期配送兩盒最優惠？</a>
+                <p class="link"><a href="/regulardelivery/">定期配送兩盒最優惠？</a>
                 </p>
             </div>
 
@@ -185,7 +194,7 @@
                     </ul>
                     <div class="regular_extra_footer">
                         <p class="note">加入健康定期購，無需每月下單，一次輕鬆購，定期定量配送到府</p>
-                        <p class="link"><a href="/shopping/contract_products/">點擊看更多</a></p>
+                        <p class="link"><a href="/regulardelivery/">點擊看更多</a></p>
                     </div>
                 </div>
             </section>
