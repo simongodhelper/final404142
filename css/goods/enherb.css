@@ -323,8 +323,7 @@
     }
 
     .tips {
-        background: linear-gradient(to bottom, #ffffff 0%, #ddd0c5 13%, #ddd0c5 96%, #ffffff 100%) !important;
-        /* padding-bottom: 0 !important; */
+        background: linear-gradient(to bottom, #ffffff 0%, #ddd0c5 13%, #ddd0c5 96%, #ffffff 100%) !important
     }
 
     .f26 {
@@ -390,7 +389,7 @@
     .w750,
     .w860 {
         width: auto;
-        padding: 0 15px;
+        padding: 4vw 15px 2vw 15px;
     }
 
     .bg_1 {
@@ -494,7 +493,7 @@
     .lead3 {
         font-size: 3.4666666666667vw;
         margin: 0 auto 15px auto !important;
-        line-height: normal;
+        line-height: 5vw;
     }
 
     .precautions_table td .spec_list li.usage {
@@ -527,7 +526,7 @@
         overflow: inherit;
         background: #fff;
         position: relative;
-        padding-top: 76px;
+        padding-top: 65px;
     }
 
     .box2_div {
@@ -644,7 +643,7 @@
 
     .box2_div .box2 .step {
         position: absolute;
-        top: 27px;
+        top: 15px;
         left: -10px;
         color: #bd3f01;
         font-weight: bold;
@@ -654,11 +653,11 @@
     .box2_div .box2 .step .label {
         background: #916640;
         display: inline-block;
-        padding: 0 16px;
+        padding: 0 9px;
         margin-right: 10px;
         font-weight: 400;
         color: #fff;
-        font-size: 18px;
+        font-size: 4vw;
         position: relative;
         height: 36px;
         line-height: 36px;
@@ -706,7 +705,7 @@
     }
 
     .ps {
-        font-size: 2.77777vw !important;
+        font-size: 3vw !important;
         line-height: normal;
         padding-top: 6px;
     }
@@ -797,8 +796,8 @@
 
     .box2_div .step_title {
         position: absolute;
-        top: 35px;
-        left: 55%;
+        top: 24px;
+        left: 50%;
         transform: translateX(-50%);
         color: #916640;
         font-weight: bold;
@@ -1460,8 +1459,14 @@
     .pic_center2 {
         max-width: 185% !important;
         margin-left: -44%;
-        margin-top: 0;
+        margin-top: -6vw;
         margin-bottom: -2px;
+    }
+
+    .pic_center3 {
+        max-width: 87% !important;
+        margin-left: 4%;
+        margin-top: 0;
     }
 
     .arrow_position {
@@ -1474,13 +1479,13 @@
     }
 
     .w600 {
-        max-width: 600px;
+        max-width: inherit;
+        width: auto;
         margin: 0 auto;
         font-size: 16px;
         line-height: 27px;
         position: relative;
         padding: 0 15px 3vw 15px;
-        /* overflow: hidden; */
     }
 
     .position_a_1 {
@@ -1537,13 +1542,43 @@
         mix-blend-mode: darken;
     }
 
+    .position_a_4 {
+        width: auto;
+        position: relative;
+    }
+
+    .position_a_4>img:nth-child(1) {
+        position: absolute;
+        top: 8%;
+        bottom: 0;
+        left: -2%;
+        width: 26vw;
+        z-index: 3;
+    }
+
+    .position_a_4>img:nth-child(2) {
+        position: absolute;
+        top: 11%;
+        right: 0%;
+        width: 20vw;
+        z-index: 3;
+    }
+
+    .position_a_4>img:nth-child(3) {
+        position: absolute;
+        bottom: 27%;
+        left: 0%;
+        width: 20vw;
+        z-index: 3;
+    }
+
     .arrow {
         width: 25vw;
         margin-top: -4vw;
     }
 
     .pb_130 {
-        padding-bottom: 15vw !important;
+        padding-bottom: 6vw !important;
     }
 
     .bg-1_arrow::before {
@@ -1582,7 +1617,7 @@
         display: flex;
         gap: 3vw;
         flex-wrap: wrap;
-        padding-bottom: 60px;
+        padding-bottom: 5vw;
     }
 
     .white_box_1_div {
@@ -1595,8 +1630,8 @@
 
     .white_box_1_div>.close {
         position: absolute;
-        width: 160px;
-        height: 160px;
+        width: 30vw;
+        height: 30vw;
         top: 45px;
         left: 50%;
         transform: translateX(-50%);
@@ -1604,7 +1639,7 @@
 
     .white_box_1_div>.close::before {
         position: absolute;
-        width: 160px;
+        width: 30vw;
         height: 2px;
         background: #916640;
         transform: rotate(135deg);
@@ -1614,7 +1649,7 @@
 
     .white_box_1_div>.close::after {
         position: absolute;
-        width: 160px;
+        width: 30vw;
         height: 2px;
         background: #916640;
         transform: rotate(45deg);
@@ -1636,7 +1671,7 @@
     .white_box_1_div .white_box_1 {
         background: #fff;
         border-radius: 10px;
-        padding: 20px 50px;
+        padding: 3vw 4vw;
         flex: 1;
         text-align: center;
     }
@@ -1655,7 +1690,7 @@
 
     .white_box_div .white_box>div,
     .white_box_1_div .white_box_1>div {
-        margin-top: 24px;
+        margin-top: 2vw;
     }
 
     .white_box_div .white_box>div>.title1,
@@ -1664,11 +1699,12 @@
         color: #916640;
         font-weight: bold;
         margin: 12px 0 4px 0;
+        font-size: 3.8vw;
     }
 
     .white_box_div .white_box:nth-child(1),
     .white_box_div .white_box:nth-child(2) {
-        width: calc(50% - 10px);
+        width: calc(50% - 6px);
     }
 
     .white_box_div .white_box:nth-child(3) {
@@ -1701,6 +1737,312 @@
 
     .white_box_div .white_box div>img {
         width: 100%;
+    }
+
+    .flowers p {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3.2vw;
+        line-height: normal;
+    }
+
+    .hair_step_div .enherb41 {
+        position: absolute;
+        top: -11%;
+        right: 3%;
+        width: 33vw;
+    }
+
+    .hair_step_div,
+    .hair_step_div1 {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 20vw;
+    }
+
+    .hair_step_div1 .enherb42 {
+        position: absolute;
+        top: -19vw;
+        left: -18vw;
+        right: 0;
+        width: 55vw;
+    }
+
+    .hair_step_div .round,
+    .hair_step_div1 .round {
+        border-radius: 100%;
+        background: #fff;
+        position: relative;
+        width: 46vw;
+        height: 46vw;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .hair_step_div .step_left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30vw;
+    }
+
+    .hair_step_div1 .step_left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center;
+    }
+
+    .hair_step_div .step_right {
+        flex: 1;
+        display: flex;
+        gap: 0px;
+        align-items: center;
+    }
+
+    .hair_step_div1 .step_right {
+        flex: 1;
+        display: flex;
+        gap: 35vw;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hair_step_div p,
+    .hair_step_div1 p {
+        font-size: 3.3vw;
+        line-height: 5.3vw;
+    }
+
+    .hair_step_div .step_left .round:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .hair_step_div1 .step_left .round:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .hair_step_div .step_left .round:nth-child(1)::before {
+        position: absolute;
+        content: "";
+        width: 95vw;
+        height: 192px;
+        background: url(../../img/goods/enherb/q1.svg) no-repeat;
+        background-size: auto 69%;
+        bottom: -17vw;
+        left: 0;
+        z-index: 1;
+        opacity: 0.8;
+    }
+
+    .hair_step_div1 .step_left .round::before {
+        position: absolute;
+        content: "";
+        width: 83vw;
+        height: 74px;
+        background: url(../../img/goods/enherb/q3.svg) no-repeat;
+        background-size: auto 82%;
+        top: -4vw;
+        left: 9vw;
+        z-index: 1;
+        opacity: 0.8;
+    }
+
+    .hair_step_div1 .step_left .round::after {
+        position: absolute;
+        content: "";
+        width: 65vw;
+        height: 146px;
+        background: url(../../img/goods/enherb/q4.svg) no-repeat;
+        background-size: auto 76%;
+        bottom: -25vw;
+        left: 21vw;
+        z-index: 1;
+        opacity: 0.8;
+    }
+
+    .hair_step_div .step_left .round:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .hair_step_div .step_left .round:nth-child(2)::before {
+        position: absolute;
+        content: "";
+        width: 192%;
+        height: 87px;
+        background: url(../../img/goods/enherb/q2.svg) no-repeat;
+        background-size: auto 98%;
+        top: -21%;
+        left: 0;
+        opacity: 0.7;
+        z-index: 1;
+    }
+
+    .hair_step_div .step_left .round:nth-child(1) img:nth-child(1),
+    .hair_step_div .step_left .round:nth-child(2) img:nth-child(1) {
+        position: absolute;
+        top: 9px;
+        left: -2px;
+        width: 21vw;
+    }
+
+    .hair_step_div .step_left .round img:nth-child(1),
+    .hair_step_div1 .step_left .round img:nth-child(1) {
+        position: absolute;
+        top: 9px;
+        left: -2px;
+        width: 20vw;
+    }
+
+    .hair_step_div .step_left .round:nth-child(1) img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: -9vw;
+        width: 34vw;
+    }
+
+    .hair_step_div1 .step_left .round img {
+        position: absolute;
+        top: 25px;
+        right: -19px;
+        width: 32vw;
+    }
+
+    .hair_step_div1 .step_right .round:nth-child(1) img:nth-child(1) {
+        position: absolute;
+        top: 9px;
+        left: -2px;
+        width: 20vw;
+    }
+
+    .hair_step_div1 .step_right .round:nth-child(1) img:nth-child(2) {
+        position: absolute;
+        top: 33px;
+        right: 0;
+        width: 33vw;
+        z-index: 1;
+    }
+
+    .hair_step_div1 .step_right .round:nth-child(2) img:nth-child(1) {
+        position: absolute;
+        top: 9px;
+        left: -2px;
+        width: 20vw;
+    }
+
+    .hair_step_div1 .step_right .round:nth-child(2) img:nth-child(2) {
+        position: absolute;
+        top: 19px;
+        right: 0;
+        width: 27vw;
+    }
+
+    .hair_step_div .step_left .round:nth-child(2) img:nth-child(2) {
+        position: absolute;
+        bottom: -2%;
+        left: -2%;
+        width: 25vw;
+    }
+
+    .hair_step_div .step_left .round:nth-child(1) p {
+        width: 43%;
+        text-align: left;
+        padding-top: 17vw;
+        margin-left: 6vw;
+    }
+
+    .hair_step_div1 .step_left .round p {
+        width: 34%;
+        text-align: left;
+        padding-top: 91px;
+        margin-left: 29px;
+    }
+
+    .hair_step_div1 .step_right .round:nth-child(1) p {
+        width: 46%;
+        text-align: left;
+        padding-top: 91px;
+        margin-left: 27px;
+    }
+
+    .hair_step_div1 .step_right .round:nth-child(2) p {
+        width: 34%;
+        text-align: left;
+        padding-top: 91px;
+        margin-left: 36px;
+    }
+
+    .hair_step_div .step_left .round:nth-child(2) p {
+        width: 39%;
+        text-align: left;
+        padding-top: 10vw;
+        margin-left: 25vw;
+    }
+
+    .hair_step_div .step_right .round {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .hair_step_div .step_right .round img:nth-child(1) {
+        position: absolute;
+        top: 14px;
+        left: -2px;
+        width: 21vw;
+    }
+
+    .hair_step_div .step_right .round img:nth-child(2) {
+        position: absolute;
+        top: 10px;
+        right: -3vw;
+        width: 24vw;
+    }
+
+    .hair_step_div .step_right .round p {
+        width: 48%;
+        text-align: left;
+        padding-top: 36%;
+        margin-left: 14%;
+    }
+
+    .girl42_txt {
+        font-size: 3.5vw;
+        line-height: 6vw;
+        text-align: left;
+        margin-left: -24%;
+        margin-top: 0;
+    }
+
+    .protect_hair {
+        position: relative;
+        padding-top: 70px;
+    }
+
+    .protect_hair>img:nth-child(1) {
+        position: absolute;
+        top: 34vw;
+        left: 0;
+        width: 27vw;
+    }
+
+    .protect_hair>img:nth-child(2) {
+        position: absolute;
+        bottom: 21vw;
+        right: 0;
+        width: 18vw;
+        z-index: 1;
+    }
+
+    .protect_hair>img:nth-child(3) {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 180px;
     }
 
 
@@ -3172,7 +3514,7 @@
             position: absolute;
             top: 36px;
             left: 0;
-            width: 256px;
+            width: 300px;
         }
 
         .protect_hair>img:nth-child(2) {
@@ -3276,6 +3618,7 @@
             color: #916640;
             font-weight: bold;
             margin: 12px 0 4px 0;
+            font-size: 16px;
         }
 
         .white_box_div .white_box:nth-child(1),
@@ -3315,6 +3658,15 @@
             width: 100%;
         }
 
+        .w600 {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 27px;
+            position: relative;
+            padding: 0 15px 3vw 15px;
+        }
+
         .hair_step_div,
         .hair_step_div1 {
             display: flex;
@@ -3325,7 +3677,7 @@
 
         .hair_step_div .enherb41 {
             position: absolute;
-            top: -19%;
+            top: -15%;
             right: 3%;
             width: 230px;
         }
@@ -3385,7 +3737,7 @@
         }
 
         .hair_step_div .step_left .round:nth-child(1) {
-            margin-left: -26px;
+            margin-left: -27px;
         }
 
         .hair_step_div1 .step_left .round:nth-child(1) {
@@ -3546,7 +3898,7 @@
             width: 48%;
             text-align: left;
             padding-top: 61px;
-            margin-left: 48%;
+            margin-left: 46%;
         }
 
         .hair_step_div .step_right .round {
@@ -3572,7 +3924,7 @@
             width: 48%;
             text-align: left;
             padding-top: 85px;
-            margin-left: 14%;
+            margin-left: 16%;
         }
 
         .position_a_1 img:nth-child(1) {
@@ -3617,6 +3969,31 @@
             mix-blend-mode: darken;
         }
 
+        .position_a_4>img:nth-child(1) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0%;
+            width: 261px;
+            z-index: 3;
+        }
+
+        .position_a_4>img:nth-child(2) {
+            position: absolute;
+            top: 200px;
+            right: 0%;
+            width: 221px;
+            z-index: 3;
+        }
+
+        .position_a_4>img:nth-child(3) {
+            position: absolute;
+            bottom: 100px;
+            left: 0%;
+            width: 200px;
+            z-index: 3;
+        }
+
         .tips_ab {
             position: absolute;
             left: 50%;
@@ -3640,7 +4017,7 @@
 
         .flowers p {
             position: absolute;
-            top: 56%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 20px;
@@ -3700,6 +4077,11 @@
             margin: auto;
         }
 
+        .position_a_4 {
+            width: auto;
+            position: relative;
+        }
+
         .pic_enherb_width {
             width: 470px;
             margin-top: 35px;
@@ -3720,5 +4102,4 @@
             width: 1400px !important;
             padding: 40px 160px 30px 160px !important;
         }
-
     }
