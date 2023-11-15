@@ -1782,6 +1782,33 @@
         margin-top: 0;
     }
 
+    .hair_step_div1 .step_right .round:nth-child(1),
+    .hair_step_div1 .step_right .round:nth-child(2) {
+        margin-left: -8vw;
+    }
+
+    .hair_step_div1 .step_right .round:nth-child(1)::before {
+        position: absolute;
+        content: "";
+        width: 50vw;
+        height: 50vw;
+        top: 0;
+        left: 0;
+        background: #fff;
+        border-radius: 100%
+    }
+
+    .hair_step_div1 .step_right .round:nth-child(2)::before {
+        position: absolute;
+        content: "";
+        width: 50vw;
+        height: 50vw;
+        top: 0;
+        left: 0;
+        background: #fff;
+        border-radius: 100%
+    }
+
     .hair_step_div .step_left {
         flex: 1;
         display: flex;
@@ -1807,7 +1834,7 @@
     .hair_step_div1 .step_right {
         flex: 1;
         display: flex;
-        gap: 35vw;
+        gap: 41vw;
         align-items: center;
         flex-direction: column;
     }
@@ -1833,8 +1860,8 @@
         height: 192px;
         background: url(../../img/goods/enherb/q1.svg) no-repeat;
         background-size: auto 69%;
-        bottom: -17vw;
-        left: 0;
+        bottom: -23vw;
+        left: -7px;
         z-index: 1;
         opacity: 0.8;
     }
@@ -1866,12 +1893,23 @@
     .hair_step_div1 .step_left .round::after {
         position: absolute;
         content: "";
-        width: 65vw;
-        height: 146px;
+        width: 50vw;
+        height: 50vw;
+        background: #fff;
+        border-radius: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .hair_step_div1 .step_right .round:nth-child(2)::after {
+        position: absolute;
+        content: "";
+        width: 80vw;
+        height: 143px;
         background: url(../../img/goods/enherb/q4.svg) no-repeat;
         background-size: auto 76%;
-        bottom: -25vw;
-        left: 21vw;
+        top: -7vw;
+        left: -26vw;
         z-index: 1;
         opacity: 0.8;
     }
@@ -1887,7 +1925,7 @@
         height: 87px;
         background: url(../../img/goods/enherb/q2.svg) no-repeat;
         background-size: auto 98%;
-        top: -21%;
+        top: -16%;
         left: -31px;
         opacity: 0.7;
         z-index: 1;
@@ -1928,6 +1966,7 @@
         top: 9px;
         left: -2px;
         width: 20vw;
+        z-index: 1;
     }
 
     .hair_step_div .step_left .round:nth-child(1) img:nth-child(2) {
@@ -1943,6 +1982,7 @@
         top: 25px;
         right: -19px;
         width: 32vw;
+        z-index: 1;
     }
 
     .hair_step_div1 .step_right .round:nth-child(1) img:nth-child(1) {
@@ -1959,6 +1999,7 @@
         width: 33vw;
         z-index: 1;
     }
+
 
     .hair_step_div1 .step_right .round:nth-child(2) img:nth-child(1) {
         position: absolute;
@@ -1996,28 +2037,26 @@
         text-align: left;
         padding-top: 91px;
         margin-left: 29px;
+        position: absolute;
+        z-index: 1;
     }
 
     .hair_step_div1 .step_right .round:nth-child(1) p {
         width: 46%;
         text-align: left;
-        padding-top: 91px;
-        margin-left: 27px;
+        padding-top: 17vw;
+        margin-left: 3vw;
+        position: absolute;
+        z-index: 1;
     }
 
     .hair_step_div1 .step_right .round:nth-child(2) p {
         width: 34%;
         text-align: left;
-        padding-top: 91px;
-        margin-left: 36px;
-    }
-
-    z {
-        width: 39%;
-        text-align: left;
-        padding-top: 10vw;
-        margin-left: 25vw;
+        padding-top: 18vw;
+        margin-left: 5vw;
         position: absolute;
+        z-index: 1;
     }
 
     .hair_step_div .step_right .round {
@@ -3774,7 +3813,7 @@
         .hair_step_div1 .step_right {
             flex: 1;
             display: flex;
-            gap: 80px;
+            gap: 194px;
             align-items: center;
             flex-direction: column;
         }
@@ -3802,7 +3841,7 @@
             background-size: auto 69%;
             bottom: -79px;
             left: -5px;
-            z-index: 1;
+            z-index: 2;
             opacity: 0.8;
         }
 
@@ -3820,17 +3859,17 @@
         .hair_step_div1 .step_left .round::before {
             position: absolute;
             content: "";
-            width: 577px;
-            height: 137px;
+            width: 552px;
+            height: 110px;
             background: url(../../img/goods/enherb/q3.svg) no-repeat;
             background-size: auto 82%;
-            top: -16px;
-            left: 28px;
+            top: -31px;
+            left: 58px;
             z-index: 1;
             opacity: 0.8;
         }
 
-        .hair_step_div1 .step_left .round::after {
+        /* .hair_step_div1 .step_left .round::after {
             position: absolute;
             content: "";
             width: 563px;
@@ -3841,7 +3880,7 @@
             left: 114px;
             z-index: 1;
             opacity: 0.8;
-        }
+        } */
 
         .hair_step_div .step_left .round:nth-child(2) {
             margin-left: 49px;
@@ -3908,11 +3947,67 @@
             width: 120px;
         }
 
+        .hair_step_div1 .step_left .round::after {
+            position: absolute;
+            content: "";
+            width: 250px;
+            height: 250px;
+            background: #fff;
+            border-radius: 100%;
+            left: 0;
+            top: 0;
+        }
+
+
+        .hair_step_div1 .step_right .round:nth-child(1)::before {
+            position: absolute;
+            content: "";
+            width: 250px;
+            height: 250px;
+            top: 0;
+            left: 0;
+            background: #fff;
+            border-radius: 100%
+        }
+
+        .hair_step_div1 .step_right .round:nth-child(2)::after {
+            position: absolute;
+            content: "";
+            width: 562px;
+            height: 207px;
+            background: url(../../img/goods/enherb/q4.svg) no-repeat;
+            background-size: auto 76%;
+            top: -30px;
+            left: -147px;
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        .hair_step_div1 .step_right .round:nth-child(2)::before {
+            position: absolute;
+            content: "";
+            width: 250px;
+            height: 250px;
+            top: 0;
+            left: 0;
+            background: #fff;
+            border-radius: 100%
+        }
+
         .hair_step_div1 .step_right .round:nth-child(1) img:nth-child(2) {
             position: absolute;
             top: 33px;
             right: -18px;
             width: 185px;
+            z-index: 1;
+        }
+
+        .hair_step_div1 .step_right .round:nth-child(1) p {
+            width: 46%;
+            text-align: left;
+            padding-top: 72px;
+            margin-left: 27px;
+            position: absolute;
             z-index: 1;
         }
 
@@ -4099,7 +4194,7 @@
 
         .flowers p {
             position: absolute;
-            top: 50%;
+            top: 53%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 20px;
