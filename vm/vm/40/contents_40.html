@@ -1,27 +1,27 @@
 <!-- contents00 -->
 <section class="contents00">
 
-<!-- contents_nav -->
-<ul class="contents_nav">
-    <li class="btn_ingredients"><a href="#feature">品牌故事</a></li>
-    <li class="btn_ingredients"><a href="#ingredients">商品功效</a></li>
-    <li class="btn_tips"><a href="#tips">商品一覽</a></li>
-</ul>
-<!-- /contents_nav -->
-
-<!-- targets -->
-<section class="targets">
-    <h2>推薦給這樣的妳</h2>
-    <ul class="targets_list">
-        <li>想<em>頭髮蓬鬆不扁塌一整天</em>的妳</li>
-        <li>想<em>秀髮看起來更豐盈年輕</em>的妳</li>
-        <li>想<em>髮絲有光澤不乾枯毛躁</em>的妳</li>
-        <li>希望<em>髮根更強韌不易斷裂</em>的妳</li>
-        <li>偏好<em>洗髮時享受草本香氛</em>的妳</li>
-        <li>期待<em>髮絲隨時飄逸柔順</em>的妳</li>
+    <!-- contents_nav -->
+    <ul class="contents_nav">
+        <li class="btn_ingredients"><a href="#feature">品牌故事</a></li>
+        <li class="btn_ingredients"><a href="#ingredients">商品功效</a></li>
+        <li class="btn_tips"><a href="#tips">商品一覽</a></li>
     </ul>
-</section>
-<!-- /targets -->
+    <!-- /contents_nav -->
+
+    <!-- targets -->
+    <section class="targets">
+        <h2>推薦給這樣的妳</h2>
+        <ul class="targets_list">
+            <li>想<em>頭髮蓬鬆不扁塌一整天</em>的妳</li>
+            <li>想<em>秀髮看起來更豐盈年輕</em>的妳</li>
+            <li>想<em>髮絲有光澤不乾枯毛躁</em>的妳</li>
+            <li>希望<em>髮根更強韌不易斷裂</em>的妳</li>
+            <li>偏好<em>洗髮時享受草本香氛</em>的妳</li>
+            <li>期待<em>髮絲隨時飄逸柔順</em>的妳</li>
+        </ul>
+    </section>
+    <!-- /targets -->
 
 </section>
 
@@ -470,89 +470,89 @@
 <script src="/js/goods/smooth_scroll.js"></script>
 <script src="/js/goods/jquery.matchHeight-min.js"></script>
 <script>
-$(function() {
-	//Show Benefits
-	$( 'input[name="buyProduct"]:radio' ).change( function() {
-		$(".regular_extra").addClass("active");
-	});
-	//modal
-	$('.overlay').on('click',function(){
-		$('.modal_container').removeClass('active');
-		$('.overlay').removeClass('active');
-	});
-	$('.btn_close').on('click',function(){
-		$('.modal_container').removeClass('active');
-		$('.overlay').removeClass('active');
-	});
-	$('.btn_close_x').on('click',function(){
-		$('.modal_container').removeClass('active');
-		$('.overlay').removeClass('active');
-	});
-	$('.btn_modal button').on('click',function(){
-        $('.overlay').addClass('active');
-        $('.modal_container').addClass('active');
+    $(function () {
+        //Show Benefits
+        $('input[name="buyProduct"]:radio').change(function () {
+            $(".regular_extra").addClass("active");
+        });
+        //modal
+        $('.overlay').on('click', function () {
+            $('.modal_container').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+        $('.btn_close').on('click', function () {
+            $('.modal_container').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+        $('.btn_close_x').on('click', function () {
+            $('.modal_container').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+        $('.btn_modal button').on('click', function () {
+            $('.overlay').addClass('active');
+            $('.modal_container').addClass('active');
+        });
     });
-});
 
-// matchHeight
-$('.ingredients_list01').matchHeight();
-$('.ingredients_list02').matchHeight();
-$('.products_title').matchHeight();
-// select_purchase_btn_bar
-let preventActivation = false;
-$(".select_purchase_btn_bar .btn_close").click(function() {
-    $('.select_purchase_btn_bar').removeClass('active');
-    preventActivation = true;
-});
-$(window).scroll(function() {
-    if (!preventActivation) {
-        if ($(this).scrollTop() > 2000) {
-            $('.select_purchase_btn_bar').addClass('active');
-        } else {
-            $('.select_purchase_btn_bar').removeClass('active');
-        }
-    }
-});
-</script>
-<script>
-//same height
-        const boxInElements = document.querySelectorAll('.hair_box_txt, .flex_between ');
-
-
-        function setMaxHeight() {
-            let maxHeightTxt1 = 0;
-            let maxHeightTxt2 = 0;
-            let maxHeightTxt2_1 = 0;
-
-
-            boxInElements.forEach(element => {
-                const height = element.offsetHeight;
-                if (element.classList.contains('hair_box_txt')) {
-                    if (height > maxHeightTxt1) {
-                        maxHeightTxt1 = height;
-                    }
-                } else if (element.classList.contains('flex_between')) {
-                    if (height > maxHeightTxt2) {
-                        maxHeightTxt2 = height;
-                    }
-                }
-            });
-
-
-            if (window.innerWidth >= 768) {
-                boxInElements.forEach(element => {
-                    if (element.classList.contains('hair_box_txt')) {
-                        element.style.height = `${maxHeightTxt1}px`;
-                    }
-                    if (element.classList.contains('flex_between')) {
-                        element.style.height = `${maxHeightTxt2}px`;
-                    }
-                });
+    // matchHeight
+    $('.ingredients_list01').matchHeight();
+    $('.ingredients_list02').matchHeight();
+    $('.products_title').matchHeight();
+    // select_purchase_btn_bar
+    let preventActivation = false;
+    $(".select_purchase_btn_bar .btn_close").click(function () {
+        $('.select_purchase_btn_bar').removeClass('active');
+        preventActivation = true;
+    });
+    $(window).scroll(function () {
+        if (!preventActivation) {
+            if ($(this).scrollTop() > 2000) {
+                $('.select_purchase_btn_bar').addClass('active');
+            } else {
+                $('.select_purchase_btn_bar').removeClass('active');
             }
         }
+    });
+</script>
+<script>
+    //same height
+    const boxInElements = document.querySelectorAll('.hair_box_txt, .flex_between ');
 
 
-        // Call the function initially and on window resize
-        window.addEventListener('resize', setMaxHeight);
-        setMaxHeight();
+    function setMaxHeight() {
+        let maxHeightTxt1 = 0;
+        let maxHeightTxt2 = 0;
+        let maxHeightTxt2_1 = 0;
+
+
+        boxInElements.forEach(element => {
+            const height = element.offsetHeight;
+            if (element.classList.contains('hair_box_txt')) {
+                if (height > maxHeightTxt1) {
+                    maxHeightTxt1 = height;
+                }
+            } else if (element.classList.contains('flex_between')) {
+                if (height > maxHeightTxt2) {
+                    maxHeightTxt2 = height;
+                }
+            }
+        });
+
+
+        if (window.innerWidth >= 768) {
+            boxInElements.forEach(element => {
+                if (element.classList.contains('hair_box_txt')) {
+                    element.style.height = `${maxHeightTxt1}px`;
+                }
+                if (element.classList.contains('flex_between')) {
+                    element.style.height = `${maxHeightTxt2}px`;
+                }
+            });
+        }
+    }
+
+
+    // Call the function initially and on window resize
+    window.addEventListener('resize', setMaxHeight);
+    setMaxHeight();
 </script>

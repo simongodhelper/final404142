@@ -86,10 +86,10 @@
     <!-- purchase -->
     <section class="purchase" id="purchase">
         <ul class="purchase_tab">
-            <li><a href="/product/goods_detail?goods_id=41"
+            <li><a href="/product/goods_detail?goods_id=40"
                     onclick="dataLayer.push({'event':'gaEvent','eventCategory':'goods_id=41','eventAction':'click','eventLabel':'tab_goods_id=41'});"><span>組合</span></a>
             </li>
-            <li><a href="/product/goods_detail?goods_id=42"
+            <li><a href="/product/goods_detail?goods_id=40"
                     onclick="dataLayer.push({'event':'gaEvent','eventCategory':'goods_id=42','eventAction':'click','eventLabel':'tab_goods_id=42'});"><span>洗髮露</span></a>
             </li>
             <li class="current"><span>潤髮乳</span></li>
@@ -107,7 +107,7 @@
                         <p class="price">NT$<span class="number">750</span>/組</p>
                     </label>
                 </div>
-                <p class="btn_modal"><button>買越多省越多，每盒最低NT$638</button></p>
+                <p class="btn_modal"><button type="button">買越多省越多，每盒最低NT$638</button></p>
             </div>
         </section>
         <!-- /one_time -->
@@ -203,7 +203,7 @@
         </section>
         <!-- /regular -->
 
-        <button class="btn_cart"
+        <button class="btn_cart" type="button"
             onclick="dataLayer.push({'event':'gaEvent','eventCategory':'goods_detail','eventAction':'click','eventLabel':'Add_to_Cart'});addCard();">加入購物車</button>
         <p class="btn_link"><a href="/contents/anti-counterfeit/"><span>為什麼其他網站賣得更便宜？對於商品真偽有疑慮嗎？</span></a>
         </p>

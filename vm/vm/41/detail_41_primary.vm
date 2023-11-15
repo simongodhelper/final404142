@@ -86,7 +86,7 @@
     <!-- purchase -->
     <section class="purchase" id="purchase">
         <ul class="purchase_tab">
-            <li><a href="/product/goods_detail?goods_id=41"
+            <li><a href="/product/goods_detail?goods_id=40"
                     onclick="dataLayer.push({'event':'gaEvent','eventCategory':'goods_id=41','eventAction':'click','eventLabel':'tab_goods_id=41'});"><span>組合</span></a>
             </li>
             <li class="current"><span>洗髮露</span></li>
@@ -107,7 +107,7 @@
                         <p class="price">NT$<span class="number">750</span>/組</p>
                     </label>
                 </div>
-                <p class="btn_modal"><button>買越多省越多，每瓶最低NT$638</button></p>
+                <p class="btn_modal"><button type="button"  >買越多省越多，每瓶最低NT$638</button></p>
                 <ul>
                     <li>同系列不同商品恕無法享有2瓶以上混合購買之優惠。</li>
                     <li>例如：enherb甦活煥采洗髮露1瓶+深層屏護潤髮乳1瓶，不適用2瓶95折之優惠。</li>
@@ -207,7 +207,7 @@
         </section>
         <!-- /regular -->
 
-        <button class="btn_cart"
+        <button class="btn_cart" type="button"
             onclick="dataLayer.push({'event':'gaEvent','eventCategory':'goods_detail','eventAction':'click','eventLabel':'Add_to_Cart'});addCard();">加入購物車</button>
         <p class="btn_link"><a href="/contents/anti-counterfeit/"><span>為什麼其他網站賣得更便宜？對於商品真偽有疑慮嗎？</span></a>
         </p>

@@ -323,7 +323,7 @@
     }
 
     .tips {
-        background: linear-gradient(to bottom, #ffffff 0%, #ddd0c5 13%, #ddd0c5 96%, #ffffff 100%) !important
+        background: linear-gradient(to bottom, #ffffff 0%, #ddd0c5 13%, #ddd0c5 96%, #ddd0c5 100%) !important
     }
 
     .f26 {
@@ -796,7 +796,7 @@
 
     .box2_div .step_title {
         position: absolute;
-        top: 24px;
+        top: 5vw;
         left: 50%;
         transform: translateX(-50%);
         color: #916640;
@@ -1471,7 +1471,7 @@
 
     .arrow_position {
         position: absolute;
-        bottom: -8.4vw;
+        bottom: -6.4vw;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
@@ -1485,7 +1485,7 @@
         font-size: 16px;
         line-height: 27px;
         position: relative;
-        padding: 0 15px 3vw 15px;
+        padding: 0 15px 8vw 15px;
     }
 
     .position_a_1 {
@@ -1578,7 +1578,7 @@
     }
 
     .pb_130 {
-        padding-bottom: 6vw !important;
+        padding-bottom: 14vw !important;
     }
 
     .bg-1_arrow::before {
@@ -1622,7 +1622,7 @@
 
     .white_box_1_div {
         display: flex;
-        gap: 20px;
+        gap: 12vw;
         flex-wrap: wrap;
         padding-top: 40px;
         position: relative;
@@ -1630,8 +1630,8 @@
 
     .white_box_1_div>.close {
         position: absolute;
-        width: 30vw;
-        height: 30vw;
+        width: 26vw;
+        height: 26vw;
         top: 45px;
         left: 50%;
         transform: translateX(-50%);
@@ -1639,7 +1639,7 @@
 
     .white_box_1_div>.close::before {
         position: absolute;
-        width: 30vw;
+        width: 26vw;
         height: 2px;
         background: #916640;
         transform: rotate(135deg);
@@ -1649,7 +1649,7 @@
 
     .white_box_1_div>.close::after {
         position: absolute;
-        width: 30vw;
+        width: 26vw;
         height: 2px;
         background: #916640;
         transform: rotate(45deg);
@@ -1659,7 +1659,7 @@
 
     .white_box_1_div .ps {
         position: absolute;
-        bottom: -35px;
+        bottom: -4vw;
     }
 
     .white_box_div .white_box {
@@ -1671,7 +1671,7 @@
     .white_box_1_div .white_box_1 {
         background: #fff;
         border-radius: 10px;
-        padding: 3vw 4vw;
+        padding: 3vw 2vw;
         flex: 1;
         text-align: center;
     }
@@ -2107,12 +2107,12 @@
 
     .protect_hair {
         position: relative;
-        padding-top: 70px;
+        padding-top: 25px;
     }
 
     .protect_hair>img:nth-child(1) {
         position: absolute;
-        top: 34vw;
+        top: 17vw;
         left: 0;
         width: 27vw;
     }
@@ -2130,7 +2130,15 @@
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 180px;
+        /* width: 180px; */
+    }
+
+    .top62 {
+        top: 59% !important;
+    }
+
+    .protect_hair>img:nth-child(3) {
+        width: 25vw;
     }
 
 
@@ -2206,6 +2214,26 @@
 
         .contents01 .gap20 {
             gap: 1.8em;
+        }
+
+        .position_a_1 {
+            overflow: hidden;
+            width: auto;
+            margin: auto;
+        }
+
+        .position_a_2 {
+            overflow: hidden;
+            position: relative;
+            width: auto;
+            margin: auto;
+        }
+
+        .position_a_3 {
+            overflow: hidden;
+            position: relative;
+            width: auto;
+            margin: auto;
         }
 
         /*------------------------------------------------------------
@@ -3340,7 +3368,7 @@
         .hair_dry_div .hair_dry_txt .dry_1 {
             width: 100%;
             height: auto;
-            margin-top: 0;
+            margin-top: 35px;
         }
 
         .hair_dry_div .hair_dry_txt .dry_1 img {
@@ -3614,10 +3642,11 @@
 
         .protect_hair>img:nth-child(3) {
             position: absolute;
-            top: 0;
+            top: 0px;
             left: 50%;
             transform: translateX(-50%);
             width: 180px;
+            z-index: 13;
         }
 
         .white_box_div {
@@ -3629,7 +3658,7 @@
 
         .white_box_1_div {
             display: flex;
-            gap: 20px;
+            gap: 50px;
             flex-wrap: wrap;
             padding-top: 40px;
             position: relative;
@@ -3666,7 +3695,7 @@
 
         .white_box_1_div .ps {
             position: absolute;
-            bottom: -35px;
+            bottom: 0;
         }
 
         .white_box_div .white_box {
@@ -3692,7 +3721,7 @@
         .white_box_div .white_box>p,
         .white_box_1_div .white_box_1>p {
             font-size: 16px;
-            line-height: normal;
+            line-height: 1.5;
         }
 
         .white_box_div .white_box>div,
@@ -4113,7 +4142,7 @@
 
         .position_a_1 img:nth-child(2) {
             position: absolute;
-            top: 42%;
+            top: 61%;
             bottom: 0;
             right: 0;
             width: 280px;
@@ -4140,10 +4169,9 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            left: 0%;
+            left: -6%;
             width: 300px;
             z-index: 3;
-            mix-blend-mode: darken;
         }
 
         .position_a_4>img:nth-child(1) {
@@ -4235,20 +4263,20 @@
         }
 
         .position_a_1 {
-            overflow: hidden;
+            overflow: inherit;
             width: 1042px;
             margin: auto;
         }
 
         .position_a_2 {
-            overflow: hidden;
+            overflow: inherit;
             position: relative;
             width: 846px;
             margin: auto;
         }
 
         .position_a_3 {
-            overflow: hidden;
+            overflow: inherit;
             position: relative;
             width: 1042px;
             margin: auto;
@@ -4279,4 +4307,10 @@
             width: 1400px !important;
             padding: 40px 160px 30px 160px !important;
         }
+
+        .top62 {
+            top: 50% !important;
+        }
+
+
     }
