@@ -515,4 +515,41 @@ $(window).scroll(function() {
         }
     }
 });
+
+//same height
+        const boxInElements = document.querySelectorAll('.hair_box_txt, .flex_between ');
+
+        function setMaxHeight() {
+            let maxHeightTxt1 = 0;
+            let maxHeightTxt2 = 0;
+            let maxHeightTxt2_1 = 0;
+
+            boxInElements.forEach(element => {
+                const height = element.offsetHeight;
+                if (element.classList.contains('hair_box_txt')) {
+                    if (height > maxHeightTxt1) {
+                        maxHeightTxt1 = height;
+                    }
+                } else if (element.classList.contains('flex_between')) {
+                    if (height > maxHeightTxt2) {
+                        maxHeightTxt2 = height;
+                    }
+                }
+            });
+
+            if (window.innerWidth >= 768) {
+                boxInElements.forEach(element => {
+                    if (element.classList.contains('hair_box_txt')) {
+                        element.style.height = `${maxHeightTxt1}px`;
+                    }
+                    if (element.classList.contains('flex_between')) {
+                        element.style.height = `${maxHeightTxt2}px`;
+                    }
+                });
+            }
+        }
+
+        // Call the function initially and on window resize
+        window.addEventListener('resize', setMaxHeight);
+        setMaxHeight();
 </script>
